@@ -58,7 +58,19 @@ width: 100%; height: auto; display: block; right: 0; position: static;
 }
 .video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%;  border: none;}
 .vjs-subtitles-button.vjs-menu-button-popup,.vjs-captions-button.vjs-menu-button-popup{display: none;}
-
+/*暂停出现播放*/
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+/*自带*/
+video::-webkit-media-controls {
+    display:none !important;
+}
+/*点击屏幕控制播放暂停*/
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
 
 
 
