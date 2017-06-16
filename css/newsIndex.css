@@ -8,7 +8,7 @@ html{font-size:20px}
 }
 @media only screen and (min-width:480px){html{font-size:25.6px!important}
 }
-.page{background-color: #f1eae9; width: 100%;}
+.page{background-color: #f1eae9; width: 100%; overflow-y: auto;}
 /*==首部轮播图==*/
 #topSlider{font-size: 0;}
 .top-slider-word{position: absolute; bottom: 0; color: #fff; font-size: 0.75rem; text-indent: 0.75rem; width: 100%; height: 1.55rem; line-height: 1.55rem; background-color: rgba(255,255,255,.2); letter-spacing: 0.05rem;}
@@ -47,9 +47,7 @@ html{font-size:20px}
 .card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
 .card+.card{border-top: 1px solid #9c6f67;}
 
-.pic-card img{ font-size: 0;}
-.pic-card .row{margin-left: -1%;}
-.pic-card .row .col-33{margin-left: 1%; width: 32.333333333333332%}
+.pic-card img{ font-size: 0;margin-left: 1%; width: 32.333333333333332%;}
 .pic-card-img{margin: 0.6rem 0 0.3rem; font-size: 0;}
 /*.pic-card-img video{display: block;}*/
 .video-js{
@@ -58,7 +56,7 @@ html{font-size:20px}
 .video-js .vjs-tech{
 width: 100%; height: auto; display: block; right: 0; position: static;
 }
-.video-js .vjs-big-play-button{width: 3rem; height: 3rem; left: 50%; top: 50%; margin-top: -1.5rem; margin-left: -1.5rem; border-radius: 50%; line-height: 3rem; border: none;}
+.video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%;  border: none;}
 .vjs-subtitles-button.vjs-menu-button-popup,.vjs-captions-button.vjs-menu-button-popup{display: none;}
 
 
