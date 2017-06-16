@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+html{font-size:20px}
+@media only screen and (min-width:400px){html{font-size:21.33px!important}
+}
+@media only screen and (min-width:414px){html{font-size:22.08px!important}
+}
+@media only screen and (min-width:480px){html{font-size:25.6px!important}
+}
+.page{background-color: #f1eae9; width: 100%;}
+/*==首部轮播图==*/
+#topSlider{font-size: 0;}
+.top-slider-word{position: absolute; bottom: 0; color: #fff; font-size: 0.75rem; text-indent: 0.75rem; width: 100%; height: 1.55rem; line-height: 1.55rem; background-color: rgba(255,255,255,.2); letter-spacing: 0.05rem;}
+/*=中间=*/
+.news-content{padding-bottom: 0.5rem;}
+.card{background: transparent; margin: 0; box-shadow: none; padding: 0.6rem;}
+.word-card{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;}
+.word-card-img{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+.word-card-content{
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    box-flex: 2;
+    padding-left: 0.3rem; position: relative;}
+.card a{color: #7a342a; font-size: 0.75rem; line-height: 1.1rem; display: block; font-weight: bold; font-family: "microsoft yahei";}
+.word-card-bottom{ font-size: 0.6rem; color: #46202a;}
+.word-card .word-card-bottom{position: absolute; bottom: 0; right: 0; left: 0.3rem;}
+.card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
+.card+.card{border-top: 1px solid #9c6f67;}
+
+.pic-card img{ font-size: 0;}
+.pic-card .row{margin-left: -1%;}
+.pic-card .row .col-33{margin-left: 1%; width: 32.333333333333332%}
+.pic-card-img{margin: 0.6rem 0 0.3rem; font-size: 0;}
+/*.pic-card-img video{display: block;}*/
+.video-js{
+    width: 100%; height: auto; display: block; right: 0;
+}
+.video-js .vjs-tech{
+width: 100%; height: auto; display: block; right: 0; position: static;
+}
+.video-js .vjs-big-play-button{width: 3rem; height: 3rem; left: 50%; top: 50%; margin-top: -1.5rem; margin-left: -1.5rem; border-radius: 50%; line-height: 3rem; border: none;}
+.vjs-subtitles-button.vjs-menu-button-popup,.vjs-captions-button.vjs-menu-button-popup{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
