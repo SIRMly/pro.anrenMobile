@@ -14,6 +14,14 @@
         autoplay: 2500,
         autoplayDisableOnInteraction: false
     });
+
+    var player = videojs("example_video_1");
+
+
+
+
+
+
 })(jQuery);
 
 
