@@ -22,3 +22,11 @@ input[type=number] { -moz-appearance: textfield;  }
 .pull-left { float: left;}
 .pull-right { float: right;}
 .hide{display: none; }
+html{font-size:20px}
+@media only screen and (min-width:400px){html{font-size:21.33px!important}
+}
+@media only screen and (min-width:414px){html{font-size:22.08px!important}
+}
+@media only screen and (min-width:480px){html{font-size:25.6px!important}
+}
+.page{background-color: #f1eae9; width: 100%; overflow-y: auto; min-height: 100%; position: absolute; left: 0; top: 0;}

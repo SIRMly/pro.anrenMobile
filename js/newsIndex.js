@@ -15,7 +15,6 @@
         autoplayDisableOnInteraction: false
     });
 
-    var player = videojs("example_video_1");
 
 
 
