@@ -10,7 +10,7 @@
         slidesPerView: 1,
         paginationClickable: false,
         spaceBetween: 0,
-        loop: false,
+        loop: true,
         autoplay: 2500,
         autoplayDisableOnInteraction: false
     });
