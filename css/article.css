@@ -1,6 +1,6 @@
 @charset "utf-8";
 .content{padding-top: 1rem; padding-bottom: 2.45rem;}
-.pd75{padding-left: 0.75rem; padding-right: 0.75rem;}
+.pd75{padding-left: 2vw; padding-right: 2vw;}
 .article-title{color: #d7c4a7; font-size: 1.2rem;}
 .article-time{font-size: 0.8rem; margin-top: 0.9rem;}
 .article-time .time{color: #46202a; margin-right: 0.4rem;}
@@ -43,7 +43,7 @@
 .comment-check{display: block;color: #919090; font-size: 0.5rem; margin-top: 0.7rem;}
 .comment-all{text-align: center; color: #595757; font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem;}
 /*==写评论==*/
-.write-comment{position: fixed; width: 100%; height: 2.45rem; bottom: 0; background-color: #7a342a;
+.write-comment{position: fixed; width: 100%; height: 12.67vw; bottom: 0; background-color: #7a342a;
     display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
@@ -52,13 +52,16 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-
-
-
 }
-.comment-number img{width: 1.075rem; font-size: 0; display: block; margin: 0 auto;}
+.comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.3rem; }
 
+
+.comment-input{flex: 1; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
+.comment-input textarea{display: block; resize: none; height: 0.9rem; width: 100%; text-indent: 1rem; font-size: 0.75rem; color: #000; margin-top: calc((9.07vw - 0.9rem)/2);}
+.comment-send{width: 17.8vw; height: 100%; background: url("../img/comment-send.png") no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;}
 
 
 
