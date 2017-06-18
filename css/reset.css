@@ -29,4 +29,4 @@ html{font-size:20px}
 }
 @media only screen and (min-width:480px){html{font-size:25.6px!important}
 }
-.page{background-color: #f1eae9; width: 100%; overflow-y: auto; min-height: 100%; position: absolute; left: 0; top: 0;}
+.page{background-color: #f1eae9; width: 100%; overflow-y: auto; min-height: 100vh; }
