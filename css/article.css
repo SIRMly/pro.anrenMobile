@@ -1,5 +1,6 @@
 @charset "utf-8";
-.content{padding-top: 1rem; padding-bottom: 12.67vw;}
+.content{min-height: 100%; padding-bottom: 12.67vw;}
+.article-detail{padding-top: 1rem; }
 .pd75{padding-left: 2vw; padding-right: 2vw;}
 .article-title{color: #d7c4a7; font-size: 1.2rem;}
 .article-time{font-size: 0.8rem; margin-top: 0.9rem;}
@@ -55,19 +56,22 @@
 }
 .comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.3rem; }
-
-
 .comment-input{flex: 1; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
 .comment-input textarea{display: block; resize: none; height: 0.9rem; line-height: 0.9rem; width: 100%; text-indent: 1rem; font-size: 0.75rem; color: #000; margin-top: calc((9.07vw - 0.9rem)/2);}
 .comment-send{width: 17.8vw; height: 100%; background: url("../img/comment-send.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain;}
 
-
-
-
-
-
+/*图集*/
+#pics-detail{background-color: #1e2023;}
+#pics{height: calc(100vh - 12.67vw); }
+.pic-word{position: absolute; bottom: 0; color: #d7c4a7; font-size: 0.75rem; background-color: rgba(9,9,9,0.6); padding: 1rem 0.75rem 0.75rem;}
+.pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
+#pics-detail .write-comment{background-color: #1e2023;}
+#pics-detail .comment-number p{color: #46202a;}
+#pics-detail .comment-input{background: url("../img/comment-input-pic.png") no-repeat center center; background-size: 90% 100%;}
+#pics-detail .comment-input textarea{color: #46202a;}
+#pics-detail .comment-send{background: url("../img/comment-send-pic.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 
 
 
