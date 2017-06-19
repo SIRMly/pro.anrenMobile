@@ -1,7 +1,7 @@
 @charset "utf-8";
 .content{min-height: 100%; padding-bottom: 12.67vw;}
 .article-detail{padding-top: 1rem; }
-.pd75{padding-left: 2vw; padding-right: 2vw;}
+.pd75{padding-left: 3.2vw; padding-right: 3.2vw;}
 .article-title{color: #d7c4a7; font-size: 1.2rem;}
 .article-time{font-size: 0.8rem; margin-top: 0.9rem;}
 .article-time .time{color: #46202a; margin-right: 0.4rem;}
@@ -55,7 +55,7 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto 0.1rem;}
+.comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto 0.05rem;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.35rem; }
 .comment-input{flex: 1; position: relative; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
 .comment-input textarea{display: block; resize: none; height: 0.9rem; line-height: 0.9rem; width: 100%; text-indent: 1rem; font-size: 0.75rem; color: #000; margin-top: calc((9.07vw - 0.9rem)/2);}
