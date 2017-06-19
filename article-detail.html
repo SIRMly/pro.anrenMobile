@@ -98,7 +98,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
-//     $("#HH").html($(window).height());
+    $("#HH").html($(window).height());
     var click = "ontouchstart" in document ? "touchstart" : "click";
     /*==点赞换图标==*/
     $(".point-hand").on(click,  function (){
@@ -114,10 +114,11 @@
 //         var winH = $(window).outerHeight();
 //         var commentBottom = winH - elementTop;
 //         console.log(elementTop);
-//         $(".page").css("bottom",commentBottom)
-        setInterval(function(){
-   $("#comment-textarea").scrollIntoView(false);
-},600)
+//         $(".page").css("bottom",commentBottom) 
+         var target = this;
+      setTimeOut(function() {
+          target.scrollIntoView(true);
+      }, 1000);
     });
 </script>
 </body>
