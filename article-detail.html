@@ -98,7 +98,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
-    $("#HH").html($(window).height());
+//     $("#HH").html($(window).height());
     var click = "ontouchstart" in document ? "touchstart" : "click";
     /*==点赞换图标==*/
     $(".point-hand").on(click,  function (){
@@ -116,9 +116,9 @@
 //         console.log(elementTop);
 //         $(".page").css("bottom",commentBottom) 
          var target = this;
-      setTimeOut(function() {
-          target.scrollIntoView(true);
-      }, 1000);
+        var interval = setInterval(function() {
+    document.body.scrollTop = document.body.scrollHeight
+}, 100)
     });
 </script>
 </body>
