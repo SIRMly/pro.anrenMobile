@@ -55,7 +55,7 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto 0.05rem;}
+.comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto -0.05rem;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.35rem; }
 .comment-input{flex: 1; position: relative; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
 .comment-input textarea{display: block; resize: none; height: 0.9rem; line-height: 0.9rem; width: 100%; text-indent: 1rem; font-size: 0.75rem; color: #000; margin-top: calc((9.07vw - 0.9rem)/2);}
