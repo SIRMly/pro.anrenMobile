@@ -88,7 +88,7 @@
             <p>20122</p>
         </div>
         <div class="comment-input">
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="comment-textarea"></textarea>
         </div>
         <!--<div class="comment-send">-->
         <a href="##" class="comment-send"></a>
@@ -105,6 +105,13 @@
         }else{
             $(this).addClass("active");
         }
+    });
+    $("#comment-textarea").focus(function (){
+        var target = this;
+        // 使用定时器是为了让输入框上滑时更加自然
+        setTimeout(function(){
+            target.scrollIntoView(true);
+        },100);
     });
 </script>
 </body>
