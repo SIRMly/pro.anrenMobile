@@ -107,11 +107,11 @@
         }
     });
     $("#comment-textarea").focus(function (){
-        $(window).resize(function (){
-           alert(123);
-        });
-        var target = this;
-        document.body.scrollTop = document.body.scrollHeight;
+        var elementTop = $(".write-comment").offset().top;
+        var winH = $(window).outerHeight();
+        var commentBottom = winH - elementTop;
+        console.log(elementTop);
+        $(".page").css("bottom",commentBottom)
     });
 </script>
 </body>
