@@ -28,7 +28,8 @@
 .comment-title{height: 7vw; width: 100%; background: url("../img/comment-title.png") no-repeat center center;
     -webkit-background-size: auto 100%;
     background-size: auto 100%;}
-.comment-item{width: 91%; margin-left: 9%;border-bottom: 1px solid #80463c; position: relative; padding: 0.75rem 0;}
+.comment-item{width: 91%; margin-left: 9%;position: relative; padding: 0.75rem 0;}
+.comment-item+.comment-item{border-top: 1px solid #80463c;}
 .comment-header{position: absolute; width: 6.4vw;height: 6.4vw; border-radius: 50%; left: -7.5vw; top: 1rem;}
 .comment-item .name{color: #036ea4; font-size: 0.7rem;}
 .comment-name{height: 1.55rem; line-height: 1.55rem;}
@@ -42,7 +43,7 @@
 .comment-second{color: #606060; font-size: 0.6rem; margin-top: 0.7rem;}
 .comment-reply{font-size: 0.5rem;}
 .comment-check{display: block;color: #919090; font-size: 0.5rem; margin-top: 0.7rem;}
-.comment-all{text-align: center; color: #595757; font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem;}
+.comment-all{text-align: center; color: #595757; font-size: 0.7rem; height: 2.5rem; line-height: 2.5rem; border-top: 1px solid #80463c;}
 /*==写评论==*/
 .write-comment{position: absolute; width: 100%; height: 12.67vw; bottom: 0; background-color: #7a342a;
     display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify;
@@ -56,13 +57,11 @@
 }
 .comment-number img{width: 5.2vw; font-size: 0; display: block; margin: 0 auto;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.3rem; }
-.comment-input{flex: 1; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
+.comment-input{flex: 1; position: relative; height: 9.07vw; background: url("../img/comment-input.png") no-repeat center center; background-size: 90% 100%; padding: 0 5%;}
 .comment-input textarea{display: block; resize: none; height: 0.9rem; line-height: 0.9rem; width: 100%; text-indent: 1rem; font-size: 0.75rem; color: #000; margin-top: calc((9.07vw - 0.9rem)/2);}
-.comment-send{width: 17.8vw; height: 100%; background: url("../img/comment-send.png") no-repeat center center;
-    -webkit-background-size: contain;
-    background-size: contain;}
-
-/*图集*/
+.comment-send{width: 17.8vw; height: 100%; background: url("../img/comment-send.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.textarea-placeholder{position: absolute; font-size: 0.75rem; top: calc((9.07vw - 0.9rem)/2); left: 5%; text-indent: 1rem;}
+/*==图集==*/
 #pics-detail{background-color: #1e2023;}
 #pics{height: calc(100vh - 12.67vw); }
 .pic-word{position: absolute; bottom: 0; color: #d7c4a7; font-size: 0.75rem; background-color: rgba(9,9,9,0.6); padding: 1rem 0.75rem 0.75rem;}
@@ -72,11 +71,35 @@
 #pics-detail .comment-input{background: url("../img/comment-input-pic.png") no-repeat center center; background-size: 90% 100%;}
 #pics-detail .comment-input textarea{color: #46202a;}
 #pics-detail .comment-send{background: url("../img/comment-send-pic.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
-
-
-
-
-
+/*==视频==*/
+.video-js{
+    width: 100%; height: auto; display: block; right: 0;
+}
+.video-js .vjs-tech{
+    width: 100%; height: auto; display: block; right: 0; position: static;
+}
+.video-js .vjs-control:before{line-height: 1.9;}
+.video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%; background-color: rgba(35,24,21,0.6);}
+/*==暂停出现播放==*/
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+/*==自带==*/
+video::-webkit-media-controls {
+    display:none !important;
+}
+/*==点击屏幕控制播放暂停==*/
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+/*==评论的评论==*/
+.comment-top{ border-bottom: 1px solid #80463c; }
+.comment-top .comment-item{border-bottom: none;}
+.reply-comment .comment-title{background: url("../img/reply-all.png") no-repeat center center;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;}
+.reply-comment .comment-main .name{ font-size: 0.85rem;}
 
 
 

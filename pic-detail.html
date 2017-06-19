@@ -71,6 +71,7 @@
             <p>20122</p>
         </div>
         <div class="comment-input">
+            <span class="textarea-placeholder">写评论</span>
             <textarea name="" id=""></textarea>
         </div>
         <!--<div class="comment-send">-->
@@ -92,7 +93,19 @@
         autoplay: false,
         autoplayDisableOnInteraction: false
     });
-
+    /*==底部input问题==*/
+    var interval;
+    $("#comment-textarea").focus(function (){
+        $(".textarea-placeholder").addClass("hide");
+        interval = setInterval(function() {
+            document.body.scrollTop = document.body.scrollHeight
+        }, 100)
+    }).blur(function (){
+        clearInterval(interval);
+        if($(this).val()==""){
+            $(".textarea-placeholder").removeClass("hide");
+        }
+    });
 </script>
 </body>
 </html>
