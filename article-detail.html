@@ -98,7 +98,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
-    $("HH").html($(window).height());
+    $("#HH").html($(window).height());
     var click = "ontouchstart" in document ? "touchstart" : "click";
     /*==点赞换图标==*/
     $(".point-hand").on(click,  function (){
@@ -109,7 +109,7 @@
         }
     });
     $("#comment-textarea").focus(function (){
-         $("HH").html($(window).height());
+         $("#HH").html($(window).height());
         var elementTop = $(".write-comment").offset().top;
         var winH = $(window).outerHeight();
         var commentBottom = winH - elementTop;
