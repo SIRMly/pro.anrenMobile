@@ -109,12 +109,15 @@
         }
     });
     $("#comment-textarea").focus(function (){
-         $("#HH").html($(window).height());
-        var elementTop = $(".write-comment").offset().top;
-        var winH = $(window).outerHeight();
-        var commentBottom = winH - elementTop;
-        console.log(elementTop);
-        $(".page").css("bottom",commentBottom)
+//          $("#HH").html($(window).height());
+//         var elementTop = $(".write-comment").offset().top;
+//         var winH = $(window).outerHeight();
+//         var commentBottom = winH - elementTop;
+//         console.log(elementTop);
+//         $(".page").css("bottom",commentBottom)
+        setInterval(function(){
+   $("#comment-textarea").scrollIntoView(false);
+},600)
     });
 </script>
 </body>
