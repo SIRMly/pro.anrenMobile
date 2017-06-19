@@ -18,6 +18,7 @@
         <div class="content article-detail">
             <p class="article-title pd75">
                 “数字敦煌”成果走进第十二届中国(深圳) 国际文化产业博览交易会
+                <span id="HH"></span>
             </p>
             <p class="article-time pd75">
                 <span class="time">2016-05-22</span>
@@ -97,6 +98,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
+    $("HH").html($(window).height());
     var click = "ontouchstart" in document ? "touchstart" : "click";
     /*==点赞换图标==*/
     $(".point-hand").on(click,  function (){
@@ -107,6 +109,7 @@
         }
     });
     $("#comment-textarea").focus(function (){
+         $("HH").html($(window).height());
         var elementTop = $(".write-comment").offset().top;
         var winH = $(window).outerHeight();
         var commentBottom = winH - elementTop;
