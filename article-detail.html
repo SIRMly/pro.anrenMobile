@@ -107,11 +107,11 @@
         }
     });
     $("#comment-textarea").focus(function (){
+        $(window).resize(function (){
+           alert(123);
+        });
         var target = this;
-        alert(1);
-        setTimeout(function() {
-            target.scrollIntoView(true);
-        }, 100);
+        document.body.scrollTop = document.body.scrollHeight;
     });
 </script>
 </body>
