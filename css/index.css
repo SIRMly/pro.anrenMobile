@@ -42,6 +42,7 @@ img{display: block; font-size: 0;}
 .state-link{color: #595757; font-size: 0.75rem; line-height: 1.1rem; font-weight: bold; font-family: "microsoft yahei";}
 .state-bottom{ font-size: 0.6rem; color: #47202a;position: absolute; bottom: 0; right: 0; left: 0.3rem;}
 /*==info==*/
+.index-notice{z-index: 30;}
 .invite-info{width: 42.4vw; height: 48.7vw; background: url("../img/visit-info.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain; position: absolute; left: 13.5%; top: 40%; opacity: 0;
@@ -80,14 +81,8 @@ img{display: block; font-size: 0;}
     -webkit-background-size: contain;
     background-size: contain; position: absolute; left: 50%; top: 34%;}
 
-
-
-
-
-
-
 /*==活动==*/
-.index-active{padding-top: 1.45rem; background-color: #94bda3; padding-bottom: 0.35rem;}
+.index-active{padding-top: 1.45rem; background-color: #94bda3; padding-bottom: 0.35rem;z-index: 31;}
 .active-title{width: 100%; height: 8.8vw; background: url("../img/index-active-title.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain;}
