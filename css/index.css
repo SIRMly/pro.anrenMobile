@@ -11,6 +11,7 @@ img{display: block; font-size: 0;}
 .nav-list.search a{background-position: 53% center;}
 .nav-list.menu a{background-position: 106% center;}
 /*==top==*/
+.swiper-container{min-height: 30vw;}
 .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 0.3rem;}
 .swiper-pagination-bullet{width: 0.5rem; height: 0.5rem; background: transparent url("../img/index-pagination.png") no-repeat center center;
     -webkit-background-size: auto 100%;
@@ -21,10 +22,12 @@ img{display: block; font-size: 0;}
     -moz-box-sizing: border-box;
     box-sizing: border-box;}
 .swiper-pagination-bullet-active{ background-position: 100% 0;}
+.index-functions{min-height: 60vw;}
 .index-function{position: absolute; width: 8.8vw; height: 33vw; top: 19%;}
 .function-visit{left: 3%;}
 .function-order{left: 35%;}
 .function-transport{left: 67%;}
+.index-view{min-height: 50vw;}
 .toView{position: absolute; width: 28.8vw; height: 9.5vw; left: 35.6vw; top: 32%;}
 /*==最新动态==*/
 .index-state{margin-top: 1.43rem; padding-bottom: 2.4rem; background: url("../img/state-bottom.png") no-repeat bottom center;
