@@ -46,11 +46,11 @@ img{display: block; font-size: 0;}
 .invite-info{width: 42.4vw; height: 48.7vw; background: url("../img/visit-info.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain; position: absolute; left: 13.5%; top: 40%; opacity: 0;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
 }
 .invite-info-show{top: 9%; opacity: 1;}
 .invite-info a{width: 9.5vw; height: 27vw; background: url("../img/visit-info-btn.png") no-repeat center center;
@@ -59,11 +59,11 @@ img{display: block; font-size: 0;}
 .research{width: 76.3vw; height: 33.5vw; background: url("../img/research.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain; position: absolute; right: 0; top: 85%; opacity: 0;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;}
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;}
 .research-show{top: 42%; opacity: 1;}
 .research a{width: 9.5vw; height: 27vw; background: url("../img/research-btn.png") no-repeat center center;
     -webkit-background-size: contain;
@@ -71,11 +71,11 @@ img{display: block; font-size: 0;}
 .education{width: 67vw; height: 67.9vw; background: url("../img/education.png") no-repeat center center;
     -webkit-background-size: contain;
     background-size: contain; position: absolute; left: 0%; bottom: -45%; opacity: 0;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;}
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;}
 .education-show{bottom: 0; opacity: 1}
 .education a{width: 9.5vw; height: 27vw; background: url("../img/education-btn.png") no-repeat center center;
     -webkit-background-size: contain;

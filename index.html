@@ -204,13 +204,13 @@
         console.log(noticeTop);
         wrapper.scroll(function (){
             console.log(wrapper.scrollTop());
-            if(wrapper.scrollTop() >= (noticeTop-0) - winH *0.65){
+            if(wrapper.scrollTop() >= (noticeTop-0) - winH *0.5){
                 $(".invite-info").addClass("invite-info-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop - winH*0.3)){
+            if(wrapper.scrollTop() >= (noticeTop - winH*0.2)){
                 $(".research").addClass("research-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop)){
+            if(wrapper.scrollTop() >= (noticeTop)+winH*0.1){
                 $(".education").addClass("education-show");
             }
 
