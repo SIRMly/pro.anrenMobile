@@ -197,20 +197,20 @@
             autoplayDisableOnInteraction: false
         });
         /*==动效==*/
+        var winW = $(window).width();
         var winH = $(window).height();
         var wrapper = $(".wrapper");
-        var noticeTop = $(".index-notice").offset().top - winH;
+        var noticeTop = $(".index-notice").offset().top;
         console.log(noticeTop);
         wrapper.scroll(function (){
             console.log(wrapper.scrollTop());
-            if(wrapper.scrollTop() >= (noticeTop + winH*0.4)){
-                console.log(123);
+            if(wrapper.scrollTop() >= (noticeTop-0) - winH + winW*0.6){
                 $(".invite-info").addClass("invite-info-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop + winH*0.7)){
+            if(wrapper.scrollTop() >= (noticeTop - winH + winW*1.4)){
                 $(".research").addClass("research-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop + winH*1)){
+            if(wrapper.scrollTop() >= (noticeTop - winH + winW*1.9)){
                 $(".education").addClass("education-show");
             }
 
@@ -222,7 +222,6 @@
 
 
         });
-
     })(jQuery)
 
 </script>
