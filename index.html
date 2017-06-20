@@ -220,6 +220,17 @@
                 $(".education").removeClass("education-show");
             }
         });
+        /*==回到顶部==*/
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        $(".index-toTop").on(click, function () {
+            wrapper.stop().animate({
+                "scrollTop": 5
+            }, 600);
+        });
+
+
+
+
     })(jQuery)
 
 </script>
