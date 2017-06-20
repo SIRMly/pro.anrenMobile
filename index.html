@@ -17,6 +17,7 @@
 <div class="page">
     <div class="nav clearfix">
         <img src="img/nav-logo.png" alt="" height="100%" class="pull-left"/>
+        <span id="scroll" class="pull-left"></span>
         <ul class="nav-lists pull-right clearfix">
             <li class="pull-left nav-list my-center">
                 <a href="##"></a>
@@ -193,7 +194,7 @@
             paginationClickable: false,
             spaceBetween: 0,
             loop: true,
-            autoplay: 25000,
+            autoplay: 2500,
             autoplayDisableOnInteraction: false
         });
         /*==动效==*/
@@ -202,6 +203,7 @@
         var noticeTop = $(".index-notice").offset().top - winH;
         console.log(noticeTop);
         wrapper.scroll(function (){
+            $("#scroll").html(wrapper.scrollTop());
             if(wrapper.scrollTop() >= (noticeTop + winH*0.4)){
                 console.log(123);
                 $(".invite-info").addClass("invite-info-show");
