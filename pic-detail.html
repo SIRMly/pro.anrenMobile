@@ -27,28 +27,28 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/pic.png" alt="" width="100%;"/>
+                        <img src="img/article-pic.png" alt="" width="100%;"/>
                         <p class="pic-word">
                             <span>2/6</span>
                             经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/pic.png" alt="" width="100%;"/>
+                        <img src="img/word-card-pic.png" alt="" width="100%;"/>
                         <p class="pic-word">
                             <span>3/6</span>
                             经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/pic.png" alt="" width="100%;"/>
+                        <img src="img/video-poster.png" alt="" width="100%;"/>
                         <p class="pic-word">
                             <span>4/6</span>
                             经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/pic.png" alt="" width="100%;"/>
+                        <img src="img/index-links.png" alt="" width="100%;"/>
                         <p class="pic-word">
                             <span>5/6</span>
                             经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
@@ -74,11 +74,9 @@
         </div>
         <div class="comment-input">
             <span class="textarea-placeholder">写评论</span>
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="comment-textarea"></textarea>
         </div>
-        <!--<div class="comment-send">-->
         <a href="##" class="comment-send"></a>
-        <!--</div>-->
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
@@ -95,13 +93,24 @@
         autoplay: false,
         autoplayDisableOnInteraction: false
     });
+    /*==图片=*/
+    var slider = $(".swiper-slide");
+    var sliderH = slider.height();
+    slider.each(function (index, item){
+        var img = $(this).find("img");
+        var p = $(this).find("p");
+        if(sliderH - img.height() >= p.outerHeight()){
+            console.log(index);
+            img.css("marginTop",(sliderH - img.height())/2);
+        }
+    });
     /*==底部input问题==*/
     var interval;
     $("#comment-textarea").focus(function (){
         $(".textarea-placeholder").addClass("hide");
         interval = setInterval(function() {
-            document.body.scrollTop = document.body.scrollHeight
-        }, 100)
+            document.body.scrollTop = document.body.scrollHeight;
+        }, 100);
     }).blur(function (){
         clearInterval(interval);
         if($(this).val()==""){

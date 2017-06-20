@@ -36,7 +36,10 @@
     -ms-box-flex: 2;
     box-flex: 2;
     padding-left: 0.3rem; position: relative;}
-.word-card-link{color: #7a342a; font-size: 0.75rem; line-height: 1.1rem; font-weight: bold; font-family: "microsoft yahei";}
+.word-card-link{color: #7a342a; font-size: 0.75rem; line-height: 1.1rem; font-weight: bold; font-family: "microsoft yahei"; display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; text-overflow: ellipsis;}
 .word-card-bottom{ font-size: 0.6rem; color: #46202a;}
 .word-card .word-card-bottom{position: absolute; bottom: 0; right: 0; left: 0.3rem;}
 .card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
