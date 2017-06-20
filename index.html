@@ -16,7 +16,18 @@
 <body>
 <div class="page">
     <div class="nav clearfix">
-        <img src="img/nav-logo.png" alt="" height="100%"/>
+        <img src="img/nav-logo.png" alt="" height="100%" class="pull-left"/>
+        <ul class="nav-lists pull-right clearfix">
+            <li class="pull-left nav-list my-center">
+                <a href="##"></a>
+            </li>
+            <li class="pull-left nav-list search">
+                <a href="##"></a>
+            </li>
+            <li class="pull-left nav-list menu">
+                <a href="##"></a>
+            </li>
+        </ul>
     </div>
     <div class="wrapper">
         <div class="content">
@@ -99,8 +110,18 @@
                     </a>
                 </div>
             </div>
-            <div class="index-notice">
-                <img src="img/index-notice.png" alt="" width="100%"/>
+            <div class="index-notice po-re">
+                <img src="img/index-notice-bg.png" alt="" width="100%"/>
+                <!--<img src="img/notice.png" alt="" width="100%"/>-->
+                <div class="invite-info">
+                    <a href="##"></a>
+                </div>
+                <div class="research">
+                    <a href="##"></a>
+                </div>
+                <div class="education">
+                    <a href="##"></a>
+                </div>
             </div>
             <div class="index-active clearfix">
                 <div class="state-title po-re">
@@ -164,6 +185,7 @@
 <script src="js/swiper.jquery.min.js"></script>
 <script>
     ;(function ($){
+        /*==轮播图==*/
         var swiper = new Swiper('#swiper-index',{
             simulateTouch: false,
             slidesPerView: 1,
@@ -174,27 +196,25 @@
             autoplay: 25000,
             autoplayDisableOnInteraction: false
         });
+        /*==动效==*/
+        var winH = $(window).height();
+        var wrapper = $(".wrapper");
+        var noticeTop = $(".index-notice").offset().top - winH;
+        console.log(noticeTop);
+        wrapper.scroll(function (){
+            if(wrapper.scrollTop() >= (noticeTop + winH*0.4)){
+                console.log(123);
+                $(".invite-info").addClass("invite-info-show");
+            }
+            if(wrapper.scrollTop() >= (noticeTop + winH*0.8)){
+                $(".research").addClass("research-show");
+            }
+            if(wrapper.scrollTop() >= (noticeTop + winH*1.2)){
+                $(".education").addClass("education-show");
+            }
+        });
+
     })(jQuery)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </script>
 </body>
