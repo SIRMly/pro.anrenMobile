@@ -202,6 +202,7 @@
         var noticeTop = $(".index-notice").offset().top - winH;
         console.log(noticeTop);
         wrapper.scroll(function (){
+            console.log(wrapper.scrollTop());
             if(wrapper.scrollTop() >= (noticeTop + winH*0.4)){
                 console.log(123);
                 $(".invite-info").addClass("invite-info-show");
