@@ -198,23 +198,27 @@
         });
         /*==动效==*/
         var winW = $(window).width();
-        var winH = $(window).height();
-        alert(winH);
+        var pageH = $(window).height()-$(".nav").height();
         var wrapper = $(".wrapper");
-        var noticeTop = $(".index-notice").offset().top;
-        console.log(noticeTop);
+        var noticeTop = $(".index-notice").offset().top - $(".nav").height();
+        console.log(pageH);
         wrapper.scroll(function (){
-            console.log(wrapper.scrollTop());
-            if(wrapper.scrollTop() >= (noticeTop - winH *0.5)){
+//            console.log(wrapper.scrollTop());
+//            console.log(noticeTop);
+            //   (1-0.75*winW/pageH)*pageH
+
+
+
+            if(wrapper.scrollTop() >= (noticeTop - (1-0.75*winW/pageH)*pageH)){
                 $(".invite-info").addClass("invite-info-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop - winH*0.2)){
+            if(wrapper.scrollTop() >= (noticeTop - pageH*0.2)){
                 $(".research").addClass("research-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop + winH*0.1)){
+            if(wrapper.scrollTop() >= (noticeTop + pageH*0.1)){
                 $(".education").addClass("education-show");
             }
-            if(wrapper.scrollTop()<= winH*0.5){
+            if(wrapper.scrollTop()<= pageH*0.5){
                 $(".invite-info").removeClass("invite-info-show");
                 $(".research").removeClass("research-show");
                 $(".education").removeClass("education-show");
