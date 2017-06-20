@@ -208,12 +208,20 @@
                 console.log(123);
                 $(".invite-info").addClass("invite-info-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop + winH*0.8)){
+            if(wrapper.scrollTop() >= (noticeTop + winH*0.7)){
                 $(".research").addClass("research-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop + winH*1.2)){
+            if(wrapper.scrollTop() >= (noticeTop + winH*1)){
                 $(".education").addClass("education-show");
             }
+
+            if(wrapper.scrollTop()<= winH*0.5){
+                $(".invite-info").removeClass("invite-info-show");
+                $(".research").removeClass("research-show");
+                $(".education").removeClass("education-show");
+            }
+
+
         });
 
     })(jQuery)
