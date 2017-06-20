@@ -204,13 +204,13 @@
         console.log(noticeTop);
         wrapper.scroll(function (){
             console.log(wrapper.scrollTop());
-            if(wrapper.scrollTop() >= (noticeTop-0) - winH + winW*0.6){
+            if(wrapper.scrollTop() >= (noticeTop-0) - winH *0.65){
                 $(".invite-info").addClass("invite-info-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop - winH + winW*1.4)){
+            if(wrapper.scrollTop() >= (noticeTop - winH*0.3)){
                 $(".research").addClass("research-show");
             }
-            if(wrapper.scrollTop() >= (noticeTop - winH + winW*1.9)){
+            if(wrapper.scrollTop() >= (noticeTop)){
                 $(".education").addClass("education-show");
             }
 
@@ -219,8 +219,6 @@
                 $(".research").removeClass("research-show");
                 $(".education").removeClass("education-show");
             }
-
-
         });
     })(jQuery)
 
