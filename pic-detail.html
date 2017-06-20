@@ -100,8 +100,7 @@
         var img = $(this).find("img");
         var p = $(this).find("p");
         if(sliderH - img.height() >= p.outerHeight()){
-            console.log(index);
-            img.css("marginTop",(sliderH - img.height())/2);
+            img.addClass("img-middle");
         }
     });
     /*==底部input问题==*/
