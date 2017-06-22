@@ -18,7 +18,7 @@
 .card+.card{border-top: 1px solid #9c6f67;}
 .pic-card-img,.video-card-img{margin: 0.6rem 0 0.3rem; font-size: 0; position: relative;}
 .pic-card-img span,.video-card-img span{position: absolute; bottom: 0.4rem; right: 0.6rem; color: #d7c4a7; font-size: 0.6rem; letter-spacing: 2px;}
-.pic-card-img span{ background: url("../img/pic-icon.png") no-repeat center left; -webkit-background-size: auto 84%; background-size: auto 84%; text-indent: 1rem;}
+.pic-card-img span{ background: url("../img/pic-icon.png") no-repeat center left; -webkit-background-size: auto 0.6rem; background-size: auto 0.6rem; text-indent: 1rem;}
 .video-card-img:after{content: ""; background: rgba(35,24,21,0.6) url("../img/video-play.png") no-repeat center center;  -webkit-background-size: contain;background-size: contain; border: 0.1rem solid #fff; border-radius: 50%; width: 10vw; height: 10vw; position: absolute; left: 50%; top: 50%; margin-left: -5vw; margin-top: -5vw;}
 
 
