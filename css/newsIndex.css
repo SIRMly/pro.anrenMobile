@@ -8,47 +8,18 @@
 .card{background: transparent; margin: 0; box-shadow: none; padding: 0.6rem;}
 .card a{display: block;}
 .card img{font-size: 0;}
-.word-card a{width:100%; display: block;
-    display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;}
-.word-card-img{
-    font-size: 0;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    box-flex: 1;
-}
-.word-card-content{
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    -webkit-box-flex: 2;
-    -moz-box-flex: 2;
-    -ms-box-flex: 2;
-    box-flex: 2;
-    padding-left: 0.3rem; position: relative;}
-.word-card-link{color: #7a342a; font-size: 0.75rem; line-height: 1.1rem; font-weight: bold; font-family: "microsoft yahei"; display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden; text-overflow: ellipsis;}
+.word-card a{width:100%; display: block; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch;}
+.word-card-img{ font-size: 0; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; box-flex: 1; }
+.word-card-content{ -webkit-flex: 2; -ms-flex: 2; flex: 2; -webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; box-flex: 2; padding-left: 0.3rem; position: relative;}
+.word-card-link{color: #7a342a; font-size: 0.75rem; line-height: 1.1rem; font-weight: bold; font-family: "microsoft yahei"; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis;}
 .word-card-bottom{ font-size: 0.6rem; color: #46202a;}
 .word-card .word-card-bottom{position: absolute; bottom: 0; right: 0; left: 0.3rem;}
 .card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
 .card+.card{border-top: 1px solid #9c6f67;}
-
-.pic-card img{margin-left: 1%; width: 32.333333333333332%;}
 .pic-card-img,.video-card-img{margin: 0.6rem 0 0.3rem; font-size: 0; position: relative;}
-.video-card-img:after{content: ""; background: rgba(35,24,21,0.6) url("../img/video-play.png") no-repeat center center;  -webkit-background-size: contain;
-    background-size: contain; border: 0.1rem solid #fff; border-radius: 50%; width: 10vw; height: 10vw; position: absolute; left: 50%; top: 50%; margin-left: -5vw; margin-top: -5vw;}
+.pic-card-img span,.video-card-img span{position: absolute; bottom: 0.4rem; right: 0.6rem; color: #d7c4a7; font-size: 0.6rem; letter-spacing: 2px;}
+.pic-card-img span{ background: url("../img/pic-icon.png") no-repeat center left; -webkit-background-size: auto 90%; background-size: auto 90%; text-indent: 1rem;}
+.video-card-img:after{content: ""; background: rgba(35,24,21,0.6) url("../img/video-play.png") no-repeat center center;  -webkit-background-size: contain;background-size: contain; border: 0.1rem solid #fff; border-radius: 50%; width: 10vw; height: 10vw; position: absolute; left: 50%; top: 50%; margin-left: -5vw; margin-top: -5vw;}
 
 
 
