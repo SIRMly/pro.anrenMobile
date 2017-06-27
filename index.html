@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="index-active clearfix po-re">
-                    <div class="state-title po-re">
+                    <div class="active-title po-re">
                         <a href="##" class="state-more"></a>
                     </div>
                     <div class="state-item">
@@ -224,7 +224,7 @@
         /*==回到顶部==*/
         var click = "ontouchstart" in document ? "touchstart" : "click";
         $(".index-toTop").on(click, function () {
-            wrapper.stop().animate({
+            container.stop().animate({
                 "scrollTop": 5
             }, 600);
         });
