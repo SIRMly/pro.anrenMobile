@@ -92,7 +92,7 @@ img{font-size: 0; display: block;}
 .pic-word{position: absolute; bottom: 0; color: #d6c3a6; font-size: 0.75rem; background-color: rgba(9,9,9,0.6); padding: 1.25rem 0.75rem 1rem; line-height: 1.15rem;}
 .pic-word>p{max-height: 5.8rem; overflow: auto; -webkit-overflow-scrolling: touch;}
 .pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
-#pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem; margin-top: calc((7.87vw - 0.7rem)/2);}
+#pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem; margin-top: calc((7.86vw - 0.75rem)/2);}
 #pics-detail .comment-number p{ width: 100%; overflow: hidden;}
 /*==视频==*/
 .video-js{
