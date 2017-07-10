@@ -28,7 +28,7 @@
             if(deerTop <= (winH-0.2*winW)){
                 deerMove();
                 watchDeer = false;
-                //deer.addClass("deerShow");
+                deer.addClass("deerShow");
             }
         }
     });
@@ -37,14 +37,9 @@
         var deerLeft = -22;
         var deerTimer = setInterval(function (){
             backPosition = (backPosition>=100 ? 0 :backPosition+50);
-            deerLeft+=2;
             deer.css({
                 "background-position-x": backPosition+"%",
-                left : deerLeft+"vw"
             });
-            if(deerLeft>=2){
-                clearInterval(deerTimer);
-            }
         },200);
     }
 

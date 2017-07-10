@@ -8,13 +8,13 @@ img{font-size: 0; display: block;}
 .content{min-height: 100%;}
 .article-detail{padding-top: 1rem; }
 .pd75{padding-left: 3.2vw; padding-right: 3.2vw;}
-/*.article-title{color: #d7c4a7; font-size: 1.2rem;}*/
-/*.article-time{font-size: 0.8rem; margin-top: 0.9rem;}*/
-/*.article-time .time{color: #46202a; margin-right: 0.4rem;}*/
-/*.article-time .author{color: #af0d23;}*/
-.article-content{font-size: 0.75rem; color: #000; line-height: 1.15rem; padding-bottom: 0.45rem; border-bottom: 1px solid #9c6f67; }
+.article-title{color: #604c3f; font-size: 1.2rem; line-height: 1.5rem;}
+.article-time{font-size: 0.8rem; margin-top: 0.9rem;}
+.article-time .time{color: #46202a; margin-right: 0.4rem;}
+.article-time .author{color: #af0d23;}
+.article-content{font-size: 0.75rem; color: #000; line-height: 1.15rem; padding-bottom: 0.45rem; }
 .article-content img{width: 100%;}
-/*.article-content .title{text-align: center; margin: 1.85rem 0 1.75rem;}*/
+.article-content .title{text-align: center; margin: 1.85rem 0 1.75rem;}
 /*.article-content .info p{line-height: 1.15rem; }*/
 /*.article-main{margin-top: 1.85rem;}*/
 /*.article-main p{margin-bottom: 1rem; line-height: 1.15rem; letter-spacing: 0.05rem; text-indent: 1.5rem;}*/
@@ -48,9 +48,10 @@ img{font-size: 0; display: block;}
 .comment-main{color: #595757; font-size: 0.85rem; line-height: 1.1rem;}
 .comment-address{color: #595757; font-size: 0.5rem; margin-top: 0.05rem;}
 .comment-second{color: #606060; font-size: 0.6rem; margin-top: 0.7rem;}
+.comment-second .name{font-size: 0.63rem;}
 .comment-reply{font-size: 0.5rem;}
 .comment-check{display: block;color: #908f8f; font-size: 0.5rem; margin-top: 0.7rem;}
-.comment-all{display: block; text-align: center; color: #595757; font-size: 0.7rem; height: 2.5rem; line-height: 1.5rem;}
+.comment-all{display: block; text-align: center; color: #595757; font-size: 0.7rem; height: 2.3rem; line-height: 1.5rem;}
 /*==写评论==*/
 .write-comment{position: absolute; width: 100%; height: 12.67vw; bottom: 0; background-color: #7a342a;
     display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify;
@@ -90,8 +91,13 @@ img{font-size: 0; display: block;}
 #pics-detail{background: #1e2023;}
 #pics{height: calc(100vh - 12.67vw); }
 #pics img.img-middle{position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
-.pic-word{position: absolute; bottom: 0; color: #d6c3a6; font-size: 0.75rem; background-color: rgba(9,9,9,0.6); padding: 1.25rem 0.75rem 1rem; line-height: 1.15rem;}
-.pic-word>p{max-height: 5.8rem; overflow: auto; -webkit-overflow-scrolling: touch;}
+.pic-word{position: absolute; bottom: 0; color: #d6c3a6; font-size: 0.75rem;  background-color: rgba(9,9,9,0.6);padding: 1.25rem 0.75rem 1rem; line-height: 1.15rem; }
+.word-inner{width: 100%; max-height: 5.8rem; overflow-y: auto; -webkit-overflow-scrolling: touch;}
+#pics-detail .pic-word.more ::-webkit-scrollbar{width: 0.25rem; background-color: transparent;}
+#pics-detail .pic-word.more ::-webkit-scrollbar-button{display: none;}
+#pics-detail .pic-word.more ::-webkit-scrollbar-track{background-color: transparent;}
+#pics-detail .pic-word.more ::-webkit-scrollbar-thumb{background-color:#d6c3a6; }
+#pics-detail .pic-word.more:after{content: ''; width: 0.1rem; position: absolute; right: 0.825rem; top: 1.25rem; bottom: 1rem; background-color: #d6c3a6;}
 .pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
 #pics-detail .comment-number>a{display: block; width: 100%; height: auto; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
 #pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem;}
@@ -102,7 +108,9 @@ img{font-size: 0; display: block;}
     width: 100%; height: auto; display: block; right: 0;
 }
 .video-js .vjs-tech{ width: 100%; height: auto; display: block; right: 0; position: static;}
-.video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%; background-color: rgba(35,24,21,0.6);}
+.video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%; background-color: transparent;}
+.video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus{background-color: transparent;}
+
 /*==暂停出现播放==*/
 .vjs-paused .vjs-big-play-button,
 .vjs-paused.vjs-has-started .vjs-big-play-button {
