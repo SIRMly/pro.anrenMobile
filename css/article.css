@@ -60,7 +60,7 @@ img{font-size: 0; display: block;}
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; padding-right: 3.2vw;}
-.comment-number{background-color: #1e2023; height: 100%; width: 13.1vw;}
+.comment-number{background-color: #1e2023; height: 100%; width: 13.1vw; position: relative;}
 .comment-number img{width: 7.6vw; font-size: 0; display: block; margin: 2.535vw auto 0;}
 .comment-number p{text-align: center; color: #d7c4a7; font-size: 0.35rem; }
 .comment-input{flex: 1; position: relative; height: 8.67vw; background: url("../img/comment-input.png") no-repeat center center;
@@ -92,7 +92,8 @@ img{font-size: 0; display: block;}
 .pic-word{position: absolute; bottom: 0; color: #d6c3a6; font-size: 0.75rem; background-color: rgba(9,9,9,0.6); padding: 1.25rem 0.75rem 1rem; line-height: 1.15rem;}
 .pic-word>p{max-height: 5.8rem; overflow: auto; -webkit-overflow-scrolling: touch;}
 .pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
-#pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem; margin-top: calc((7.86vw - 0.75rem)/2);}
+#pics-detail .comment-number>a{display: block; width: 100%; height: auto; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
+#pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem;}
 #pics-detail .comment-number p{ width: 100%; overflow: hidden;}
 /*==视频==*/
 .video-js{
