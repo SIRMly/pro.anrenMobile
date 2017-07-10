@@ -98,10 +98,7 @@ img{font-size: 0; display: block;}
 .video-js{
     width: 100%; height: auto; display: block; right: 0;
 }
-.video-js .vjs-tech{
-    width: 100%; height: auto; display: block; right: 0; position: static;
-}
-.video-js .vjs-control:before{line-height: 1.9;}
+.video-js .vjs-tech{ width: 100%; height: auto; display: block; right: 0; position: static;}
 .video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%; background-color: rgba(35,24,21,0.6);}
 /*==暂停出现播放==*/
 .vjs-paused .vjs-big-play-button,
