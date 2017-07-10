@@ -101,12 +101,14 @@
             $(this).addClass("active");
         }
     });
+    /*==回复某个人==*/
+    var commentTextarea = $("#comment-textarea");
     $(".comment-main").on(click, function (){
         var name = $(this).prev().find(".name").html();
-        $("#comment-textarea").focus();
+        commentTextarea.focus().val("");
         $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
     });
-    $("#comment-textarea").on("input",function (){
+    commentTextarea.on("input",function (){
        if($(this).val()==""){
            $(".textarea-reply").removeClass("hide");
        }else{
@@ -115,7 +117,7 @@
     });
     /*==底部input问题==*/
     var interval;
-    $("#comment-textarea").focus(function (){
+    commentTextarea.focus(function (){
         $(".textarea-placeholder").addClass("hide");
         interval = setInterval(function() {
             document.body.scrollTop = document.body.scrollHeight

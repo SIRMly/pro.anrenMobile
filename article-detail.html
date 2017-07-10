@@ -120,6 +120,7 @@
         </label>
         <div class="comment-input">
             <span class="textarea-placeholder">写评论</span>
+            <span class="textarea-reply hide"></span>
             <textarea name="" id="comment-textarea"></textarea>
         </div>
         <a href="javascript:;" class="comment-send"></a>
@@ -136,18 +137,33 @@
             $(this).addClass("active");
         }
     });
+    /*==回复某个人==*/
+    var commentTextarea = $("#comment-textarea");
+    $(".comment-main").on(click, function (){
+        var name = $(this).prev().find(".name").html();
+        commentTextarea.focus().val("");
+        $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
+    });
+    commentTextarea.on("input",function (){
+        if($(this).val()==""){
+            $(".textarea-reply").removeClass("hide");
+        }else{
+            $(".textarea-reply").addClass("hide");
+        }
+    });
     /*==底部input问题==*/
     var interval;
-    $("#comment-textarea").focus(function (){
+    commentTextarea.focus(function (){
         $(".textarea-placeholder").addClass("hide");
         interval = setInterval(function() {
             document.body.scrollTop = document.body.scrollHeight
         }, 100)
     }).blur(function (){
         clearInterval(interval);
-        if($(this).val()==""){
+        if($.trim($(this).val())==""){
             $(".textarea-placeholder").removeClass("hide");
         }
+        $(".textarea-reply").addClass("hide");
     });
 </script>
 </body>
