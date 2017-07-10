@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <title>首页-敦煌研究院</title>
 </head>
@@ -18,27 +17,16 @@
     <div class="container">
         <div class="wrapper">
             <div class="content">
-                <div id="slider-index">
-                    <div class="swiper-container" id="swiper-index">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="##">
-                                    <img src="img/index-slider.png" alt="" width="100%;"/>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="##">
-                                    <img src="img/index-slider.png" alt="" width="100%;"/>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="##">
-                                    <img src="img/index-slider.png" alt="" width="100%;"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination" id="pagination-index"></div>
-                    </div>
+                <div class="nav clearfix po-re">
+                    <img src="img/index-logo.png" alt="" />
+                    <ul class="nav-lists clearfix">
+                        <li class="pull-left nav-list my-center">
+                            <a href="##"></a>
+                        </li>
+                        <li class="pull-left nav-list search">
+                            <a href="##"></a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="index-functions po-re">
                     <img src="img/index-links.png" alt="" width="100%"/>
@@ -168,36 +156,10 @@
             </div>
         </div>
     </div>
-    <div class="nav clearfix">
-        <img src="img/nav-logo.png" alt="" height="100%" class="pull-left"/>
-        <ul class="nav-lists pull-right clearfix">
-            <li class="pull-left nav-list my-center">
-                <a href="##"></a>
-            </li>
-            <li class="pull-left nav-list search">
-                <a href="##"></a>
-            </li>
-            <li class="pull-left nav-list menu">
-                <a href="##"></a>
-            </li>
-        </ul>
-    </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/swiper.jquery.min.js"></script>
 <script>
     ;(function ($){
-        /*==轮播图==*/
-        var swiper = new Swiper('#swiper-index',{
-            simulateTouch: false,
-            slidesPerView: 1,
-            pagination : "#pagination-index",
-            paginationClickable: false,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: 2500,
-            autoplayDisableOnInteraction: false
-        });
         /*==动效==*/
         var winW = $(window).width();
         var winH = $(window).height();

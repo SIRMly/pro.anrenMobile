@@ -38,11 +38,8 @@
 .card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
 /*.card+.card{border-top: 1px solid #9c6f67;}*/
 .card:not(:last-of-type):after{content: ""; display: block; height: 0.25rem; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0; background: url("../img/card-border.png") no-repeat center center;
-    -webkit-background-size:100% 100%;
-    background-size:100% 100%;}
-
-
-
+    -webkit-background-size:100% auto;
+    background-size:100% auto;}
 .pic-card-img,.video-card-img{margin: 0.6rem 0 0.3rem; font-size: 0; position: relative;}
 .pic-card-img span,.video-card-img span{position: absolute; bottom: 0.4rem; right: 0.6rem; color: #d7c4a7; font-size: 0.6rem; letter-spacing: 2px;}
 .pic-card-img span{ background: url("../img/pic-icon.png") no-repeat center left; -webkit-background-size: auto 0.6rem; background-size: auto 0.6rem; text-indent: 0.8rem;}

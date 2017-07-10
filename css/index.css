@@ -1,16 +1,18 @@
 @charset "utf-8";
+.page{background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
 img{display: block; font-size: 0;}
 .po-re{position: relative;}
-.container{top: 3rem;}
-.wrapper{background-color: #fff2eb;}
 /*==nav==*/
-.nav{position: absolute; left: 0; top: 0; height: 3rem; background-color: #ffe9df; padding: 0 0.5rem 0 0.65rem; width: 100%;}
-.nav-lists{height: 100%; }
-.nav-list{height: 100%; line-height: 3rem; width: 1.15rem; margin-left: 0.5rem;}
-.nav-list a{display: block; height: 100%; background: url("../img/nav.png") no-repeat; -webkit-background-size: auto 32%; background-size: auto 32%;}
-.nav-list.my-center a{background-position: -1% center;}
-.nav-list.search a{background-position: 53% center;}
-.nav-list.menu a{background-position: 106% center;}
+.nav{width: 100%; margin-top: 0.75rem;}
+.nav>img{ width: 8vw; margin: 0 auto;}
+.nav-lists{position: absolute; right: 0.3rem; top: 0;}
+.nav-lists a{display: block; margin-left: 0.2rem; width: 1.375rem; height: 1.375rem; background: url("../img/nav.png") no-repeat center center;}
+.nav-lists .my-center a{background-position: 0 0;
+    -webkit-background-size: 212.7% 100%;
+    background-size: 212.7% 100%;}
+.nav-lists .search a{background-position: 100% 0;
+    -webkit-background-size: 212.7% 100%;
+    background-size: 212.7% 100%;}
 /*==top==*/
 .swiper-container{min-height: 30vw;}
 .swiper-container-horizontal>.swiper-pagination-bullets{bottom: 0.3rem;}
