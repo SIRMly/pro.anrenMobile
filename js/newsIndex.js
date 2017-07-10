@@ -21,11 +21,15 @@
     var deerTop = deer.offset().top;
     var container = $(".container");
     var deerTimer;
+    var watchDeer = true;
     container.scroll(function (){
-        deerTop = deer.offset().top;
-        if(deerTop <= (winH-0.2*winW)){
-            deerMove();
-            //deer.addClass("deerShow");
+        if(watchDeer){
+            deerTop = deer.offset().top;
+            if(deerTop <= (winH-0.2*winW)){
+                deerMove();
+                watchDeer = false;
+                //deer.addClass("deerShow");
+            }
         }
     });
     function deerMove(){
@@ -39,7 +43,6 @@
                 left : deerLeft+"vw"
             });
             if(deerLeft>=2){
-                console.log("ok");
                 clearInterval(deerTimer);
             }
         },200);
