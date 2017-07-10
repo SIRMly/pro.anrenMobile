@@ -20,12 +20,30 @@
     var deer = $(".deer");
     var deerTop = deer.offset().top;
     var container = $(".container");
+    var deerTimer;
     container.scroll(function (){
         deerTop = deer.offset().top;
         if(deerTop <= (winH-0.2*winW)){
-            deer.addClass("deerShow");
+            deerMove();
+            //deer.addClass("deerShow");
         }
     });
+    function deerMove(){
+        var backPosition = 0;
+        var deerLeft = -22;
+        var deerTimer = setInterval(function (){
+            backPosition = (backPosition>=100 ? 0 :backPosition+50);
+            deerLeft+=2;
+            deer.css({
+                "background-position-x": backPosition+"%",
+                left : deerLeft+"vw"
+            });
+            if(deerLeft>=2){
+                console.log("ok");
+                clearInterval(deerTimer);
+            }
+        },200);
+    }
 
 })(jQuery);
 

@@ -15,21 +15,13 @@
 .news-screen1{margin-top: -20vw;}
 /*==首部轮播图==*/
 #topSlider{font-size: 0; padding: 0 0.5rem; position: relative; margin-top: 15vw;}
-.deer{width: 20vw; height: 26vw; background: url("../img/deer.png") no-repeat center center; background-size: contain; position: absolute; left: -20vw; top: -24vw; z-index: 90;
-    -webkit-transition: left 0.8s;
-    -moz-transition: left 0.8s;
-    -ms-transition: left 0.8s;
-    -o-transition: left 0.8s;
-    transition: left 0.8s;}
-.deerShow{left: 0;}
+.deer{width: 23vw; height: 18.53vw; background: url("../img/deerMove.png") no-repeat center center;  position: absolute; left: -22vw; top: -20vw; z-index: 90; background-size: 300% 100%;}
+/*.deerShow{left: 0;}*/
 #topSlider a{display: block;}
 .top-slider-word{position: absolute; bottom: 0; color: #fff; font-size: 0.75rem; text-indent: 0.75rem; width: 100%; height: 1.55rem; line-height: 1.55rem; background-color: rgba(255,255,255,.2); letter-spacing: 0.05rem;}
 #top-pagination{text-align: right; padding-right: 0.3rem; bottom: 0.625rem;}
 #top-pagination .swiper-pagination-bullet{margin: 0 0.15rem;  opacity:1; background-color: #050505; width: 0.3rem; height: 0.3rem;}
 #top-pagination .swiper-pagination-bullet-active{background-color: #fff;}
-
-
-
 /*=中间=*/
 .news-content{padding-bottom: 0.5rem; padding-top: 1.3rem; background: url("../img/news-content-bg.png") repeat-y;
     -webkit-background-size:100% auto;
