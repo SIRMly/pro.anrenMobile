@@ -1,9 +1,6 @@
 @charset "utf-8";
 .po-re{position: relative;}
-.page{background: url("../img/newsIndexBg.png") repeat; background-size: 100% auto; height: auto;}
-.wrapper{position: absolute; left: 0; top: 0; width: 100%; background: url("../img/newsIndexBg.png") repeat; background-size: 100% auto;}
-
-
+.page{background: url("../img/newsIndexBg.png") repeat; background-size: 100% auto;}
 /*==上部==*/
 .top-wrapper{min-height: 100vh; width: 100%; position: relative;}
 .news-index-logos{margin-left: 12.8vw; margin-top: 8.4vw;}
