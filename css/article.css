@@ -115,9 +115,10 @@ img{font-size: 0; display: block;}
     width: 100%; height: auto; display: block; right: 0;
 }
 .video-js .vjs-tech{ width: 100%; height: auto; display: block; right: 0; position: static;}
-.video-js .vjs-big-play-button{width: 10vh; height: 10vh; line-height: 10vh; left: 50%; top: 50%; margin-top: -5vh; margin-left: -5vh; border-radius: 50%; background-color: transparent;}
+.video-js .vjs-big-play-button{width: 8vh; height: 8vh; line-height: 8vh; left: 50%; top: 50%; margin-top: -4vh; margin-left: -4vh; border-radius: 50%; background-color: transparent;}
 .video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus{background-color: transparent;}
-
+.vjs-loading-spinner{  margin: -20px 0 0 -20px; border: 3px solid rgba(43, 51, 63, 0.7); width: 40px; height: 40px;}
+.vjs-loading-spinner:before, .vjs-loading-spinner:after{margin: -3px;}
 /*==暂停出现播放==*/
 .vjs-paused .vjs-big-play-button,
 .vjs-paused.vjs-has-started .vjs-big-play-button {

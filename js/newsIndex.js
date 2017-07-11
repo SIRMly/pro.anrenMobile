@@ -107,11 +107,11 @@
         pullUpTotal+=5;
 
         // 超过20条即加载完成
-        if(pullUpTotal >= 100){
-            pullInstance.pullUpDone();
-        }else{
-            pullInstance.pullUpSuccess();
-        }
+        //if(pullUpTotal >= 100){
+        //    pullInstance.pullUpDone();
+        //}else{
+        //    pullInstance.pullUpSuccess();
+        //}
     }
     // 处理上拉加载失败
     function handlePullUpFailed() {
