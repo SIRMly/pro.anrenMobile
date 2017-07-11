@@ -39,15 +39,10 @@
         var deerTimer = setInterval(function (){
             backPosition = (backPosition>=100 ? 0 :backPosition+50);
             deer.css({
-                "background-position-x": backPosition+"%",
+                "background-position-x": backPosition+"%"
             });
         },200);
     }
-
-
-
-
-
 
 
     /*==下拉加载==*/
@@ -104,14 +99,14 @@
                 break;
         }
         $listWrapper.append($(str));
-        pullUpTotal+=5;
+        pullUpTotal+=1;
 
         // 超过20条即加载完成
-        //if(pullUpTotal >= 100){
-        //    pullInstance.pullUpDone();
-        //}else{
-        //    pullInstance.pullUpSuccess();
-        //}
+        if(pullUpTotal >= 100){
+            pullInstance.pullUpDone();
+        }else{
+            pullInstance.pullUpSuccess();
+        }
     }
     // 处理上拉加载失败
     function handlePullUpFailed() {
