@@ -30,6 +30,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -42,6 +43,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -54,6 +56,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -66,6 +69,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -77,6 +81,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -88,6 +93,7 @@
                                         经关于敦煌莫高窟始建年代，目前学界一直使用前秦建元二年（公元366年）的说法，为解决这个矛盾，把敦煌莫高窟营建史研究向前推进了一大步。
                                     </p>
                                 </div>
+                                <span class="scrollbar"></span>
                             </div>
                         </div>
                     </div>
@@ -126,18 +132,43 @@
     /*==图片=*/
     var slider = $(".swiper-slide");
     var sliderH = slider.height();
+    var fs = parseFloat($("body").css("font-size"));
     slider.each(function (index, item){
         var img = $(this).find("img");
         var words = $(this).find(".pic-word");
         var p = $(this).find("p");
+        var inner = $(this).find(".word-inner");
+        var scrollbar = $(this).find(".scrollbar");
         console.log(sliderH - img.height() - p.outerHeight());
+        /*==图片居中==*/
         if(sliderH - img.height() >= p.outerHeight()){
             img.addClass("img-middle");
         }
-//        console.log(p.height());
-        if(p.height() > words.height()){
+        /*==滚动条==*/
+        var pHei = p.height();
+        var wordsHei = words.height();
+        var innerHei = inner.height();
+        if(pHei > innerHei){
             words.addClass("more");
             console.log(index);
+            /*==滚动条长度==*/
+            scrollbar.css({
+                height :　innerHei/pHei*5.8*fs
+            });
+            console.log(innerHei/pHei);
+            /*==滚动时移动==*/
+            inner.scroll(function(){
+                scrollbar.css({
+                    top : inner.scrollTop()/pHei*5.8+1.25+"rem"
+                });
+            })
+
+
+
+
+
+
+
         }
     });
     /*==底部input问题==*/
