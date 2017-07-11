@@ -97,6 +97,7 @@ img{font-size: 0; display: block;}
 #pics-detail .pic-word.more ::-webkit-scrollbar-button{display: none;}
 #pics-detail .pic-word.more ::-webkit-scrollbar-track{background-color: transparent;}
 #pics-detail .pic-word.more ::-webkit-scrollbar-thumb{background-color:#d6c3a6; }
+#pics-detail .pic-word.more{scrollbar-face-color: #d6c3a6;}
 #pics-detail .pic-word.more:after{content: ''; width: 0.1rem; position: absolute; right: 0.825rem; top: 1.25rem; bottom: 1rem; background-color: #d6c3a6;}
 .pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
 #pics-detail .comment-number>a{display: block; width: 100%; height: auto; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
