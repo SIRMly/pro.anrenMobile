@@ -108,21 +108,18 @@ img{display: block; font-size: 0;}
 @-webkit-keyframes bird2HeadMove {
     0%{transform: rotate(-4.2deg);}
     15%{transform: rotate(-4.2deg);}
-    20%{transform: rotate(-10deg);}
-    45%{transform: rotate(-10deg);}
-    52.5%{transform: rotate(-4.2deg);}
-    55%{transform: rotate(0deg);}
-    57.5%{transform: rotate(-4.2deg);}
-    60%{transform: rotate(0deg);}
-    62.5%{transform: rotate(-4.2deg);}
-    65%{transform: rotate(0deg);}
-    67.5%{transform: rotate(-4.2deg);}
+    20%{transform: rotate(-13deg);}
+    45%{transform: rotate(-13deg);}
+    52.5%{transform: rotate(21deg);}
+    55%{transform: rotate(25deg);}
+    57.5%{transform: rotate(21deg);}
+    60%{transform: rotate(25deg);}
+    62.5%{transform: rotate(21deg);}
+    65%{transform: rotate(25deg);}
+    75%{transform: rotate(-4.2deg);}
     100%{transform: rotate(-4.2deg);}
 }
 @-webkit-keyframes bird2TailMove {
-
-
-
     0%{transform: rotate(0deg);}
     2.5%{transform: rotate(-2deg);}
     5%{transform: rotate(0deg);}
