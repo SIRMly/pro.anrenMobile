@@ -97,7 +97,7 @@ img{display: block; font-size: 0;}
 
 @-webkit-keyframes bird2HeadMove {
     0%{transform: rotate(0deg);}
-    15%{transform: rotate(40deg);}
+    15%{transform: rotate(30deg);}
     30%{transform: rotate(0deg);}
     35%{transform: rotate(20deg);}
     40%{transform: rotate(10deg);}
