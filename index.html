@@ -40,8 +40,8 @@
     </div>
     <div class="part2 po-re">
         <div class="part-bird3 po-re">
-            <div class="bird3-head"></div>
-            <div class="bird3-tail"></div>
+            <div class="bird3-head move"></div>
+            <div class="bird3-tail move"></div>
         </div>
     </div>
 
@@ -60,8 +60,18 @@
     ;
     (function ($) {
         /*==动效==*/
-        var winW = $(window).width();
-        var winH = $(window).height();
+        var win = $(window);
+        var winW = win.width();
+        var winH = win.height();
+        var bird3 = $();
+        win.scroll(function (){
+
+        });
+        /*==动头的鸟==*/
+
+
+
+
 
 
         /*==回到顶部==*/

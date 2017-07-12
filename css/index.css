@@ -89,30 +89,46 @@ img{display: block; font-size: 0;}
     -webkit-background-size: contain;
     background-size: contain; margin-top: -23vw;padding-top: 56vw;}
 .part-bird3{width: 60vw; height: 56vw; background: url("../img/part2-bird3.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-left: -2vw;}
-.bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw; animation: bird2HeadMove 4s infinite linear 0s forwards; }
+.bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw;
+    transform-origin:37% 79%;
+    transform: rotate(-4.2deg);
+
+
+}
+.bird3-head.move{
+    animation: bird2HeadMove 6s infinite linear 0s forwards;
+}
 .bird3-tail{width: 18.13vw; height: 13.4vw; background: url("../img/bird3-tail.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 30vw; top: 38.3vw;
+
+
+
     transform-origin:left top;
-
-    animation: bird2TailMove 4s infinite linear 0s forwards; }
-
+    }
+.bird3-tail.move{animation: bird2TailMove 6s infinite linear 0s forwards; }
 @-webkit-keyframes bird2HeadMove {
-    0%{transform: rotate(0deg);}
-    15%{transform: rotate(20deg);}
-    30%{transform: rotate(0deg);}
-    35%{transform: rotate(15deg);}
-    40%{transform: rotate(10deg);}
-    45%{transform: rotate(15deg);}
+    0%{transform: rotate(-4.2deg);}
+    15%{transform: rotate(-4.2deg);}
+    20%{transform: rotate(-10deg);}
+    45%{transform: rotate(-10deg);}
+    52.5%{transform: rotate(-4.2deg);}
     55%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    57.5%{transform: rotate(-4.2deg);}
+    60%{transform: rotate(0deg);}
+    62.5%{transform: rotate(-4.2deg);}
+    65%{transform: rotate(0deg);}
+    67.5%{transform: rotate(-4.2deg);}
+    100%{transform: rotate(-4.2deg);}
 }
 @-webkit-keyframes bird2TailMove {
+
+
+
     0%{transform: rotate(0deg);}
-    15%{transform: rotate(-10deg);}
-    30%{transform: rotate(0deg);}
-    35%{transform: rotate(-5deg);}
-    40%{transform: rotate(2deg);}
-    45%{transform: rotate(-5deg);}
-    55%{transform: rotate(0deg);}
+    2.5%{transform: rotate(-2deg);}
+    5%{transform: rotate(0deg);}
+    7.5%{transform: rotate(-2deg);}
+    10%{transform: rotate(0deg);}
+    10.5%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}
 }
 
