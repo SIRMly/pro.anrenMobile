@@ -176,17 +176,17 @@ img{display: block; font-size: 0;}
 .part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.53vw; left: 10.4vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 .part3-legs{position: absolute; left: 2.4vw; top: 24.3vw;
     transform-origin: top right;
-    animation: part3bone1Move 6s infinite linear 0s forwards;
+    animation: part3bone1Move 4s infinite linear 0s forwards;
 }
 .part3-bone1{width: 4.13vw; height: 6.13vw;}
 .part3-legs2{margin-top: -2vw; margin-left: 0vw;
     transform-origin: top center;
-    animation: part3bone2Move 6s infinite linear 0s forwards;
+    animation: part3bone2Move 4s infinite linear 0s forwards;
 }
 .part3-bone2{width: 3.6vw; height: 5.06vw; }
 .part3-bone3{width: 3.87vw; height: 3.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; margin-left: 1vw; margin-top: -3vw;
     transform-origin: top center;
-    animation: part3bone3Move 6s infinite linear 0s forwards;
+    animation: part3bone3Move 4s infinite linear 0s forwards;
 }
 @-webkit-keyframes part3bone1Move {
     0%{transform: rotate(0deg);}
