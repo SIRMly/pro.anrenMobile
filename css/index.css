@@ -170,62 +170,137 @@ img{display: block; font-size: 0;}
     100%{transform: rotate(0deg);}
 }
 /*==part3==*/
-.part3{width: 100%; height: 310vw; background: url("../img/part3bg.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -20vw; padding-left: 62.23vw; padding-top: 77vw;}
-.part3-deer{width: 27.73vw; height: 41.87vw; background: url("../img/bagDeer.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;  }
-.part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 7.5vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.53vw; left: 10.4vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.part3-legs{position: absolute; left: 2.4vw; top: 24.3vw;
+.part3{width: 100%; height: 310vw; background: url("../img/bg3.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -20vw; padding-left: 62.23vw; padding-top: 77vw;}
+.part3-deer{width: 27.73vw; height: 41.87vw; }
+.part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 7.5vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    transform-origin: bottom center;
+    animation: part3EarLeftMove 5s infinite linear 0s forwards;
+}
+.part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.53vw; left: 10.4vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    transform-origin: 0% 80%;
+    transform: rotate(0deg);
+    animation: part3EarRightMove 5s infinite linear 0s forwards;
+
+}
+@-webkit-keyframes part3EarLeftMove {
+    0%{transform: rotate(0deg);}
+    2%{transform: rotate(-10deg);}
+    4%{transform: rotate(2deg);}
+    6%{transform: rotate(-8deg);}
+    8%{transform: rotate(2deg);}
+    10%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes part3EarRightMove {
+    0%{transform: rotate(0deg);}
+    2%{transform: rotate(10deg);}
+    4%{transform: rotate(2deg);}
+    6%{transform: rotate(8deg);}
+    8%{transform: rotate(2deg);}
+    10%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+
+
+
+
+.part3-legs{position: absolute;  left: 2.4vw; top: 24.3vw;
     transform-origin: top right;
-    animation: part3bone1Move 4s infinite linear 0s forwards;
+    transform: rotate(-12deg);
+
+    animation: part3bone1Move 5s infinite linear 0s forwards;
 }
 .part3-bone1{width: 4.13vw; height: 6.13vw;}
-.part3-legs2{margin-top: -2vw; margin-left: 0vw;
+.part3-legs2{
+    /*margin-top: -2vw; margin-left: 0vw;*/
+    margin-top: -1vw; margin-left: 0.2vw;
     transform-origin: top center;
-    animation: part3bone2Move 4s infinite linear 0s forwards;
+    /*transform: rotate(0deg);*/
+    transform: rotate(28deg);
+    animation: part3bone2Move 5s infinite linear 0s forwards;
 }
 .part3-bone2{width: 3.6vw; height: 5.06vw; }
-.part3-bone3{width: 3.87vw; height: 3.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; margin-left: 1vw; margin-top: -3vw;
+.part3-bone3{width: 3.87vw; height: 3.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    /*margin-left: 1vw; margin-top: -3vw;*/
+    margin-left: 1vw; margin-top: -2vw;
     transform-origin: top center;
-    animation: part3bone3Move 4s infinite linear 0s forwards;
+    transform: rotate(44deg);
+    animation: part3bone3Move 5s infinite linear 0s forwards;
 }
 @-webkit-keyframes part3bone1Move {
-    0%{transform: rotate(0deg);}
-    13.3%{transform: rotate(10deg);}
-    26.7%{transform: rotate(-10deg);}
-    33.3%{transform: rotate(4deg);}
-    46.67%{transform: rotate(-10deg);}
-    53.3%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{transform: rotate(-12deg);}
+    10%{transform: rotate(10deg);}
+    20%{transform: rotate(-18deg);}
+    25%{transform: rotate(-18deg);}
+    30%{transform: rotate(10deg);}
+    40%{transform: rotate(-18deg);}
+    45%{transform: rotate(-18deg);}
+    50%{transform: rotate(-12deg);}
+    100%{transform: rotate(-12deg);}
 }
 @-webkit-keyframes part3bone2Move {
-    0%{transform: rotate(0deg);}
-    13.3%{transform: rotate(10deg);}
-    26.7%{transform: rotate(-10deg);}
-    33.3%{transform: rotate(4deg);}
-    46.67%{transform: rotate(-10deg);}
-    53.3%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{transform: rotate(28deg);}
+    10%{transform: rotate(50deg);}
+    20%{transform: rotate(-5deg);}
+    25%{transform: rotate(-5deg);}
+    30%{transform: rotate(32deg);}
+    40%{transform: rotate(-5deg);}
+    45%{transform: rotate(-5deg);}
+    50%{transform: rotate(28deg);}
+    100%{transform: rotate(28deg);}
 }
 @-webkit-keyframes part3bone3Move {
-    0%{transform: rotate(0deg);}
-    13.3%{transform: rotate(40deg);}
-    26.7%{transform: rotate(-10deg);}
-    33.3%{transform: rotate(20deg);}
-    46.67%{transform: rotate(-10deg);}
-    53.3%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{transform: rotate(44deg);}
+    10%{transform: rotate(40deg);}
+    20%{transform: rotate(90deg);}
+    25%{transform: rotate(90deg);}
+    30%{transform: rotate(20deg);}
+    40%{transform: rotate(90deg);}
+    45%{transform: rotate(90deg);}
+    50%{transform: rotate(44deg);}
+    100%{transform: rotate(44deg);}
 }
+.part3-body{width: 100%; position: absolute; left: 0; top: 0;}
+.part3-btn{position: absolute;  width: 10.67vw; height: 34.27vw; background: url("../img/part3-btn.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain; left: 51vw; top: 78vw; opacity: 0;}
+.part3-btn.show{
+    animation: fadeIn 2s 1 linear 0s forwards;
+}
+/*==part4==*/
+.part4{width: 100%; height: 138.53vw; background: url("../img/bg4.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -174vw;}
 
 
 
 
+/*==part5==*/
+.part5{width: 100%; height: 246.27vw; background: url("../img/bg5.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -66vw;}
+
+/*==part6==*/
+.part6{width: 100%; height: 120.3vw; background: url("../img/bg6.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -165vw;}
 
 
+/*==part7==*/
+.part7{width: 100%; height: 192.4vw; background: url("../img/bg7.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -35vw;}
 
-
-
-
-
+/*==part8==*/
+.part8{width: 100%; height: 211vw; background: url("../img/bg8.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -29vw;}
+/*==part9==*/
+.part9{width: 100%; height: 154.67vw; background: url("../img/bg9.png") no-repeat top center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto; margin-top: -23vw;}
 
 
 
