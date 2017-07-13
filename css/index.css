@@ -66,11 +66,14 @@ img{display: block; font-size: 0;}
 .part1{margin-top: -32vw;}
 .part1-bird1{width: 33.3vw; height: 13vw; background: url("../img/bird1.png") no-repeat left top;
     position: absolute;left: 18%; top: 31vw; -webkit-background-size:3% auto;background-size:3% auto;
+    -webkit-animation: bird1Move 2s 1 ease-in 2.5s forwards;
+    -o-animation: bird1Move 2s 1 ease-in 2.5s forwards;
     animation: bird1Move 2s 1 ease-in 2.5s forwards;
 }
-.part1-bird2{width: 36.267vw; height: 15.5vw; background: url("../img/bird2.png") no-repeat left top; position: absolute; left: 55.47%; top: 60vw; background-size: 3% auto; z-index: 40;
+.part1-bird2{width: 36.267vw; height: 15.5vw; background: url("../img/bird2.png") no-repeat left top; position: absolute; left: 55.47%; top: 60vw; -webkit-background-size: 3% auto; background-size: 3% auto; z-index: 40;
+    -webkit-animation: bird2Move 2s 1 ease-in 2.5s forwards;
+    -o-animation: bird2Move 2s 1 ease-in 2.5s forwards;
     animation: bird2Move 2s 1 ease-in 2.5s forwards;
-
 }
 @-webkit-keyframes bird1Move {
     0%{left: 18%; top: 31vw; -webkit-background-size:3% auto;
@@ -78,34 +81,63 @@ img{display: block; font-size: 0;}
     100%{left: 22.8%; top: 33vw; -webkit-background-size:100% auto;
         background-size:100% auto;}
  }
-@-webkit-keyframes bird2Move {
-    0%{left: 53%; top: 60vw; background-size: 3% auto;}
-    100%{left: 55.47%; top: 64vw; background-size: 100% auto;}
+@keyframes bird1Move {
+    0%{left: 18%; top: 31vw; -webkit-background-size:3% auto; background-size:3% auto;}
+    100%{left: 22.8%; top: 33vw; -webkit-background-size:100% auto; background-size:100% auto;}
  }
-.part1-btn{width: 27vw; height: 8.4vw; background: url("../img/visit-info-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 60.13%; top: 78vw;  z-index: 30; opacity: 0; animation: fadeIn 2s 1 ease-in 4.5s forwards; }
+@-webkit-keyframes bird2Move {
+    0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
+    100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
+ }
+@keyframes bird2Move {
+    0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
+    100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
+ }
+
+.part1-btn{width: 27vw; height: 8.4vw; background: url("../img/visit-info-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 60.13%; top: 78vw;  z-index: 30; opacity: 0;
+    -webkit-animation: fadeIn 2s 1 ease-in 4.5s forwards;
+    -o-animation: fadeIn 2s 1 ease-in 4.5s forwards;
+    animation: fadeIn 2s 1 ease-in 4.5s forwards; }
 /*==part2==*/
-.part2{width: 100%;
-    background: url("../img/montain2.png") no-repeat left top;
-    -webkit-background-size: contain;
-    background-size: contain; margin-top: -23vw;padding-top: 56vw;}
-.part-bird3{width: 60vw; height: 56vw; background: url("../img/part2-bird3.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-left: -2vw;}
+.part2{width: 100%; background: url("../img/montain2.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-top: -23vw;padding-top: 56vw;}
+.part2-bird3{width: 60vw; height: 56vw; background: url("../img/part2-bird3.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-left: -2vw;}
 .bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw;
-    transform-origin:37% 79%;
+    -webkit-transform-origin: 37% 79%;
+    -o-transform-origin: 37% 79%;
+    transform-origin: 37% 79%;
+    -webkit-transform: rotate(-4.2deg);
+    -o-transform: rotate(-4.2deg);
     transform: rotate(-4.2deg);
-
-
 }
-.bird3-head.move{
+.part2-bird3.move .bird3-head{
+    -webkit-animation: bird2HeadMove 6s infinite linear 0s forwards;
+    -o-animation: bird2HeadMove 6s infinite linear 0s forwards;
     animation: bird2HeadMove 6s infinite linear 0s forwards;
 }
 .bird3-tail{width: 18.13vw; height: 13.4vw; background: url("../img/bird3-tail.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 30vw; top: 38.3vw;
-
-
-
-    transform-origin:left top;
+    -webkit-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
     }
-.bird3-tail.move{animation: bird2TailMove 6s infinite linear 0s forwards; }
+.part2-bird3.move .bird3-tail{
+    -webkit-animation: bird2TailMove 6s infinite linear 0s forwards;
+    -o-animation: bird2TailMove 6s infinite linear 0s forwards;
+    animation: bird2TailMove 6s infinite linear 0s forwards; }
 @-webkit-keyframes bird2HeadMove {
+    0%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    15%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    20%{transform: rotate(-13deg);}
+    45%{transform: rotate(-13deg);}
+    52.5%{transform: rotate(21deg);}
+    55%{transform: rotate(25deg);}
+    57.5%{transform: rotate(21deg);}
+    60%{transform: rotate(25deg);}
+    62.5%{transform: rotate(21deg);}
+    65%{transform: rotate(25deg);}
+    75%{transform: rotate(-4.2deg);}
+    100%{transform: rotate(-4.2deg);}
+}
+@keyframes bird2HeadMove {
     0%{transform: rotate(-4.2deg);}
     15%{transform: rotate(-4.2deg);}
     20%{transform: rotate(-13deg);}
@@ -128,6 +160,89 @@ img{display: block; font-size: 0;}
     10.5%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}
 }
+@keyframes bird2TailMove {
+    0%{transform: rotate(0deg);}
+    2.5%{transform: rotate(-2deg);}
+    5%{transform: rotate(0deg);}
+    7.5%{transform: rotate(-2deg);}
+    10%{transform: rotate(0deg);}
+    10.5%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+/*==part3==*/
+.part3{width: 100%; height: 310vw; background: url("../img/part3bg.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -20vw; padding-left: 62.23vw; padding-top: 77vw;}
+.part3-deer{width: 27.73vw; height: 41.87vw; background: url("../img/bagDeer.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;  }
+.part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 7.5vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.53vw; left: 10.4vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.part3-legs{position: absolute; left: 2.4vw; top: 24.3vw;
+    transform-origin: top right;
+    animation: part3bone1Move 6s infinite linear 0s forwards;
+}
+.part3-bone1{width: 4.13vw; height: 6.13vw;}
+.part3-legs2{margin-top: -2vw; margin-left: 0vw;
+    transform-origin: top center;
+    animation: part3bone2Move 6s infinite linear 0s forwards;
+}
+.part3-bone2{width: 3.6vw; height: 5.06vw; }
+.part3-bone3{width: 3.87vw; height: 3.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; margin-left: 1vw; margin-top: -3vw;
+    transform-origin: top center;
+    animation: part3bone3Move 6s infinite linear 0s forwards;
+}
+@-webkit-keyframes part3bone1Move {
+    0%{transform: rotate(0deg);}
+    13.3%{transform: rotate(10deg);}
+    26.7%{transform: rotate(-10deg);}
+    33.3%{transform: rotate(4deg);}
+    46.67%{transform: rotate(-10deg);}
+    53.3%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes part3bone2Move {
+    0%{transform: rotate(0deg);}
+    13.3%{transform: rotate(10deg);}
+    26.7%{transform: rotate(-10deg);}
+    33.3%{transform: rotate(4deg);}
+    46.67%{transform: rotate(-10deg);}
+    53.3%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes part3bone3Move {
+    0%{transform: rotate(0deg);}
+    13.3%{transform: rotate(40deg);}
+    26.7%{transform: rotate(-10deg);}
+    33.3%{transform: rotate(20deg);}
+    46.67%{transform: rotate(-10deg);}
+    53.3%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

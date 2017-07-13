@@ -39,11 +39,24 @@
         <a href="##" class="part1-btn"></a>
     </div>
     <div class="part2 po-re">
-        <div class="part-bird3 po-re">
-            <div class="bird3-head move"></div>
-            <div class="bird3-tail move"></div>
+        <div class="part2-bird3 po-re">
+            <div class="bird3-head"></div>
+            <div class="bird3-tail"></div>
         </div>
     </div>
+   <div class="part3 po-re">
+       <div class="part3-deer po-re">
+           <div class="part3-earLeft"></div>
+           <div class="part3-earRight"></div>
+           <div class="part3-legs">
+               <img src="img/part3-bone1.png" alt="" class="part3-bone1"/>
+               <div class="part3-legs2">
+                   <img src="img/part3-bone2.png" alt="" class="part3-bone1"/>
+                   <div class="part3-bone3"></div>
+               </div>
+           </div>
+       </div>
+   </div>
 
 
     <div class="index-bottom">
@@ -63,11 +76,30 @@
         var win = $(window);
         var winW = win.width();
         var winH = win.height();
-        var bird3 = $();
+        var bird3 = $(".part2-bird3");
+        var bird3Top = bird3.find(".bird3-head").offset().top + 0.28*winW;
+        var bird3Move = true;
+        if(winH>= bird3Top){
+            bird3Fun()
+        }
         win.scroll(function (){
-
+            /*==动头鸟Fun==*/
+            if(bird3Move){
+                if($(this).scrollTop()+winH>= bird3Top){
+                    bird3Fun()
+                }
+            }
         });
-        /*==动头的鸟==*/
+        /*==动头鸟Fun==*/
+        function bird3Fun(){
+            bird3.addClass("move");
+            bird3Move = false;
+        }
+
+
+
+
+
 
 
 
