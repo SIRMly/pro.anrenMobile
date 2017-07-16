@@ -4,7 +4,7 @@
     -webkit-justify-content: space-between;
     justify-content: space-between;}
 /*==活动报名列表==*/
-.wrapper{background: url("../img/active-bg.png") repeat; background-size: 100% auto; width: 100%; overflow-x: hidden;}
+.wrapper{background: url("../img/active-bg.png") repeat; -webkit-background-size:100% auto; background-size:100% auto; width: 100%; overflow-x: hidden;}
 .news-index-logos{margin-left: 0; margin-top: 0;}
 .top-wrapper{min-height: 100vh;}
 .active-logo{width: 100vw;}
@@ -21,11 +21,6 @@
 .article-content{font-size: 0.75rem; color: #000; line-height: 1.15rem; padding-bottom: 0.45rem; }
 .article-content img{width: 100%;}
 .article-content .title{text-align: center; margin: 1.85rem 0 1.75rem;}
-/*.article-content .info p{line-height: 1.15rem; }*/
-/*.article-main{margin-top: 1.85rem;}*/
-/*.article-main p{margin-bottom: 1rem; line-height: 1.15rem; letter-spacing: 0.05rem; text-indent: 1.5rem;}*/
-/*.article-main p.pic{margin-bottom: 1.8rem;}*/
-/*.article-main p.pic img{display: block; width: 100%; font-size: 0;}*/
 .article-read{margin-top: 2.2rem;  font-size: 0.8rem; color: #46202a;}
 .read-num{background: url("../img/read-icon.png") no-repeat center left;
     -webkit-background-size: auto 70%;
@@ -56,7 +51,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;padding: 0 0.5rem; }
 .input-controller.number2{word-spacing: 1.4rem;}
-.input-controls{flex: 1;}
+.input-controls{flex: 1; text-indent: 0.8rem;}
 /*==textarea==*/
 .textarea-label{height: 5.5rem; line-height: 5.5rem; background: url("../img/textarea-bg.png") no-repeat;
     -webkit-background-size: 100% 100%;
@@ -77,9 +72,16 @@
 .img-show{display: block; width: 100%; height: 100%;}
 .img-btn{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0;}
 .form-submit{display: block; width: 46.67vw; height: 30.13vw; background: url("../img/submit-btn.png") no-repeat center center; background-size: contain; margin: 2rem auto 0;}
-
-
-
+/*==失物招领==*/
+#lost-found{background: url("../img/lostfound-bg.png") repeat; background-size: 100% auto; width: 100%; }
+/*==合作==*/
+.description{font-size: 0;background: url("../img/des-bg.png") repeat-y;
+    -webkit-background-size:100% auto;
+    background-size:100% auto; margin: 0 3.2vw; position: relative;}
+.description img{display: block;}
+.description-inner{font-size: 0.6rem; color: #8b4637; padding: 0.6rem 0.3rem 1rem; text-indent: 1.2rem; text-align: justify;}
+.left-border{position: absolute; height: 100%; width: 0.2rem; left: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; background-size: 100% auto;}
+.right-border{position: absolute; height: 100%; width: 0.2rem; right: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; background-size: 100% auto;}
 
 
 
