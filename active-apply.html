@@ -98,20 +98,27 @@
                     <span class="input-controller textarea-controller">文字描述</span>
                     <img src="img/textarea-border.png" alt="" height="100%">
                     <div class="textarea-wrapper">
-                        <textarea name="" id="" class="textarea-controls">文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</textarea>
+                        <!--<textarea name="" id="" class="textarea-controls" maxlength="20">述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</textarea>-->
+                        <textarea name="" id="" class="textarea-controls" maxlength="100"></textarea>
                         <div class="text-words">0/100</div>
                         <div class="img-wrapper clearfix">
                             <div class="img-updown pull-right">
-                                <img src="" alt="" class="img-show">
-                                <input type="file" class="img-btn" accept="image/jpeg,image/jpg,image/png">
+                                <img src="" alt="" class="img-show" id="img-show3">
+                                <input type="file" class="img-btn" id="img-btn3" accept="image/jpeg,image/jpg,image/png">
                             </div>
                             <div class="img-updown pull-right">
-
+                                <img src="" alt="" class="img-show" id="img-show2">
+                                <input type="file" class="img-btn" id="img-btn2" accept="image/jpeg,image/jpg,image/png">
+                            </div>
+                            <div class="img-updown pull-right">
+                                <img src="" alt="" class="img-show" id="img-show1">
+                                <input type="file" class="img-btn" id="img-btn1" accept="image/jpeg,image/jpg,image/png">
                             </div>
                         </div>
                     </div>
                 </label>
             </div>
+            <a href="javascript:;" class="form-submit"></a>
         </div>
     </div>
 </div>
@@ -137,6 +144,50 @@
             $(this).addClass("active");
         }
     });
+    /*==上传预览图片==*/
+    $("#img-btn3").on("change", function (){
+        console.log(3);
+        imgUpdown(3);
+    });
+    $("#img-btn2").on("change", function (){
+        console.log(2);
+        imgUpdown(2);
+    });
+    $("#img-btn1").on("change", function (){
+        console.log(1);
+        imgUpdown(1);
+    });
+    function imgUpdown(index){
+        var $file = $("#img-btn"+ index +"");
+        var fileObj = $file[0];
+        var windowURL = window.URL || window.webkitURL;
+        var dataURL;
+        var $img = $("#img-show"+ index +"");
+        if(fileObj && fileObj.files && fileObj.files[0]){
+            dataURL = windowURL.createObjectURL(fileObj.files[0]);
+            $img.attr('src',dataURL);
+        }else{
+            dataURL = $file.val();
+            var imgObj = document.getElementById("#img-show"+ index +"");
+            imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+            imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+        }
+    }
+
+    /*==textarea 字数==*/
+    $(".textarea-controls").on("input", function(){
+        var length = $(this).val().length;
+        $(".text-words").html(length+"/100");
+
+    })
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>

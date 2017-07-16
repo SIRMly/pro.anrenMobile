@@ -37,7 +37,9 @@
     -webkit-background-size: auto 90%;
     background-size: auto 90%;}
 /*==表格部分==*/
-.forms-wrapper{width: 100%; margin-top: 1rem; font-size: 0;}
+.forms-wrapper{width: 100%; margin-top: 1rem; font-size: 0; padding-bottom: 21vw; background: url("../img/form-bg.png") no-repeat bottom center;
+    -webkit-background-size:100% auto;
+    background-size:100% auto;}
 /*.forms-title{font-size: 0;}*/
 .forms-wrapper>img{width: 32.8vw; margin: 0 auto; display: block;}
 .forms-content{margin-top: 1.5rem;}
@@ -56,7 +58,7 @@
 .input-controller.number2{word-spacing: 1.4rem;}
 .input-controls{flex: 1;}
 /*==textarea==*/
-.textarea-label{height: 6.3rem; line-height: 6.3rem; background: url("../img/textarea-bg.png") no-repeat;
+.textarea-label{height: 5.5rem; line-height: 5.5rem; background: url("../img/textarea-bg.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;}
 .input-controller{ background: url("../img/label2-bg.png") no-repeat;
@@ -66,14 +68,15 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 0.53rem; padding: 0 0.675rem; margin: 0.4rem 0; text-align: justify; text-indent: 1.3rem; height: 3rem; overflow: scroll;}
+    font-size: 0.53rem; padding: 0 0.675rem; margin: 0.4rem 0; text-align: justify; text-indent: 1.3rem; height: 2.2rem; overflow-y: auto;}
 .text-words{text-align: right; padding-right: 0.675rem; color: #8b4637; font-size: 0.55rem; line-height: 0.3rem;}
 .img-wrapper{margin: 0.3rem 0.675rem;}
 .img-updown{width: 1.5rem; height: 1.5rem; background: url("../img/img-updown.png") no-repeat center center;
     -webkit-background-size: contain;
-    background-size: contain; margin-left: 0.2rem; position: relative;}
-.img-btn{position: absolute; width: 100%; height: 100%; left: 0; top: 0; opacity: 0;}
-
+    background-size: contain; margin-left: 0.2rem; position: relative; overflow: hidden;}
+.img-show{display: block; width: 100%; height: 100%;}
+.img-btn{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0;}
+.form-submit{display: block; width: 46.67vw; height: 30.13vw; background: url("../img/submit-btn.png") no-repeat center center; background-size: contain; margin: 2rem auto 0;}
 
 
 
