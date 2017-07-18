@@ -39,7 +39,7 @@
         <a href="##" class="part1-btn"></a>
     </div>
     <div class="part2 po-re">
-        <div class="part2-bird3 po-re">
+        <div class="part2-bird3 po-re move">
             <div class="bird3-head"></div>
             <div class="bird3-tail"></div>
         </div>
@@ -57,19 +57,39 @@
            </div>
            <img src="img/bagDeer.png" alt="" width="100%" class="part3-body"/>
        </div>
-       <a href="##" class="part3-btn"></a>
+       <a href="##" class="part3-btn part-btn"></a>
    </div>
-    <div class="part4 po-re"></div>
-    <div class="part5 po-re"></div>
-    <div class="part6 po-re"></div>
-    <div class="part7 po-re"></div>
+    <div class="part4 po-re">
+        <div class="part4-fish"></div>
+        <div class="part4-water"></div>
+        <a href="##" class="part4-btn part-btn"></a>
+        <div class="part4-flower"></div>
+    </div>
+    <div class="part5 po-re">
+        <a href="##" class="part5-btn part-btn"></a>
+        <div class="part5-deer po-re">
+            <div class="part5-head"></div>
+        </div>
+    </div>
+    <div class="part6 po-re">
+        <div class="part6-boat po-re">
+            <div class="part6-stick"></div>
+            <div class="part6-sail"></div>
+        </div>
+        <a href="##" class="part6-btn part-btn"></a>
+    </div>
+    <div class="part7 po-re">
+        <div class="part7-cloudS"></div>
+        <div class="part7-bird"></div>
+        <div class="part7-bg"></div>
+        <div class="part7-cloudB"></div>
+    </div>
     <div class="part8 po-re"></div>
     <div class="part9 po-re"></div>
 
 
     <div class="index-bottom">
         <p>敦煌研究院网站投稿邮箱tougao@.dha.ac.cn</p>
-
         <p>
             <span>敦煌研究院版权所有</span>
             <span>陇icp备11000088号－1</span>
@@ -78,48 +98,61 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
-    ;
-    (function ($) {
+    ;(function ($) {
         /*==动效==*/
         var win = $(window);
         var winW = win.width();
         var winH = win.height();
-        var bird3 = $(".part2-bird3");
-        var bird3Top = bird3.find(".bird3-head").offset().top + 0.28*winW;
-        var bird3Move = true;
-        var part3Btn = $(".part3-btn");
-        var part3BtnTop = part3Btn.offset().top+0.17*winW;
-        var part3BtnShow = true;
-        if(winH>= bird3Top){
-            bird3Fun()
-        }
+        /*==鱼==*/
+        var part4 = $(".part4");
+        var part4FishTop = part4.find(".part4-fish").offset().top + 0.16*winW;
+        var part7Bird = $(".part7-bird");
+        var part7BirdTop = part7Bird.offset().top;
+        var part7BirdShow = true;
+        var part7BirdTimer;
+        var partBtn = $(".part-btn");
         win.scroll(function (){
-            /*==动头鸟Fun==*/
-            if(bird3Move){
-                if($(this).scrollTop()+winH>= bird3Top){
-                    bird3Fun()
+            /*==btns==*/
+            partBtn.each(function(){
+                if(!($(this).hasClass("show"))){
+                    if($(window).scrollTop()+winH*0.65 >= $(this).offset().top+$(this).height()*0.5){
+                        $(this).addClass("show");
+                    }
+                }
+            });
+            /*==鱼出来==*/
+            if(!($(part4).hasClass("show"))){
+                if($(window).scrollTop()+ winH*0.8 >= part4FishTop){
+                    part4.addClass("show");
                 }
             }
-            /*==预约订票btn==*/
-            if(part3BtnShow){
-                if($(this).scrollTop()+0.7*winH>= part3BtnTop){
-                    part3Btn.addClass("show")
+            /*==part7Bird==*/
+            if(part7BirdShow){
+//                deerTop = deer.offset().top;
+                if($(window).scrollTop() >= (part7BirdTop - winH)){
+                    part7BirdMove();
+                    part7BirdShow = false;
+                    part7Bird.addClass("move");
+                    $(".part7-cloudB").addClass("show");
+                    $(".part7-cloudS").addClass("show");
                 }
             }
+
+
+
         });
-        /*==动头鸟Fun==*/
-        function bird3Fun(){
-            bird3.addClass("move");
-            bird3Move = false;
+        function part7BirdMove(){
+            var backPosition = 0;
+            var part7BirdTimer = setInterval(function (){
+                backPosition = (backPosition>=100 ? 0 :backPosition+100);
+                part7Bird.css({
+                    "background-position-x": backPosition+"%"
+                });
+//                if(part7Bird.position().left >= 0.44*winW){
+//                    clearInterval(part7BirdTimer);
+//                }
+            },500);
         }
-
-
-
-
-
-
-
-
 
 
 

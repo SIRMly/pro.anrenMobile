@@ -14,12 +14,7 @@
 .news-screen1{margin-top: -20vw;}
 /*==首部轮播图==*/
 #topSlider{font-size: 0; padding: 0 0.5rem; position: relative; margin-top: 15vw;}
-.deer{width: 23vw; height: 18.53vw; background: url("../img/deerMove.png") no-repeat center center;  position: absolute; left: -22vw; top: -20vw; z-index: 90; background-size: 300% 100%;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -ms-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;  }
+.deer{width: 23vw; height: 18.53vw; background: url("../img/deerMove.png") no-repeat center center;  position: absolute; left: -22vw; top: -20vw; z-index: 90; background-size: 300% 100%; -webkit-transition: left 2s; -moz-transition: left 2s; -ms-transition: left 2s; -o-transition: left 2s; transition: left 2s;  }
 .deerShow{left: 0;}
 #topSlider a{display: block;}
 .top-slider-word{position: absolute; bottom: 0; color: #fff; font-size: 0.75rem; text-indent: 0.75rem; width: 100%; height: 1.55rem; line-height: 1.55rem; background-color: rgba(255,255,255,.2); letter-spacing: 0.05rem;}
@@ -27,9 +22,7 @@
 #top-pagination .swiper-pagination-bullet{margin: 0 0.15rem;  opacity:1; background-color: #050505; width: 0.3rem; height: 0.3rem;}
 #top-pagination .swiper-pagination-bullet-active{background-color: #fff;}
 /*=中间=*/
-.news-content{padding-bottom: 0.5rem; padding-top: 1.3rem; background: url("../img/news-content-bg.png") repeat-y;
-    -webkit-background-size:100% auto;
-    background-size:100% auto;}
+.news-content{padding-bottom: 0.5rem; padding-top: 1.3rem; background: url("../img/news-content-bg.png") repeat-y; -webkit-background-size:100% auto; background-size:100% auto;}
 .card{background: transparent; margin: 0; box-shadow: none; padding: 0.7rem 0.5rem 1rem; position: relative;}
 .card a{display: block;}
 .card img{font-size: 0;}
@@ -41,24 +34,8 @@
 .word-card .word-card-bottom{position: absolute; bottom: 0; right: 0; left: 0.3rem;}
 .card-read{ text-indent: 0.85rem; background: url("../img/read-icon.png") no-repeat center left; background-size: auto 65%;}
 /*.card+.card{border-top: 1px solid #9c6f67;}*/
-.card:not(:last-of-type):after{content: ""; display: block; height: 0.25rem; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0; background: url("../img/card-border.png") no-repeat center center;
-    -webkit-background-size:100% auto;
-    background-size:100% auto;}
+.card:not(:last-of-type):after{content: ""; display: block; height: 0.25rem; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0; background: url("../img/card-border.png") no-repeat center center; -webkit-background-size:100% auto; background-size:100% auto;}
 .pic-card-img,.video-card-img{margin: 0.6rem 0 0.3rem; font-size: 0; position: relative;}
 .pic-card-img span,.video-card-img span{position: absolute; bottom: 0.4rem; right: 0.6rem; color: #d7c4a7; font-size: 0.6rem; letter-spacing: 2px;}
 .pic-card-img span{ background: url("../img/pic-icon.png") no-repeat center left; -webkit-background-size: auto 0.6rem; background-size: auto 0.6rem; text-indent: 0.8rem;}
 .video-card-img:after{content: ""; background:url("../img/video-play.png") no-repeat center center;  -webkit-background-size: contain;background-size: contain; border: 0.1rem solid #fff; border-radius: 50%; width: 10vw; height: 10vw; position: absolute; left: 50%; top: 50%; margin-left: -5vw; margin-top: -5vw;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
