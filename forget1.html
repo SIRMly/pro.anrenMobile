@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="敦煌，敦煌研究院，忘记密码"/>
+    <meta name="description" content="敦煌研究院忘记密码"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>敦煌研究院</title>
+</head>
+<body>
+<div class="wrapper" id="forget1">
+    <div class="content">
+        <div class="forms-wrapper pd75">
+            <div class="forget-title">请输入您的找回密码信息!</div>
+            <div class="forms-content">
+                <label class="input-label flex">
+                    <span class="input-controller number2">账 号</span>
+                    <img src="img/input-border.png" alt="" height="100%">
+                    <input type="text" class="input-controls" placeholder="邮箱／手机／账号">
+                </label>
+                <label class="input-label flex">
+                    <span class="input-controller number2">邮 箱</span>
+                    <img src="img/input-border.png" alt="" height="100%">
+                    <input type="password" class="input-controls" placeholder="密码">
+                </label>
+                <label class="input-label flex">
+                    <span class="input-controller">验证号码</span>
+                    <img src="img/input-border.png" alt="" height="100%" class="line">
+                    <input type="text" class="input-controls" placeholder="验证码">
+                    <img src="img/input-border.png" alt="" height="100%" class="line">
+                    <a class="check-img disabled">发送验证码</a>
+                </label>
+            </div>
+            <a href="javascript:;" class="form-submit"></a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        /*==发送验证码按钮点击==*/
+        $(".check-img").on(click, function(){
+            if(!($(this).hasClass("disabled"))){
+                $(this).addClass("disabled");
+            }
+        })
+    })(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="敦煌，敦煌研究院，合作投稿"/>
+    <meta name="description" content="敦煌研究院合作投稿"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/activeApply.css"/>
+    <title>敦煌研究院</title>
+</head>
+<body>
+<div class="wrapper" id="lost-found">
+    <div class="content">
+        <div class="top-wrapper">
+            <div class="news-index-logos clearfix">
+                <img src="img/coop-logo.png" alt="" class="active-logo"/>
+                <a href="##" class="logo">
+                    <img src="img/logo.png" alt="" width="100%"/>
+                </a>
+            </div>
+        </div>
+        <div class="description">
+            <img src="img/des-border.png" alt="" width="100%">
+            <div class="description-inner">作为理论应用性的论文，撰写者应能运用所学的基本理论知识，来解决实际中出现的问题。论文总体的思路是围绕论文主题“提出问题、分析问题、解决问题”，并据此搭建整篇文章的框架结构。</div>
+            <img src="img/des-border.png" alt="" width="100%">
+            <div class="left-border"></div>
+            <div class="right-border"></div>
+        </div>
+        <div class="forms-wrapper pd75">
+            <div class="forms-content">
+                <label class="input-label flex">
+                    <span class="input-controller number2">姓 名</span>
+                    <img src="img/input-border.png" alt="" height="100%">
+                    <input type="text" class="input-controls">
+                </label>
+                <label class="input-label flex">
+                    <span class="input-controller">手机号码</span>
+                    <img src="img/input-border.png" alt="" height="100%">
+                    <input type="text" class="input-controls">
+                </label>
+                <label class="input-label textarea-label flex">
+                    <span class="input-controller textarea-controller">合作描述</span>
+                    <img src="img/textarea-border.png" alt="" height="100%">
+                    <div class="textarea-wrapper">
+                        <textarea name="" id="" class="textarea-controls" maxlength="100"></textarea>
+                        <div class="text-words">0/100</div>
+                        <div class="img-wrapper clearfix">
+                            <div class="img-updown pull-right">
+                                <img src="" alt="" class="img-show" id="img-show3">
+                                <input type="file" class="img-btn" id="img-btn3" accept="image/jpeg,image/jpg,image/png">
+                            </div>
+                            <div class="img-updown pull-right">
+                                <img src="" alt="" class="img-show" id="img-show2">
+                                <input type="file" class="img-btn" id="img-btn2" accept="image/jpeg,image/jpg,image/png">
+                            </div>
+                            <div class="img-updown pull-right">
+                                <img src="" alt="" class="img-show" id="img-show1">
+                                <input type="file" class="img-btn" id="img-btn1" accept="image/jpeg,image/jpg,image/png">
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <a href="javascript:;" class="form-submit"></a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        /*==上传预览图片==*/
+        $("#img-btn3").on("change", function (){
+            console.log(3);
+            imgUpdown(3);
+        });
+        $("#img-btn2").on("change", function (){
+            console.log(2);
+            imgUpdown(2);
+        });
+        $("#img-btn1").on("change", function (){
+            console.log(1);
+            imgUpdown(1);
+        });
+        function imgUpdown(index){
+            var $file = $("#img-btn"+ index +"");
+            var fileObj = $file[0];
+            var windowURL = window.URL || window.webkitURL;
+            var dataURL;
+            var $img = $("#img-show"+ index +"");
+            if(fileObj && fileObj.files && fileObj.files[0]){
+                dataURL = windowURL.createObjectURL(fileObj.files[0]);
+                $img.attr('src',dataURL);
+            }else{
+                dataURL = $file.val();
+                var imgObj = document.getElementById("#img-show"+ index +"");
+                imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+            }
+        }
+        /*==textarea 字数==*/
+        $(".textarea-controls").on("input", function(){
+            var length = $(this).val().length;
+            $(".text-words").html(length+"/100");
+
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
