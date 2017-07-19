@@ -118,23 +118,19 @@
                             </div>
                             <div class="input-wrapper">
                                 <div class="input-label ">
-                                    <input type="tel" class="input-controls number2" id="sex" placeholder="性 别">
+                                    <input type="text" class="input-controls number2" id="sex" placeholder="性 别">
                                 </div>
                             </div>
                             <div class="input-wrapper">
                                 <div class="input-label ">
-                                    <input type="tel" class="input-controls number2" placeholder="籍 贯">
+                                    <input type="text" class="input-controls number2" placeholder="籍 贯">
                                 </div>
                             </div>
                             <div class="input-wrapper">
                                 <div class="input-label ">
-                                    <input type="tel" class="input-controls" placeholder="居住地址">
+                                    <input type="text" class="input-controls" placeholder="居住地址">
                                 </div>
                             </div>
-
-
-
-
                         </div>
                         <a href="javascript:;" class="register-next po-re">
                             <img src="img/register-done.png" alt=""/>
@@ -172,10 +168,7 @@
         });
         /*==性别==*/
         $("#sex").picker({
-            toolbarTemplate: '<header class="bar bar-nav">\
-  <button class="button button-link pull-right close-picker">好的</button>\
-  <h1 class="title">请选择您的性别</h1>\
-  </header>',
+            toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">好的</button><h1 class="title">请选择您的性别</h1></header>',
             cols: [
                 {
                     textAlign: 'center',
