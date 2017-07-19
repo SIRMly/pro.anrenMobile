@@ -15,38 +15,43 @@
     <title>敦煌研究院</title>
 </head>
 <body>
-<div class="wrapper" id="login">
-    <div class="content">
-        <div class="forms-wrapper pd75">
-            <div class="login-title"></div>
-            <div class="forms-content">
-                <label class="input-label flex">
-                    <span class="input-controller number2">账 号</span>
-                    <img src="img/input-border.png" alt="" height="100%">
-                    <input type="text" class="input-controls" placeholder="邮箱／手机／账号">
-                </label>
-                <label class="input-label flex">
-                    <span class="input-controller number2">密 码</span>
-                    <img src="img/input-border.png" alt="" height="100%">
-                    <input type="password" class="input-controls" placeholder="密码">
-                </label>
-                <label class="input-label flex">
-                    <span class="input-controller">验证号码</span>
-                    <img src="img/input-border.png" alt="" height="100%" class="line">
-                    <input type="text" class="input-controls" placeholder="验证码">
-                    <img src="img/input-border.png" alt="" height="100%" class="line">
-                    <div class="check-img">
-                        <img src="img/check.png" alt="">
+<div class="page" id="login">
+    <div class="container">
+        <div class="wrapper">
+                <div class="forms-wrapper pd75">
+                    <div class="forms-content">
+                        <div class="input-wrapper">
+                            <div class="input-label">
+                                <input type="text" class="input-controls" placeholder="输入账号">
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-label">
+                                <input type="password" class="input-controls number2" placeholder="密 码">
+                            </div>
+                        </div>
+                        <div class="input-wrapper clearfix">
+                            <div class="input-label input-label-small pull-left">
+                                <input type="text" class="input-controls pull-left" placeholder="验证码">
+                            </div>
+                            <div class="check-img pull-right po-re">
+                                <div class="check-bg">
+                                    <img src="img/check.png" alt="">
+                                </div>
+                                <a href="javascript:;" class="change-check">更换验证码</a>
+                            </div>
+                        </div>
                     </div>
-                </label>
+                    <div class="login-btns po-re">
+                        <img src="img/login-btns.png" alt=""/>
+                        <a href="javascript:;" class="login-btn login"></a>
+                        <a href="register.html" class="login-btn toRegister"></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="forget1.html" class="toForget">忘记密码</a>
+                </div>
             </div>
-            <a href="javascript:;" class="login-submit"></a>
-        </div>
-        <div class="links po-re">
-            <a href="register.html" class="login-link toRegister">未注册</a>
-            <span></span>
-            <a href="forget1.html" class="login-link toForget">忘记密码</a>
-        </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>

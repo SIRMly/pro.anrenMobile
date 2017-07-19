@@ -86,15 +86,6 @@
     </div>
     <div class="part8 po-re"></div>
     <div class="part9 po-re"></div>
-
-
-    <div class="index-bottom">
-        <p>敦煌研究院网站投稿邮箱tougao@.dha.ac.cn</p>
-        <p>
-            <span>敦煌研究院版权所有</span>
-            <span>陇icp备11000088号－1</span>
-        </p>
-    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
@@ -138,8 +129,6 @@
                 }
             }
 
-
-
         });
         function part7BirdMove(){
             var backPosition = 0;
@@ -148,9 +137,9 @@
                 part7Bird.css({
                     "background-position-x": backPosition+"%"
                 });
-//                if(part7Bird.position().left >= 0.44*winW){
-//                    clearInterval(part7BirdTimer);
-//                }
+                if(part7Bird.position().left >= 0.48*winW){
+                    clearInterval(part7BirdTimer);
+                }
             },500);
         }
 

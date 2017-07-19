@@ -15,37 +15,28 @@
     <title>敦煌研究院</title>
 </head>
 <body>
-<div class="wrapper" id="forget1">
-    <div class="content">
-        <div class="forms-wrapper pd75">
-            <div class="forget-title">请输入您的新密码!</div>
-            <div class="forms-content">
-                <label class="input-label flex">
-                    <span class="input-controller number3">新 密 码</span>
-                    <img src="img/input-border.png" alt="" height="100%">
-                    <input type="text" class="input-controls" >
-                </label>
-                <label class="input-label flex">
-                    <span class="input-controller">确认密码</span>
-                    <img src="img/input-border.png" alt="" height="100%" class="line">
-                    <input type="text" class="input-controls">
-                </label>
+<div class="page" id="forget2">
+    <div class="container">
+        <div class="wrapper">
+            <div class="forms-wrapper pd75">
+                <div class="forget-title">请输入您的新密码</div>
+                <div class="forms-content">
+                    <div class="input-wrapper">
+                        <div class="input-label">
+                            <input type="password" class="input-controls number3" placeholder="新 密 码">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="input-label">
+                            <input type="password" class="input-controls" placeholder="确认密码">
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="form-submit"></a>
             </div>
-            <a href="javascript:;" class="form-submit"></a>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script>
-    ;(function ($){
-        var click = "ontouchstart" in document ? "touchstart" : "click";
-        /*==发送验证码按钮点击==*/
-        $(".check-img").on(click, function(){
-            if(!($(this).hasClass("disabled"))){
-                $(this).addClass("disabled");
-            }
-        })
-    })(jQuery);
-</script>
 </body>
 </html>
