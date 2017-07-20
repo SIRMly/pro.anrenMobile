@@ -22,6 +22,8 @@
 .read-num{background: url("../img/read-icon.png") no-repeat center left; -webkit-background-size: auto 70%; background-size: auto 70%; padding-left: 1.2rem; margin-right: 1.5rem;}
 .point-num{padding-left: 1.2rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 90%; background-size: auto 90%;}
 .point-num.active{background: url("../img/point-active.png") no-repeat center left; -webkit-background-size: auto 90%; background-size: auto 90%;}
+select{background: transparent; border: none; outline: none;appearance:none; -moz-appearance:none; -webkit-appearance:none;}
+select:focus{outline: none; border: none;}
 /*==表格部分==*/
 .forms-wrapper{width: 100%; margin-top: 1rem; font-size: 0; padding-bottom: 21vw; background: url("../img/form-bg.png") no-repeat bottom center; -webkit-background-size:100% auto; background-size:100% auto;}
 .forms-wrapper>img{width: 32.8vw; margin: 0 auto; display: block;}

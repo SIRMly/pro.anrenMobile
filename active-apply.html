@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/activeApply.css"/>
     <title>敦煌研究院</title>
+    <style>
+        .input-label{position: relative;}
+        .error-warning{position: absolute; color: red; font-size: 0.5rem; left: 0.5rem; top: 1.3rem;}
+        textarea{resize: none;}
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -90,11 +95,21 @@
                     <span class="input-controller">身份证号</span>
                     <img src="img/input-border.png" alt="" height="100%">
                     <input type="tel" class="input-controls">
+                    <div class="error-warning">请输入正确的身份证号</div>
                 </label>
                 <label class="input-label flex">
                     <span class="input-controller">手机号码</span>
                     <img src="img/input-border.png" alt="" height="100%">
                     <input type="tel" class="input-controls">
+                    <div class="error-warning">请输入正确的手机号码</div>
+                </label>
+                <label class="input-label flex">
+                    <span class="input-controller number2">性 别</span>
+                    <img src="img/input-border.png" alt="" height="100%">
+                    <select class="input-controls">
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
                 </label>
                 <label class="input-label textarea-label flex">
                     <span class="input-controller textarea-controller">文字描述</span>
