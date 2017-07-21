@@ -84,8 +84,41 @@
         <div class="part7-bg"></div>
         <div class="part7-cloudB"></div>
     </div>
-    <div class="part8 po-re"></div>
-    <div class="part9 po-re"></div>
+    <div class="part8 po-re">
+        <div class="part8-cloudS"></div>
+        <div class="part8-bg"></div>
+        <div class="part8-couples">
+            <div class="left-body">
+                <div class="left-head"></div>
+            </div>
+            <div class="left-leg"></div>
+            <div class="right-head">
+                <div class="right-mouth"></div>
+            </div>
+        </div>
+        <div class="part8-cloudB"></div>
+        <div class="lotus1"></div>
+        <div class="lotus2"></div>
+        <div class="lotus3"></div>
+        <div class="part-btn part8-btn"></div>
+        <div class="part8-crane">
+            <div class="crane-mouth"></div>
+            <div class="crane-body"></div>
+            <div class="crane-eye"></div>
+        </div>
+        <div class="part8-leaf"></div>
+    </div>
+    <div class="part9 po-re">
+        <div class="part9-deer1">
+            <div class="part9-head"></div>
+        </div>
+        <div class="part-btn part9-btn"></div>
+        <div class="part9-deer2"></div>
+    </div>
+    <div class="bottom po-re">
+        <img src="img/index-bottom.png" alt=""/>
+    </div>
+    <a href="javascript:;" class="toTop"></a>
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
@@ -102,11 +135,13 @@
         var part7BirdShow = true;
         var part7BirdTimer;
         var partBtn = $(".part-btn");
+        var part8Move = true;
+        var part8Top = $(".part8").offset().top;
         win.scroll(function (){
             /*==btns==*/
             partBtn.each(function(){
                 if(!($(this).hasClass("show"))){
-                    if($(window).scrollTop()+winH*0.65 >= $(this).offset().top+$(this).height()*0.5){
+                    if($(window).scrollTop()+winH*0.75 >= $(this).offset().top+$(this).height()*0.5){
                         $(this).addClass("show");
                     }
                 }
@@ -119,8 +154,7 @@
             }
             /*==part7Bird==*/
             if(part7BirdShow){
-//                deerTop = deer.offset().top;
-                if($(window).scrollTop() >= (part7BirdTop - winH)){
+                if($(window).scrollTop() >= (part7BirdTop - winH*1.3)){
                     part7BirdMove();
                     part7BirdShow = false;
                     part7Bird.addClass("move");
@@ -129,6 +163,13 @@
                 }
             }
 
+            /*==part8Move==*/
+            if (part8Move) {
+                if ($(window).scrollTop() >= (part8Top - winH*0.65)) {
+                    part8Move = false;
+                    $(".part8").addClass("show");
+                }
+            }
         });
         function part7BirdMove(){
             var backPosition = 0;
@@ -145,12 +186,14 @@
 
 
 
+
         /*==回到顶部==*/
         var click = "ontouchstart" in document ? "touchstart" : "click";
-        $(".index-toTop").on(click, function () {
-            container.stop().animate({
+        $(".toTop").on(click, function () {
+            console.log(123);
+            $("body,html").stop().animate({
                 "scrollTop": 5
-            }, 600);
+            }, 1000);
         });
     })(jQuery);
 </script>

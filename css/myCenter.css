@@ -19,13 +19,10 @@
 .center-line{display: block; width: 100%;}
 .center-lists li{position: relative;}
 .center-lists .lists-inner{width: 100%; font-size: 0.9rem; color: #373635; height: 17.33vw; line-height: 17.33vw; padding-left: 10.4vw;}
-.center-lists{}
 .center-btn{display: block; width: 7.47vw; height: 7.47vw; background: url("../img/center-btn.png") no-repeat; -webkit-background-size: contain; background-size: contain; margin-right: 0.5rem;}
 .center-person{position: absolute; width: 10.3vw; left: 0; bottom: 0;}
 /*==我的活动==*/
-.my-active .content{min-height: 100vh;background: url("../img/my-active-bg.png") repeat-y;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; padding-bottom: 14.4vw; padding-top: 2.6rem;}
+.my-active .content{min-height: 100vh;background: url("../img/my-active-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; padding-bottom: 14.4vw; padding-top: 2.6rem;}
 .my-active .news-content{padding-top: 0; background: none;}
 .my-title{width: 37.6vw; height: 9.2vw; background: url("../img/my-title-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;  margin: 0 auto 1.92rem;}
 .my-title img{display: block; width: 100%;}
@@ -33,9 +30,7 @@
 .card:first-child:before { top: -0.25rem; bottom: auto;}
 .check-more{display: block; width: 14.93vw; height: 12.13vw; background: url("../img/check-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 10.8vw auto 0;}
 /*==账号信息==*/
-.myInfo .content{min-height: 100vh; background: url("../img/myInfo-bg.png") no-repeat center bottom;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; padding: 0 1rem;}
+.myInfo .content{min-height: 100vh; background: url("../img/myInfo-bg.png") no-repeat center bottom; -webkit-background-size: 100% auto; background-size: 100% auto; padding: 0 1rem;}
 .info-lists li{height: 14.8vw; position: relative; color: #333333; font-size: 0.875rem;padding: 0.1rem;}
 .info-lists li:not(:first-child){-webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; }
 .info-lists li:not(:first-child):after{ content: ""; display: block; height: 0.25rem; position: absolute; left: 0; right: 0; bottom: 0; background: url(../img/card-border.png) no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
@@ -44,61 +39,3 @@
 .info-lists li:nth-of-type(2){height: 10vw;}
 .font-small{font-size: 0.75rem;}
 .color-gray{color: #b1b0a9;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
