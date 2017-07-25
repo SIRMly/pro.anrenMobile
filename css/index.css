@@ -382,7 +382,7 @@ background-size: 0%;  }
 }
 @-webkit-keyframes part6SailMove {
     0%{right: 41vw; }
-    100%{right: 42vw;}
+    100%{right: 40vw;}
 }
 
 /*==part7==*/
