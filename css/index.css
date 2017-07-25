@@ -95,7 +95,6 @@ img{display: block; font-size: 0;}
     0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
     100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
 }
-
 .part1-btn{width: 27vw; height: 8.4vw; background: url("../img/visit-info-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 60.13%; top: 78vw;  z-index: 30; opacity: 0;
     -webkit-animation: fadeIn 2s 1 ease-in 4.5s forwards;
     -o-animation: fadeIn 2s 1 ease-in 4.5s forwards;
@@ -312,17 +311,25 @@ background-size: 0%;  }
 /*==part5==*/
 .part5{width: 100%; height: 246.27vw; background: url("../img/bg5.png") no-repeat top center;
     -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -66vw; padding-left: 37vw; padding-top: 41vw;}
+    background-size: 100% auto; margin-top: -66vw; padding-left: 43vw; padding-top: 46vw;}
 .part5-btn{width: 8.8vw; height: 30vw; background: url("../img/part5-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 81vw; top: 39.5vw; opacity: 0;}
-.part5-deer{width: 42.27vw; height: 30vw; background: url("../img/part5-deer.png") no-repeat;
+.part5-deer{width: 35vw; height: 24.84vw; background: url("../img/part5-deer.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
-.part5-head{width: 12.27vw; height: 12.8vw; background: url("../img/part5-head.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; right: 0; top: 6vw;
-    transform-origin: 25% 65%;
+.part5-headW{width: 29.03%; height: 42.267%; position: absolute; right: 0; top: 22.5%;transform-origin: 25% 65%;
     animation: part5HeadMove 5s infinite ease-out 0s forwards;
+}
+.part5-head{width: 100%; height: 100%; background: url("../img/part5-head.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; position: absolute; right: 0; top: 0;
+
+}
+.part5-mouth{width: 53.261%; height: 20.8333%; background: url("../img/part5-mouth.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; position: absolute; right: 2%; top: 75%;
+    transform-origin: 27% 18%;
+    animation: part5MouthMove 5s infinite ease-out 0s forwards;
 }
 @-webkit-keyframes part5HeadMove {
     0%{transform: rotate(0deg);}
@@ -332,28 +339,50 @@ background-size: 0%;  }
     30%{transform: rotate(40deg);}
     36%{transform: rotate(35deg);}
     41%{transform: rotate(40deg);}
-    45%{transform: rotate(35deg);}
+    /*45%{transform: rotate(35deg);}*/
     50%{transform: rotate(40deg);}
     65%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+@-webkit-keyframes part5MouthMove {
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(0deg);}
+    20%{transform: rotate(10deg);}
+    24%{transform: rotate(0deg);}
+    30%{transform: rotate(10deg);}
+    36%{transform: rotate(0deg);}
+    41%{transform: rotate(10deg);}
+    45%{transform: rotate(0deg);}
+    50%{transform: rotate(0deg);}
+    65%{transform: rotate(0deg);}
+    70%{}
+    75%{transform: rotate(6deg);}
+    79%{transform: rotate(0deg);}
+    83%{transform: rotate(6deg);}
+    87%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}
 }
 /*==part6==*/
 .part6{width: 100%; height: 120.3vw; background: url("../img/bg6.png") no-repeat top center;
     -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -165vw; padding-left: 1vw; padding-top: 34vw; }
-.part6-btn{width: 7.87vw; height: 40vw; background: url("../img/part6-btn.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 58vw; top: 50vw; opacity: 0;}
+    background-size: 100% auto; margin-top: -165vw; padding-left: 38vw; padding-top: 89vw; }
+.part6-btn{width: 7.87vw; height: 40vw; background: url("../img/part6-btn.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 59vw; top: 63vw; opacity: 0;}
 .part6-boat{width: 61.07vw; height: 55.07vw; background: url("../img/part6-boat.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.part6-stick{width: 16.67vw; height: 15.2vw; background: url("../img/part6-stick.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; bottom: 2vw; left: -0.5vw;
-    transform-origin: 70% 30%; transform: rotate(5deg);
+.part6-stick{width: 16.67vw; height: 15.2vw; background: url("../img/part6-stick.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; bottom: 2vw; left: 44.5vw; transform-origin: 30% 30%; transform: rotate(8deg);
     animation: part6StickMove 3s  linear 0s infinite alternate;
 }
-.part6-sail{width: 14.8vw; height: 24.93vw; background: url("../img/part6-sail.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 5vw; right: 5vw;
+.part6-sail{width: 14.8vw; height: 24.93vw; background: url("../img/part6-sail.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 5vw; right: 41vw;
+    animation: part6SailMove 1s  linear 0s infinite alternate;
 }
 @-webkit-keyframes part6StickMove {
-    0%{transform: rotate(5deg);}
-    20%{transform: rotate(5deg);}
-    80%{transform: rotate(-6deg);}
-    100%{transform: rotate(-6deg);}
+    0%{transform: rotate(8deg);}
+    15%{transform: rotate(8deg);}
+    85%{transform: rotate(-8deg);}
+    100%{transform: rotate(-8deg);}
+}
+@-webkit-keyframes part6SailMove {
+    0%{right: 41vw; }
+    100%{right: 42vw;}
 }
 
 /*==part7==*/
@@ -375,9 +404,9 @@ background-size: 0%;  }
     position: absolute; top: 108vw; left: -70vw;
 }
 .part7-cloudB.show{
-    -webkit-animation: part7CloudBMove 8s ease-in 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
-    -o-animation: part7CloudBMove 8s ease-in 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
-    animation: part7CloudBMove 8s ease-in 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
+    -webkit-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
+    -o-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
+    animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
 }
 @-webkit-keyframes part7CloudBMove {
     0%{left: -70vw;}
@@ -387,13 +416,13 @@ background-size: 0%;  }
     0%{margin-top: 0;}
     100%{margin-top: 2vw;}
 }
-.part7-cloudS{width: 38vw; height: 10.2vw; background: url("../img/part7-cloudB.png") no-repeat left bottom;
-    -webkit-background-size: 100% auto;  background-size: 100% auto; position: absolute; top: 95vw; left: 10vw;
+.part7-cloudS{width: 38vw; height: 10.2vw; background: url("../img/part7-cloudB.png") no-repeat left bottom; -webkit-background-size: 100% auto;  background-size: 100% auto; position: absolute; top: 95vw; left: 10vw;
 }
 .part7-cloudS.show{
-    -webkit-animation: part7CloudSMove 7s ease-in 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
-    -o-animation: part7CloudSMove 7s ease-in 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
-    animation: part7CloudSMove 7s ease-in 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;}
+    -webkit-animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
+    -o-animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
+    animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
+}
 @-webkit-keyframes part7CloudSMove {
     0%{left: 10vw;}
     100%{left: 90vw;}
@@ -469,7 +498,7 @@ background-size: 0%;  }
 .part8-cloudB{width: 63.33vw; height: 14.67vw; background: url("../img/part8-cloudB.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; position: absolute; left: 100vw; top: 37vw; }
-.part8.show .part8-cloudB{animation: part8CloudBMove 12s ease-in 3s 1 forwards, part7CloudBMoveUp 2s linear 3s infinite alternate, fadeIn 7s ease-in 3s 1 forwards;}
+.part8.show .part8-cloudB{animation: part8CloudBMove 12s ease-in 3s 1 forwards, part7CloudBMoveUp 2s linear 3s infinite alternate, fadeIn 13s ease-in 3s 1 forwards;}
 .part8-cloudS{width: 30.27vw; height: 7.73vw; background: url("../img/part8-cloudS.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; position: absolute; left: 60vw; top: 21vw;  }
@@ -587,20 +616,20 @@ margin-top: -51.4667vw;}
 /*==侧边==*/
 .side{width: 100%; height: 100vh; position: fixed; left: 100%; top: 0; bottom: 0; overflow: hidden; z-index: 9999; background: url("../img/active-bg.png") repeat; -webkit-background-size: 100% auto; background-size: 100% auto; }
 .side-content{position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; background: url("../img/side.png") no-repeat center bottom;-webkit-background-size: 100% auto; background-size: 100% auto;}
-.main-title,.main-title a{text-align: center; height: 3rem; line-height: 3rem; color: #221815; font-size: 0.75rem;}
+.main-title,.main-title a{text-align: center; height: 2.25rem; line-height: 2.25rem; color: #221815; font-size: 0.75rem;}
 .main-title p{width: 100%; height: 100%;}
 /*.main-title a{display: block;}*/
-.side-icon{width: 0.85rem; height: 0.85rem; background: url("../img/side-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -4rem; top: 1.075rem; -webkit-transition: transform 0.5s; -moz-transition: transform 0.5s; -ms-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
+.side-icon{width: 0.85rem; height: 0.85rem; background: url("../img/side-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -4rem; top: 0.75rem; -webkit-transition: transform 0.5s; -moz-transition: transform 0.5s; -ms-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
 .main-title.active a{color: #7b3428;}
 .main-title.active .side-icon{ -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);}
-.main-title:before{content: ""; position: absolute; width: 2.075rem; height: 1.55rem; left: 50%; margin-left: -4.8rem; top: -0.2rem;
+.main-title:before{content: ""; position: absolute; width: 2.075rem; height: 1.55rem; left: 50%; margin-left: -4.8rem; top: -0.55rem;
     background: url("../img/side-bird.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; opacity: 0; -webkit-transition: opacity 1.5s; -moz-transition: opacity 1.5s; -ms-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;}
 .main-title.active:before{opacity: 1;}
-.side-item{padding: 0 0.75rem; background-color: rgba(158,142,112,0.3); display: none; opacity: 0;
+.side-item{padding: 0.5rem 0.75rem; margin-top: -0.35rem; background-color: rgba(158,142,112,0.3); display: none; opacity: 0;
     -webkit-animation: fadeIn 2s forwards;
     -o-animation: fadeIn 2s forwards;
-    animation: fadeIn 2s forwards;}
-.side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.7rem; height: 1.75rem; line-height: 1.75rem;}
+    animation: fadeIn 2s forwards; }
+.side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.7rem; height: 1.3rem; line-height: 1.3rem;}
 .side-back{display: block; width: 13.3vw; height: 13.3vw; background: url("../img/side-back.png") no-repeat center center;-webkit-background-size: 85% auto; background-size: 85% auto; margin: 1.4rem 0 1.4rem 80vw;}
 
 
