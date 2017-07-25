@@ -333,14 +333,14 @@ background-size: 0%;  }
 }
 @-webkit-keyframes part5HeadMove {
     0%{transform: rotate(0deg);}
-    10%{transform: rotate(40deg);}
-    20%{transform: rotate(40deg);}
-    24%{transform: rotate(35deg);}
-    30%{transform: rotate(40deg);}
-    36%{transform: rotate(35deg);}
-    41%{transform: rotate(40deg);}
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(15deg);}
+    24%{transform: rotate(11deg);}
+    30%{transform: rotate(15deg);}
+    36%{transform: rotate(11deg);}
+    41%{transform: rotate(15deg);}
     /*45%{transform: rotate(35deg);}*/
-    50%{transform: rotate(40deg);}
+    50%{transform: rotate(15deg);}
     65%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}
 }
@@ -372,7 +372,7 @@ background-size: 0%;  }
     animation: part6StickMove 3s  linear 0s infinite alternate;
 }
 .part6-sail{width: 14.8vw; height: 24.93vw; background: url("../img/part6-sail.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 5vw; right: 41vw;
-    animation: part6SailMove 1s  linear 0s infinite alternate;
+    animation: part6SailMove 2s  linear 0s infinite alternate;
 }
 @-webkit-keyframes part6StickMove {
     0%{transform: rotate(8deg);}
