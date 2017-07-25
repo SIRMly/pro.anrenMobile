@@ -94,14 +94,14 @@ img{display: block; font-size: 0;}
 @keyframes bird2Move {
     0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
     100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
- }
+}
 
 .part1-btn{width: 27vw; height: 8.4vw; background: url("../img/visit-info-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 60.13%; top: 78vw;  z-index: 30; opacity: 0;
     -webkit-animation: fadeIn 2s 1 ease-in 4.5s forwards;
     -o-animation: fadeIn 2s 1 ease-in 4.5s forwards;
     animation: fadeIn 2s 1 ease-in 4.5s forwards; }
 /*==part2==*/
-.part2{width: 100%; background: url("../img/montain2.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-top: -23vw;padding-top: 56vw;}
+.part2{width: 100%; background: url("../img/montain2.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-top: -5vw;padding-top: 56vw;}
 .part2-bird3{width: 60vw; height: 56vw; background: url("../img/part2-bird3.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-left: -2vw;}
 .bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw;
     -webkit-transform-origin: 37% 79%;
@@ -205,9 +205,7 @@ img{display: block; font-size: 0;}
     animation: part3bone1Move 7s infinite linear 0s forwards;
 }
 .part3-bone1{width: 4vw; height: 10.133vw;}
-.part3-legs2{margin-top: -4.6vw; margin-left: 0vw; transform-origin: 65% 16%; transform: rotate(-0deg);
-    animation: part3bone2Move 7s infinite linear 0s forwards;
-}
+.part3-legs2{margin-top: -4.6vw; margin-left: 0vw; transform-origin: 65% 16%; transform: rotate(-0deg);animation: part3bone2Move 7s infinite linear 0s forwards;}
 .part3-bone2{width: 4.133vw; height: 9.6vw; }
 .part3-bone3{width: 3.2vw; height: 5.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; margin-left: -0.2vw; margin-top: -5.6vw; transform-origin: center 20%;  transform: rotate(-0deg);
     animation: part3bone3Move 7s infinite linear 0s forwards;
@@ -273,11 +271,17 @@ img{display: block; font-size: 0;}
     100%{transform: rotate(0deg);}
 }
 .part3-body{width: 100%; position: absolute; left: 0; top: 0;}
+.part-btn{opacity: 0;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;}
 .part3-btn{position: absolute;  width: 10.67vw; height: 34.27vw; background: url("../img/part3-btn.png") no-repeat;
     -webkit-background-size: contain;
-    background-size: contain; left: 51vw; top: 78vw; opacity: 0;}
+    background-size: contain; left: 51vw; top: 78vw; }
 .part-btn.show{
-    animation: fadeIn 2s 1 linear 0s forwards;
+   opacity: 1;
 }
 /*==part4==*/
 .part4{width: 100%; height: 138.53vw; background: url("../img/bg4.png") no-repeat top center;
@@ -483,25 +487,25 @@ background-size: 0%;  }
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; position: absolute; left: -5vw; bottom: 74vw; transform-origin: 66.6% bottom;
     transform: rotate(-2deg);
-    animation: lotusMove 5s linear 0s infinite alternate;
+    animation: lotusMove 4s linear 0s infinite alternate;
 }
 .lotus2{width: 44.4vw; height: 38.93vw; background: url("../img/lotus2.png") no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; position: absolute; left: 17vw; bottom: 95vw; transform-origin: 51% bottom;
     transform: rotate(-2deg);
-    animation: lotusMove 5s linear 0s infinite alternate;
+    animation: lotusMove 4s linear 0s infinite alternate;
 }
 .lotus3{width: 38.267vw; height: 34vw; background: url("../img/lotus3.png") no-repeat;
      -webkit-background-size: 100% 100%;
      background-size: 100% 100%; position: absolute; left: 42vw; bottom: 87vw; transform-origin: 46% bottom;
      transform: rotate(-2deg);
-     animation: lotusMove 5s linear 0s infinite alternate;
+     animation: lotusMove 4s linear 0s infinite alternate;
  }
 @-webkit-keyframes lotusMove {
-    0%{transform: rotate(-2deg);}
-    30%{transform: rotate(-2deg);}
-    70%{transform: rotate(2deg);}
-    100%{transform: rotate(2deg);}
+    0%{transform: rotate(-3deg);}
+    20%{transform: rotate(-3deg);}
+    80%{transform: rotate(3deg);}
+    100%{transform: rotate(3deg);}
 }
 .part8-btn{width: 9.07vw; height: 63.067vw; background: url("../img/part8-btn.png") no-repeat;
     -webkit-background-size: contain;
@@ -583,17 +587,20 @@ margin-top: -51.4667vw;}
 /*==侧边==*/
 .side{width: 100%; height: 100vh; position: fixed; left: 100%; top: 0; bottom: 0; overflow: hidden; z-index: 9999; background: url("../img/active-bg.png") repeat; -webkit-background-size: 100% auto; background-size: 100% auto; }
 .side-content{position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; background: url("../img/side.png") no-repeat center bottom;-webkit-background-size: 100% auto; background-size: 100% auto;}
-.main-title,.main-title a{text-align: center; height: 3rem; line-height: 3rem; color: #221815; font-size: 1rem;}
+.main-title,.main-title a{text-align: center; height: 3rem; line-height: 3rem; color: #221815; font-size: 0.75rem;}
 .main-title p{width: 100%; height: 100%;}
-.main-title a{display: block;}
+/*.main-title a{display: block;}*/
 .side-icon{width: 0.85rem; height: 0.85rem; background: url("../img/side-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -4rem; top: 1.075rem; -webkit-transition: transform 0.5s; -moz-transition: transform 0.5s; -ms-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
 .main-title.active a{color: #7b3428;}
 .main-title.active .side-icon{ -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);}
-.main-title.active:before{content: ""; position: absolute; width: 2.075rem; height: 1.55rem; left: 50%; margin-left: -4.8rem; top: -0.2rem; background: url("../img/side-bird.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;}
-.side-item{padding: 0 0.75rem; background-color: rgba(158,142,112,0.3); display: none;}
-.side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.675rem; height: 1.75rem; line-height: 1.75rem;}
+.main-title:before{content: ""; position: absolute; width: 2.075rem; height: 1.55rem; left: 50%; margin-left: -4.8rem; top: -0.2rem;
+    background: url("../img/side-bird.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; opacity: 0; -webkit-transition: opacity 1.5s; -moz-transition: opacity 1.5s; -ms-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;}
+.main-title.active:before{opacity: 1;}
+.side-item{padding: 0 0.75rem; background-color: rgba(158,142,112,0.3); display: none; opacity: 0;
+    -webkit-animation: fadeIn 2s forwards;
+    -o-animation: fadeIn 2s forwards;
+    animation: fadeIn 2s forwards;}
+.side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.7rem; height: 1.75rem; line-height: 1.75rem;}
 .side-back{display: block; width: 13.3vw; height: 13.3vw; background: url("../img/side-back.png") no-repeat center center;-webkit-background-size: 85% auto; background-size: 85% auto; margin: 1.4rem 0 1.4rem 80vw;}
 
 
