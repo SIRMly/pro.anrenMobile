@@ -390,10 +390,10 @@
                     proNum++;
                     proPercentage = Math.floor(proNum/count*100);
                     $(".night-bg").css({
-                        opacity : 1-proPercentage
+                        opacity : (100-proPercentage)/100
                     });
                     $(".sun").css({
-                        opacity : proPercentage
+                        opacity : proPercentage/100
                     });
                     if(proNum>=count){
                         proPercentage=100;
