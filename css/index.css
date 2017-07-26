@@ -1,7 +1,7 @@
 @charset "utf-8";
-.container{position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-x: hidden;}
+.container{position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-x: hidden; background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
 
-.content{position:absolute; width: 100%;top: 0; left: 0; overflow: hidden; min-height: 100%;  background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.content{position:absolute; width: 100%;top: 0; left: 0; overflow: hidden; min-height: 100%;  }
 img{display: block; font-size: 0;}
 .po-re{position: relative;}
 @-webkit-keyframes fadeIn {
@@ -631,11 +631,15 @@ margin-top: -51.4667vw;}
     animation: fadeIn 2s forwards; }
 .side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.7rem; height: 1.3rem; line-height: 1.3rem;}
 .side-back{display: block; width: 13.3vw; height: 13.3vw; background: url("../img/side-back.png") no-repeat center center;-webkit-background-size: 85% auto; background-size: 85% auto; margin: 1.4rem 0 1.4rem 80vw;}
-
-
-
-
-
+/*==loading==*/
+.loading{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; z-index: 99999; overflow-x: hidden;}
+.night-bg{width: 100%; height: 100%; background: url("../img/loading-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; }
+.day-bg{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.sun{width: 8.67vw; height: 8.67vw; background: url("../img/sun.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 71%; top: 14%; opacity: 0;}
+.mountain{min-width: 101%; position: absolute; left: 0; top: 33%; height: 21vw; background: url("../img/loading-mountain.png") repeat-x;
+    -webkit-background-size: auto 100%; background-size: auto 100%;}
+.deer{width: 32vw; height: 25.86vw; background: url("../img/deerMove.png") no-repeat; -webkit-background-size: 300% 100%; background-size: 300% 100%; position: absolute; left: 34vw; top: 34%;}
+#progress{color: #5078b1; font-size: 0.75rem; text-align: center; width: 100%; position: absolute; left: 0; top: calc(34% + 35vw); font-weight: bold;}
 
 
 

@@ -14,6 +14,15 @@
     <title>首页-敦煌研究院</title>
 </head>
 <body>
+<div class="loading">
+    <div class="night-bg"></div>
+    <div class="day-bg">
+        <div class="sun"></div>
+        <div class="mountain"></div>
+        <div class="deer"></div>
+        <p id="progress">100%</p>
+    </div>
+</div>
 <div class="container">
     <div class="content">
         <div class="nav clearfix po-re">
@@ -276,7 +285,132 @@
 <script>
     ;(function ($) {
         var click = "ontouchstart" in document ? "touchstart" : "click";
-        /*==动效==*/
+        /*==loading==*/
+        /*==鹿==*/
+        var deer = $(".deer");
+        var deerTimer;
+        deerMove();
+        function deerMove(){
+            var backPosition = 0;
+            var deerLeft = -22;
+            deerTimer = setInterval(function (){
+                backPosition = (backPosition>=100 ? 0 :backPosition+50);
+                deer.css({
+                    "background-position-x": backPosition+"%"
+                });
+            },200);
+        }
+        /*==山==*/
+        var mountain = $(".mountain");
+        var mountainTimer;
+        mountainTimer = setInterval(function (){
+            mountain.stop().css({
+                width : "+=0.3px",
+                left : "-=0.2px"
+            });
+        },0,"linear");
+        /*=progress==*/
+        var imgs = [
+            "img/bagDeer.png",
+            "img/bird1.png",
+            "img/bird2.png",
+            "img/bird3-head.png",
+            "img/bird3-tail.png",
+            "img/bottom-bg.png",
+            "img/crane.png",
+            "img/crane-eye.png",
+            "img/crane-mouth.png",
+            "img/index-bottom.png",
+            "img/index-logo.png",
+            "img/left-body.png",
+            "img/left-head.png",
+            "img/left-leg.png",
+            "img/lotus1.png",
+            "img/lotus2.png",
+            "img/lotus3.png",
+            "img/montain1.png",
+            "img/montain2.png",
+            "img/nav.png",
+            "img/nav-cicle.png",
+            "img/part2-bird3.png",
+            "img/part3bg.png",
+            "img/part3-bone1.png",
+            "img/part3-bone2.png",
+            "img/part3-bone3.png",
+            "img/part3-btn.png",
+            "img/part3-earLeft.png",
+            "img/part3-earRight.png",
+            "img/part4-btn.png",
+            "img/part4-fish.png",
+            "img/part4-flower.png",
+            "img/bg4.png",
+            "img/part4-water.png",
+            "img/part5-btn.png",
+            "img/part5-deer.png",
+            "img/part5-head.png",
+            "img/part5-mouth.png",
+            "img/bg5.png",
+            "img/bg6.png",
+            "img/part6-boat.png",
+            "img/part6-btn.png",
+            "img/part6-sail.png",
+            "img/part6-stick.png",
+            "img/bg7.png",
+            "img/part7-cloudB.png",
+            "img/part7-cloudS.png",
+            "img/part8-btn.png",
+            "img/bg3.png",
+            "img/part8-cloudB.png",
+            "img/part8-cloudS.png",
+            "img/part8-couples.png",
+            "img/bg8.png",
+            "img/part8-leaf.png",
+            "img/part9-btn.png",
+            "img/part9-deer1.png",
+            "img/part9-deer2.png",
+            "img/part9-head.png",
+            "img/right-head.png",
+            "img/right-mouth.png",
+            "img/side.png",
+            "img/side-back.png",
+            "img/side-bird.png",
+            "img/side-icon.png",
+            "img/bg9.png"
+        ];
+        var proBox = $("#progress");
+        preload(imgs,proBox);
+        function preload(imgs,proBox){
+            var proNum = 0,
+                count = imgs.length,
+                proPercentage = 0;
+            for(var i in imgs){
+                var newImg = new Image();
+                newImg.src = imgs[i];
+                newImg.onload = function (){
+                    proNum++;
+                    proPercentage = Math.floor(proNum/count*100);
+                    $(".night-bg").css({
+                        opacity : 1-proPercentage
+                    });
+                    $(".sun").css({
+                        opacity : proPercentage
+                    });
+                    if(proNum>=count){
+                        proPercentage=100;
+                        page1();
+                    }
+                    proBox.html(proPercentage+"%");
+                }
+            }
+        }
+        function page1(){
+            $(".loading").fadeOut(500);
+            $(".container").fadeIn(500);
+            clearInterval(mountainTimer);
+            clearInterval(deerTimer);
+        }
+
+        /*==index动效==*/
         var win = $(window);
         var container = $(".container");
         var winW = win.width();
