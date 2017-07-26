@@ -635,25 +635,6 @@ margin-top: -51.4667vw;}
 .night-bg{width: 100%; height: 100%; background: url("../img/loading-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; }
 .day-bg{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 .sun{width: 8.67vw; height: 8.67vw; background: url("../img/sun.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 71%; top: 14%; opacity: 0;}
-.mountain{min-width: 101%; position: absolute; left: 0; top: 33%; height: 21vw; background: url("../img/loading-mountain.png") repeat-x;
-    -webkit-background-size: auto 100%; background-size: auto 100%;}
+.mountain{min-width: 101%; position: absolute; left: 0; top: 33%; height: 21vw; background: url("../img/loading-mountain.png") repeat-x; -webkit-background-size: auto 100%; background-size: auto 100%;}
 .deer{width: 32vw; height: 25.86vw; background: url("../img/deerMove.png") no-repeat; -webkit-background-size: 300% 100%; background-size: 300% 100%; position: absolute; left: 34vw; top: 34%;}
 #progress{color: #5078b1; font-size: 0.75rem; text-align: center; width: 100%; position: absolute; left: 0; top: calc(34% + 35vw); font-weight: bold;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
