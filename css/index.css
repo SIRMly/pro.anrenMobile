@@ -1,6 +1,5 @@
 @charset "utf-8";
-.container{position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-x: hidden; background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
-
+.container{position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow-x: hidden; background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; display: none;}
 .content{position:absolute; width: 100%;top: 0; left: 0; overflow: hidden; min-height: 100%;  }
 img{display: block; font-size: 0;}
 .po-re{position: relative;}
