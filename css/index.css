@@ -174,98 +174,127 @@ img{display: block; font-size: 0;}
 .part3-deer{width: 27.73vw; height: 41.87vw; }
 .part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 8vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
     transform-origin: bottom center;
-    animation: part3EarLeftMove 7s infinite linear 0s forwards;
+    animation: part3EarLeftMove 8s infinite linear 0s forwards;
 }
 .part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.2vw; left: 11vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; transform-origin: 0% 80%; transform: rotate(0deg);
-    animation: part3EarRightMove 7s infinite linear 0s forwards;
+    animation: part3EarRightMove 8s infinite linear 0s forwards;
 }
 @-webkit-keyframes part3EarLeftMove {
     0%{transform: rotate(0deg);}
-    2%{transform: rotate(-10deg);}
-    4%{transform: rotate(2deg);}
-    6%{transform: rotate(-8deg);}
-    8%{transform: rotate(2deg);}
-    10%{transform: rotate(10deg);}
-    11%{transform: rotate(0deg);}
+    1.5%{transform: rotate(-10deg);}
+    3%{transform: rotate(2deg);}
+    4.5%{transform: rotate(-8deg);}
+    6%{transform: rotate(2deg);}
+    7.5%{transform: rotate(10deg);}
+    10%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}
 }
 @-webkit-keyframes part3EarRightMove {
     0%{transform: rotate(0deg);}
-    2%{transform: rotate(10deg);}
-    4%{transform: rotate(2deg);}
-    6%{transform: rotate(8deg);}
-    8%{transform: rotate(2deg);}
-    10%{transform: rotate(10deg);}
-    11%{transform: rotate(0deg);}
+    1.5%{transform: rotate(10deg);}
+    3%{transform: rotate(2deg);}
+    4.5%{transform: rotate(8deg);}
+    6%{transform: rotate(2deg);}
+    7.5%{transform: rotate(10deg);}
+    10%{transform: rotate(0deg);}
     100%{transform: rotate(0deg);}}
 
-.part3-legs{position: absolute;  left: 3.5vw; top: 24vw; transform-origin: 50% 20%; transform: rotate(0deg); margin-top: -0.5vw;
-    animation: part3bone1Move 7s infinite linear 0s forwards;
+.part3-legs{position: absolute;  left: 3.2vw; top: 23vw; transform-origin: 50% 20%; transform: rotate(0deg);
+    animation: part3bone1Move 8s infinite linear 0s forwards;
 }
-.part3-bone1{width: 4vw; height: 10.133vw;}
-.part3-legs2{margin-top: -4.6vw; margin-left: 0vw; transform-origin: 65% 16%; transform: rotate(-0deg);animation: part3bone2Move 7s infinite linear 0s forwards;}
+.part3-bone1{width: 4.4vw; height: 10.133vw;}
+.part3-legs2{ position: absolute; top:6.1vw; left: 2vw; transform-origin: 35% 12.5%; transform: rotate(-0deg);
+    animation: part3bone2Move 8s infinite linear 0s forwards;
+}
 .part3-bone2{width: 4.133vw; height: 9.6vw; }
-.part3-bone3{width: 3.2vw; height: 5.2vw; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; margin-left: -0.2vw; margin-top: -5.6vw; transform-origin: center 20%;  transform: rotate(-0deg);
-    animation: part3bone3Move 7s infinite linear 0s forwards;
+.part3-bone3{width: 3.2vw; height: 5.2vw; position: absolute; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; left: 0vw; top: 4.5vw; transform-origin: center 20%;  transform: rotate(-0deg);
+    animation: part3bone3Move 8s infinite linear 0s forwards;
 }
 @-webkit-keyframes part3bone1Move {
     0%{transform: rotate(0deg);}
+
     15%{transform: rotate(0deg);}
-    19%{transform: rotate(20deg);}
-    23%{transform: rotate(31deg);}
-    27%{transform: rotate(17deg); }
-    31%{transform: rotate(0deg);}
-    35%{transform: rotate(20deg);}
-    39%{transform: rotate(31deg);}
-    43%{transform: rotate(17deg);}
-    47%{transform: rotate(0deg);}
-    51%{transform: rotate(20deg);}
-    55%{transform: rotate(31deg);}
-    59%{transform: rotate(17deg);}
-    63%{transform: rotate(0deg);}
-    /*56.33%{transform: rotate(29deg);}*/
-    /*60.67%{transform: rotate(15deg);}*/
-    /*65%{transform: rotate(0deg);}*/
+    18.125%{transform: rotate(-1deg);}
+    21.25%{transform: rotate(23deg); }
+    24.375%{transform: rotate(35deg);}
+    27.5%{transform: rotate(52deg);}
+    30.625%{transform: rotate(45deg);}
+
+
+    33.75%{transform: rotate(0deg);}
+    36.875%{transform: rotate(-1deg);}
+    40%{transform: rotate(23deg);}
+    43.125%{transform: rotate(35deg);}
+    46.25%{transform: rotate(52deg);}
+    49.375%{transform: rotate(45deg);}
+
+    52.5%{transform: rotate(0deg);}
+    55.625%{transform: rotate(-1deg);}
+    58.75%{transform: rotate(23deg);}
+    61.875%{transform: rotate(35deg);}
+    65%{transform: rotate(52deg);}
+    68.125%{transform: rotate(45deg);}
+
+    71.25%{transform: rotate(0deg);}
+
     100%{transform: rotate(0deg);}
 }
 @-webkit-keyframes part3bone2Move {
     0%{transform: rotate(0deg);}
+
     15%{transform: rotate(0deg);}
-    19%{transform: rotate(-28deg);}
-    23%{transform: rotate(-3deg);}
-    27%{transform: rotate(-5deg);}
-    31%{transform: rotate(0deg);}
-    35%{transform: rotate(-28deg);}
-    39%{transform: rotate(-3deg);}
-    43%{transform: rotate(-5deg);}
-    47%{transform: rotate(0deg);}
-    51%{transform: rotate(-28deg);}
-    55%{transform: rotate(-3deg);}
-    59%{transform: rotate(-5deg);}
-    65%{transform: rotate(0deg);}
-    /*56.33%{transform: rotate(29deg);}*/
-    /*60.67%{transform: rotate(15deg);}*/
-    /*65%{transform: rotate(0deg);}*/
+    18.125%{transform: rotate(-24deg);}
+    21.25%{transform: rotate(-42deg); }
+    24.375%{transform: rotate(-34deg);}
+    27.5%{transform: rotate(-37deg);}
+    30.625%{transform: rotate(-38deg);}
+
+
+    33.75%{transform: rotate(0deg);}
+    36.875%{transform: rotate(-24deg);}
+    40%{transform: rotate(-42deg);}
+    43.125%{transform: rotate(-34deg);}
+    46.25%{transform: rotate(-37deg);}
+    49.375%{transform: rotate(-38deg);}
+
+    52.5%{transform: rotate(0deg);}
+    55.625%{transform: rotate(-24deg);}
+    58.75%{transform: rotate(-42deg);}
+    61.875%{transform: rotate(-34deg);}
+    65%{transform: rotate(-37deg);}
+    68.125%{transform: rotate(-38deg);}
+
+    71.25%{transform: rotate(0deg);}
+
     100%{transform: rotate(0deg);}
 }
 @-webkit-keyframes part3bone3Move {
     0%{transform: rotate(0deg);}
+
     15%{transform: rotate(0deg);}
-    19%{transform: rotate(-61deg);}
-    23%{transform: rotate(-44deg);}
-    27%{transform: rotate(-2deg);}
-    31%{transform: rotate(0deg);}
-    35%{transform: rotate(-61deg);}
-    39%{transform: rotate(-44deg);}
-    43%{transform: rotate(-2deg);}
-    47%{transform: rotate(0deg);}
-    51%{transform: rotate(-61deg);}
-    55%{transform: rotate(-44deg);}
-    59%{transform: rotate(-2deg);}
-    65%{transform: rotate(0deg);}
-    /*56.33%{transform: rotate(29deg);}*/
-    /*60.67%{transform: rotate(15deg);}*/
-    /*65%{transform: rotate(0deg);}*/
+    18.125%{transform: rotate(-38deg);}
+    21.25%{transform: rotate(-53deg); }
+    24.375%{transform: rotate(-50deg);}
+    27.5%{transform: rotate(-49deg);}
+    30.625%{transform: rotate(0deg);}
+
+
+    33.75%{transform: rotate(0deg);}
+    36.875%{transform: rotate(-38deg);}
+    40%{transform: rotate(-53deg);}
+    43.125%{transform: rotate(-50deg);}
+    46.25%{transform: rotate(-49deg);}
+    49.375%{transform: rotate(0deg);}
+
+    52.5%{transform: rotate(0deg);}
+    55.625%{transform: rotate(-38deg);}
+    58.75%{transform: rotate(-53deg);}
+    61.875%{transform: rotate(-50deg);}
+    65%{transform: rotate(-49deg);}
+    68.125%{transform: rotate(0deg);}
+
+    71.25%{transform: rotate(0deg);}
+
     100%{transform: rotate(0deg);}
 }
 .part3-body{width: 100%; position: absolute; left: 0; top: 0;}
