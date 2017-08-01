@@ -395,9 +395,11 @@
                     $(".night-bg").css({
                         opacity : (100-proPercentage)/100
                     });
-                    $(".sun").css({
-                        opacity : (proPercentage-10)/100
-                    });
+                    if(proPercentage>30){
+                        $(".sun").css({
+                            opacity : (proPercentage-10)/100
+                        });
+                    }
                     if(proNum>=count){
                         proPercentage=100;
                         page1();
