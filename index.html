@@ -13,8 +13,9 @@
     <title>首页-敦煌研究院</title>
 </head>
 <body>
+<audio src="audio/bgm.mp3" preload="auto" loop id="bgm"></audio>
 <div class="loading">
-    <div class="night-bg"></div>
+    <!--<div class="night-bg"></div>-->
     <div class="day-bg">
         <div class="sun"></div>
         <div class="mountain"></div>
@@ -71,7 +72,7 @@
         <div class="part4 po-re">
             <div class="part4-fish"></div>
             <div class="part4-water"></div>
-            <a href="javascript:;" class="part4-btn part-btn"></a>
+            <a href="javascript:;" class="part4-btn part-btn" data-show="1"></a>
             <div class="part4-flower"></div>
         </div>
         <div class="part5 po-re">
@@ -95,7 +96,7 @@
             <div class="part7-cloudS"></div>
             <!--<div class="part7-bird"></div>-->
             <div class="part7-bg"></div>
-            <div class="part7-cloudB"></div>
+            <!--<div class="part7-cloudB"></div>-->
         </div>
         <div class="part8 po-re">
             <div class="part8-cloudS"></div>
@@ -109,7 +110,7 @@
                     <div class="right-mouth"></div>
                 </div>
             </div>
-            <div class="part8-cloudB"></div>
+            <!--<div class="part8-cloudB"></div>-->
             <div class="lotus1"></div>
             <div class="lotus2"></div>
             <div class="lotus3"></div>
@@ -126,10 +127,17 @@
                 <div class="part9-head"></div>
             </div>
             <div class="part-btn part9-btn"></div>
-            <div class="part9-deer2"></div>
+            <div class="part9-deer2">
+                <div class="part9-deer2-ear"></div>
+                <div class="part9-deer2-body"></div>
+            </div>
         </div>
         <div class="bottom po-re">
             <img src="img/index-bottom.png" alt=""/>
+            <!--<div class="bottom-words">-->
+                <!--<p>敦煌研究院网站投稿邮箱tougao@dah.ac.cn</p>-->
+                <!--<p>敦煌研究院版权所有&nbsp;&nbsp;陇icp备11000088号-1</p>-->
+            <!--</div>-->
         </div>
         <a href="javascript:;" class="toTop"></a>
     </div>
@@ -284,30 +292,26 @@
 <script>
     ;(function ($) {
         var click = "ontouchstart" in document ? "touchstart" : "click";
-        /*==loading==*/
-        /*==鹿==*/
-        var deer = $(".deer");
-        var deerTimer;
-        deerMove();
-        function deerMove(){
-            var backPosition = 0;
-            var deerLeft = -22;
-            deerTimer = setInterval(function (){
-                backPosition = (backPosition>=100 ? 0 :backPosition+50);
-                deer.css({
-                    "background-position-x": backPosition+"%"
-                });
-            },200);
-        }
+        var bgm = document.getElementById("bgm");
+        bgm.src = "audio/bgm.mp3";
+        document.addEventListener("WeixinJSBridgeReady", function () {
+        }, false);
+        setTimeout(function () {
+            bgm.play();
+            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                bgm.play();
+            });
+        }, 200);
+
         /*==山==*/
         var mountain = $(".mountain");
-        var mountainTimer;
-        mountainTimer = setInterval(function (){
-            mountain.stop().css({
-                width : "+=0.3px",
-                left : "-=0.2px"
-            });
-        },0,"linear");
+//        var mountainTimer;
+//        mountainTimer = setInterval(function (){
+//            mountain.stop().css({
+//                width : "+=0.5px",
+//                left : "-=0.2px"
+//            });
+//        },0,"linear");
         /*=progress==*/
         var imgs = [
             "img/sun.png",
@@ -371,6 +375,7 @@
             "img/part9-btn.png",
             "img/part9-deer1.png",
             "img/part9-deer2.png",
+            "img/part9-deer2Ear.png",
             "img/part9-head.png",
             "img/right-head.png",
             "img/right-mouth.png",
@@ -392,9 +397,9 @@
                 newImg.onload = function (){
                     proNum++;
                     proPercentage = Math.floor(proNum/count*100);
-                    $(".night-bg").css({
-                        opacity : (100-proPercentage)/100
-                    });
+//                    $(".night-bg").css({
+//                        opacity : (100-proPercentage)/100
+//                    });
                     if(proPercentage>30){
                         $(".sun").css({
                             opacity : (proPercentage-10)/100
@@ -402,7 +407,10 @@
                     }
                     if(proNum>=count){
                         proPercentage=100;
-                        page1();
+                        setTimeout(function (){
+                            page1();
+                        },2000);
+//                        },0)
                     }
                     proBox.html(proPercentage+"%");
                 }
@@ -410,9 +418,8 @@
         }
         function page1(){
             $(".loading").fadeOut(500);
-            $(".container").fadeIn(500);
-            clearInterval(mountainTimer);
-            clearInterval(deerTimer);
+            $(".container").fadeIn(2000);
+//            clearInterval(mountainTimer);
         }
 
         /*==index动效==*/
@@ -423,6 +430,7 @@
         /*==鱼==*/
         var part4 = $(".part4");
         var part4FishTop = part4.find(".part4-fish").offset().top + 0.16*winW;
+        var btn4Show = 0;
 //        var part7Bird = $(".part7-bird");
 //        var part7BirdTop = part7Bird.offset().top;
         var part7 = $(".part7");
@@ -430,22 +438,38 @@
         var part7BirdShow = true;
         var part7BirdTimer;
         var partBtn = $(".part-btn");
-        var part8Move = true;
+        var part8Move = 1;
         var part8Top = $(".part8").offset().top;
         container.scroll(function (){
             /*==btns==*/
             partBtn.each(function(index, item){
                 if(!($(this).hasClass("show"))){
                     if(win.scrollTop()+winH*0.7 >= $(this).offset().top+$(this).height()*0.5 && win.scrollTop()+winH*0.2 <= $(this).offset().top+$(this).height()*0.5){
-                        console.log(index);
-                        partBtn.not($(this)).removeClass("show");
-                        $(this).addClass("show");
+                        if(btn4Show == 0){
+                            if(index != 1){
+                                partBtn.not($(this)).removeClass("show");
+                                $(".part4-btn").removeClass("show2");
+                                $(this).addClass("show");
+                            }else{
+                                btn4Show = 1;
+                                partBtn.not($(this)).removeClass("show");
+                                setTimeout(function (){
+                                    $(".part4-btn").addClass("show2");
+                                    btn4Show = 2;
+                                },2000);
+                            }
+                        }else if(btn4Show == 2){
+                            partBtn.not($(this)).removeClass("show");
+                            partBtn.not($(this)).removeClass("show2");
+                            $(this).addClass("show");
+                        }
                     }
                 }
             });
             /*==鱼出来==*/
             if(!($(part4).hasClass("show"))){
-                if($(window).scrollTop()+ winH*0.64 >= part4.find(".part4-fish").offset().top){
+//                if($(window).scrollTop()+ winH*0.64 >= part4.find(".part4-fish").offset().top){
+                if(win.scrollTop()+winH*0.7 >= $(".part4-btn").offset().top+ 0.1*winW){
                     part4.addClass("show");
                 }
             }
@@ -455,7 +479,7 @@
 //                    part7BirdMove();
                     part7BirdShow = false;
 //                    part7Bird.addClass("move");
-                    $(".part7-cloudB").addClass("show");
+//                    $(".part7-cloudB").addClass("show");
                     $(".part7-cloudS").addClass("show");
                 }
             }

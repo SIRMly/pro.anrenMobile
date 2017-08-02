@@ -57,3 +57,8 @@
 select.input-controls{border: none; outline: none; background-color: transparent; appearance: none; -webkit-appearance:none;}
 .register-links{color: #994242; font-size: 0.7rem; text-align: center; margin-top: 0.6rem; padding-left: 2.5rem;}
 .register-links a{color: #429984;}
+/*==成功==*/
+.register-succ,#register-success a{color: #9e6c5e; text-align: center;}
+.succ-word{font-size:1rem; margin-top: 30vh;}
+a.toInfo{font-size: 0.75rem;}
+a.backToLogin{position: absolute; bottom: 1.2rem; font-size: 0.6rem; width: 100%;}

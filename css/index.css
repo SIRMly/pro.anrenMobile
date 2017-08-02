@@ -28,21 +28,9 @@ img{display: block; font-size: 0;}
 .nav-lists .search a{background-position: 100% 0; -webkit-background-size: 212.7% 100%; background-size: 212.7% 100%;}
 /*==tiger==*/
 .tiger{width: 46vw; height: 14.4vw; background: url("../img/tiger.png") no-repeat; position: absolute; top: 0;}
-.tiger-left{background-position: 0 0;-webkit-background-size: auto 100%; background-size: auto 100%; left: -46vw;
-    -webkit-animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards;
-    -o-animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards;
-    animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards;
-}
-.tiger-right{background-position: 100% 0;-webkit-background-size: auto 100%; background-size: auto 100%; right: -46vw;
-    -webkit-animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards;
-    -o-animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards;
-    animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards;
-}
-.nav-circle{width: 7.4vw; height: 7.4vw; background: url("../img/nav-cicle.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -3.7vw; top: 7%; opacity: 0;
-    -webkit-animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards;
-    -o-animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards;
-    animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards;
-}
+.tiger-left{background-position: 0 0;-webkit-background-size: auto 100%; background-size: auto 100%; left: -46vw; -webkit-animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards; -o-animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards; animation: tigerLeftMove 1.5s 1 ease-in 0.5s forwards; }
+.tiger-right{background-position: 100% 0;-webkit-background-size: auto 100%; background-size: auto 100%; right: -46vw; -webkit-animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards; -o-animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards; animation: tigerRightMove 1.5s 1 ease-in 0.5s forwards;}
+.nav-circle{width: 7.4vw; height: 7.4vw; background: url("../img/nav-cicle.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -3.7vw; top: 7%; opacity: 0; -webkit-animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards; -o-animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards; animation: fadeIn 1.5s 1 linear 2s forwards, ratateMove 5s infinite linear 2.5s forwards;}
 @-webkit-keyframes tigerLeftMove {
     0%{left: -46vw;}
     90%{left: 5vw;}
@@ -65,20 +53,10 @@ img{display: block; font-size: 0;}
 }
 /*==part1==*/
 .part1{margin-top: -32vw;}
-.part1-bird1{width: 33.3vw; height: 13vw; background: url("../img/bird1.png") no-repeat left top;
-    position: absolute;left: 18%; top: 31vw; -webkit-background-size:3% auto;background-size:3% auto;
-    -webkit-animation: bird1Move 2s 1 ease-in 2.5s forwards;
-    -o-animation: bird1Move 2s 1 ease-in 2.5s forwards;
-    animation: bird1Move 2s 1 ease-in 2.5s forwards;
-}
-.part1-bird2{width: 36.267vw; height: 15.5vw; background: url("../img/bird2.png") no-repeat left top; position: absolute; left: 55.47%; top: 60vw; -webkit-background-size: 3% auto; background-size: 3% auto; z-index: 40;
-    -webkit-animation: bird2Move 2s 1 ease-in 2.5s forwards;
-    -o-animation: bird2Move 2s 1 ease-in 2.5s forwards;
-    animation: bird2Move 2s 1 ease-in 2.5s forwards;
-}
+.part1-bird1{width: 33.3vw; height: 13vw; background: url("../img/bird1.png") no-repeat left top; position: absolute;left: 18%; top: 31vw; -webkit-background-size:3% auto;background-size:3% auto; -webkit-animation: bird1Move 2.5s 1 ease-in 2.5s forwards; -o-animation: bird1Move 2.5s 1 ease-in 2.5s forwards; animation: bird1Move 2.5s 1 ease-in 2.5s forwards; }
+.part1-bird2{width: 36.267vw; height: 15.5vw; background: url("../img/bird2.png") no-repeat left top; position: absolute; left: 55.47%; top: 64vw; opacity: 0; -webkit-background-size: 100% auto; background-size: 100% auto; z-index: 40; -webkit-animation: fadeIn 1s 1 ease-in 5s forwards; -o-animation: fadeIn 1s 1 ease-in 5s forwards; animation: fadeIn 1s 1 ease-in 5s forwards; }
 @-webkit-keyframes bird1Move {
-    0%{left: 18%; top: 31vw; -webkit-background-size:3% auto;
-        background-size:3% auto;}
+    0%{left: 18%; top: 31vw; -webkit-background-size:3% auto;  background-size:3% auto;}
     100%{left: 22.8%; top: 33vw; -webkit-background-size:100% auto;
         background-size:100% auto;}
  }
@@ -88,370 +66,366 @@ img{display: block; font-size: 0;}
  }
 @-webkit-keyframes bird2Move {
     0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
+    30%{left: 22.8%; top: 33vw; -webkit-background-size: 30% auto; background-size: 30% auto;}
     100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
  }
-@keyframes bird2Move {
-    0%{left: 18%; top: 31vw; -webkit-background-size: 3% auto; background-size: 3% auto;}
-    100%{left: 55.47%; top: 64vw; -webkit-background-size: 100% auto; background-size: 100% auto;}
-}
 .part1-btn{width: 27vw; height: 8.4vw; background: url("../img/visit-info-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 60.13%; top: 78vw;  z-index: 30; opacity: 0;
-    -webkit-animation: fadeIn 2s 1 ease-in 4.5s forwards;
-    -o-animation: fadeIn 2s 1 ease-in 4.5s forwards;
-    animation: fadeIn 2s 1 ease-in 4.5s forwards; }
+    -webkit-animation: fadeIn 1s 1 ease-in 5.1s forwards;
+    -o-animation: fadeIn 1s 1 ease-in 5.1s forwards;
+    animation: fadeIn 1s 1 ease-in 5.1s forwards; }
 /*==part2==*/
 .part2{width: 100%; background: url("../img/montain2.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-top: -5vw;padding-top: 56vw;}
 .part2-bird3{width: 60vw; height: 56vw; background: url("../img/part2-bird3.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; margin-left: -2vw;}
-.bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw;
-    -webkit-transform-origin: 37% 79%;
-    -o-transform-origin: 37% 79%;
-    transform-origin: 37% 79%;
-    -webkit-transform: rotate(-4.2deg);
-    -o-transform: rotate(-4.2deg);
-    transform: rotate(-4.2deg);
-}
-.part2-bird3.move .bird3-head{
-    -webkit-animation: bird2HeadMove 6s infinite linear 0s forwards;
-    -o-animation: bird2HeadMove 6s infinite linear 0s forwards;
-    animation: bird2HeadMove 6s infinite linear 0s forwards;
-}
-.bird3-tail{width: 18.13vw; height: 13.4vw; background: url("../img/bird3-tail.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 30vw; top: 38.3vw;
-    -webkit-transform-origin: left top;
-    -o-transform-origin: left top;
-    transform-origin: left top;
-    }
-.part2-bird3.move .bird3-tail{
-    -webkit-animation: bird2TailMove 6s infinite linear 0s forwards;
-    -o-animation: bird2TailMove 6s infinite linear 0s forwards;
-    animation: bird2TailMove 6s infinite linear 0s forwards; }
+.bird3-head{width: 12.4vw; height: 6.3vw; background: url("../img/bird3-head.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 20.2vw; top: 25.6vw; -webkit-transform-origin: 37% 79%; -o-transform-origin: 37% 79%; transform-origin: 37% 79%; -webkit-transform: rotate(-4.2deg); -o-transform: rotate(-4.2deg); transform: rotate(-4.2deg);}
+.part2-bird3.move .bird3-head{ -webkit-animation: bird2HeadMove 4s infinite linear 0s forwards; -o-animation: bird2HeadMove 4s infinite linear 0s forwards; animation: bird2HeadMove 4s infinite linear 0s forwards; }
+.bird3-tail{width: 18.13vw; height: 13.4vw; background: url("../img/bird3-tail.png") no-repeat left top; -webkit-background-size: contain; background-size: contain; position: absolute; left: 30vw; top: 38.3vw;-webkit-transform-origin: left top;-o-transform-origin: left top;transform-origin: left top; }
+.part2-bird3.move .bird3-tail{ -webkit-animation: bird2TailMove 6s infinite linear 0s forwards; -o-animation: bird2TailMove 6s infinite linear 0s forwards; animation: bird2TailMove 6s infinite linear 0s forwards; }
 @-webkit-keyframes bird2HeadMove {
     0%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
     15%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
-    20%{transform: rotate(-13deg);}
-    45%{transform: rotate(-13deg);}
-    52.5%{transform: rotate(21deg);}
-    55%{transform: rotate(25deg);}
-    57.5%{transform: rotate(21deg);}
-    60%{transform: rotate(25deg);}
-    62.5%{transform: rotate(21deg);}
-    65%{transform: rotate(25deg);}
-    75%{transform: rotate(-4.2deg);}
-    100%{transform: rotate(-4.2deg);}
+    20%{ -webkit-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    45%{ -webkit-transform: rotate(-13deg); -moz-transform: rotate(-13deg); -ms-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    52.5%{ -webkit-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    55%{ -webkit-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    57.5%{ -webkit-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    60%{ -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    62.5%{ -webkit-transform: rotate(21deg); -moz-transform: rotate(21deg); -ms-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    65%{ -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    75%{ -webkit-transform: rotate(-4.2deg); -moz-transform: rotate(-4.2deg); -ms-transform: rotate(-4.2deg); -o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    100%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
 }
 @keyframes bird2HeadMove {
-    0%{transform: rotate(-4.2deg);}
-    15%{transform: rotate(-4.2deg);}
-    20%{transform: rotate(-13deg);}
-    45%{transform: rotate(-13deg);}
-    52.5%{transform: rotate(21deg);}
-    55%{transform: rotate(25deg);}
-    57.5%{transform: rotate(21deg);}
-    60%{transform: rotate(25deg);}
-    62.5%{transform: rotate(21deg);}
-    65%{transform: rotate(25deg);}
-    75%{transform: rotate(-4.2deg);}
-    100%{transform: rotate(-4.2deg);}
+    0%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    15%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    20%{ -webkit-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    45%{ -webkit-transform: rotate(-13deg); -moz-transform: rotate(-13deg); -ms-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    52.5%{ -webkit-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    55%{ -webkit-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    57.5%{ -webkit-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    60%{ -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    62.5%{ -webkit-transform: rotate(21deg); -moz-transform: rotate(21deg); -ms-transform: rotate(21deg); -o-transform: rotate(21deg); transform: rotate(21deg);}
+    65%{ -webkit-transform: rotate(25deg); -moz-transform: rotate(25deg); -ms-transform: rotate(25deg); -o-transform: rotate(25deg); transform: rotate(25deg);}
+    75%{ -webkit-transform: rotate(-4.2deg); -moz-transform: rotate(-4.2deg); -ms-transform: rotate(-4.2deg); -o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
+    100%{-webkit-transform: rotate(-4.2deg);-moz-transform: rotate(-4.2deg);-ms-transform: rotate(-4.2deg);-o-transform: rotate(-4.2deg);transform: rotate(-4.2deg);}
 }
 @-webkit-keyframes bird2TailMove {
-    0%{transform: rotate(0deg);}
-    2.5%{transform: rotate(-2deg);}
-    5%{transform: rotate(0deg);}
-    7.5%{transform: rotate(-2deg);}
-    10%{transform: rotate(0deg);}
-    10.5%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{ -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    2.5%{ -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    5%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    7.5%{-webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    10%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 @keyframes bird2TailMove {
-    0%{transform: rotate(0deg);}
-    2.5%{transform: rotate(-2deg);}
-    5%{transform: rotate(0deg);}
-    7.5%{transform: rotate(-2deg);}
-    10%{transform: rotate(0deg);}
-    10.5%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{ -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    2.5%{ -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    5%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    7.5%{-webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    10%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 /*==part3==*/
 .part3{width: 100%; height: 310vw; background: url("../img/bg3.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -20vw; padding-left: 62.23vw; padding-top: 77vw;}
 .part3-deer{width: 27.73vw; height: 41.87vw; }
-.part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 8vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
-    transform-origin: bottom center;
-    animation: part3EarLeftMove 8s infinite linear 0s forwards;
+.part3-earLeft{width: 2.27vw; height: 5.73vw; position: absolute; top: 0; left: 8vw; background: url("../img/part3-earLeft.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; -webkit-transform-origin: bottom center; -moz-transform-origin: bottom center; -ms-transform-origin: bottom center; -o-transform-origin: bottom center; transform-origin: bottom center; -webkit-animation: part3EarLeftMove 3s infinite linear 0s forwards; -o-animation: part3EarLeftMove 3s infinite linear 0s forwards; animation: part3EarLeftMove 3s infinite linear 0s forwards;
 }
-.part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.2vw; left: 11vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; transform-origin: 0% 80%; transform: rotate(0deg);
-    animation: part3EarRightMove 8s infinite linear 0s forwards;
+.part3-earRight{width: 2vw; height: 5.73vw; position: absolute; top: 2.2vw; left: 11vw; background: url("../img/part3-earRight.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; -webkit-transform-origin: 0% 80%; -o-transform-origin: 0% 80%; transform-origin: 0% 80%; transform: rotate(0deg); -webkit-animation: part3EarRightMove 3s infinite linear 0s forwards; -o-animation: part3EarRightMove 3s infinite linear 0s forwards; animation: part3EarRightMove 3s infinite linear 0s forwards;
 }
 @-webkit-keyframes part3EarLeftMove {
-    0%{transform: rotate(0deg);}
-    1.5%{transform: rotate(-10deg);}
-    3%{transform: rotate(2deg);}
-    4.5%{transform: rotate(-8deg);}
-    6%{transform: rotate(2deg);}
-    7.5%{transform: rotate(10deg);}
-    10%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    3%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    6%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    9%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    12%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    15%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    18%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+}
+@keyframes part3EarLeftMove {
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    3%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    6%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    9%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    12%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    15%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    18%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 @-webkit-keyframes part3EarRightMove {
-    0%{transform: rotate(0deg);}
-    1.5%{transform: rotate(10deg);}
-    3%{transform: rotate(2deg);}
-    4.5%{transform: rotate(8deg);}
-    6%{transform: rotate(2deg);}
-    7.5%{transform: rotate(10deg);}
-    10%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    3%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    6%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    9%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    12%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    15%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    18%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+}
+@keyframes part3EarRightMove {
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    3%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    6%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    9%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    12%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    15%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    18%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+}
 
 .part3-legs{position: absolute;  left: 3.2vw; top: 23vw; transform-origin: 50% 20%; transform: rotate(0deg);
-    animation: part3bone1Move 8s infinite linear 0s forwards;
+    /*animation: part3bone1Move 8s infinite linear 0s forwards;*/
 }
 .part3-bone1{width: 4.4vw; height: 10.133vw;}
 .part3-legs2{ position: absolute; top:6.1vw; left: 2vw; transform-origin: 35% 12.5%; transform: rotate(-0deg);
-    animation: part3bone2Move 8s infinite linear 0s forwards;
+    /*animation: part3bone2Move 8s infinite linear 0s forwards;*/
 }
 .part3-bone2{width: 4.133vw; height: 9.6vw; }
 .part3-bone3{width: 3.2vw; height: 5.2vw; position: absolute; background: url("../img/part3-bone3.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; left: 0vw; top: 4.5vw; transform-origin: center 20%;  transform: rotate(-0deg);
-    animation: part3bone3Move 8s infinite linear 0s forwards;
+    /*animation: part3bone3Move 8s infinite linear 0s forwards;*/
 }
 @-webkit-keyframes part3bone1Move {
     0%{transform: rotate(0deg);}
-
     15%{transform: rotate(0deg);}
     18.125%{transform: rotate(-1deg);}
     21.25%{transform: rotate(23deg); }
     24.375%{transform: rotate(35deg);}
     27.5%{transform: rotate(52deg);}
     30.625%{transform: rotate(45deg);}
-
-
     33.75%{transform: rotate(0deg);}
     36.875%{transform: rotate(-1deg);}
     40%{transform: rotate(23deg);}
     43.125%{transform: rotate(35deg);}
     46.25%{transform: rotate(52deg);}
     49.375%{transform: rotate(45deg);}
-
     52.5%{transform: rotate(0deg);}
     55.625%{transform: rotate(-1deg);}
     58.75%{transform: rotate(23deg);}
     61.875%{transform: rotate(35deg);}
     65%{transform: rotate(52deg);}
     68.125%{transform: rotate(45deg);}
-
     71.25%{transform: rotate(0deg);}
-
     100%{transform: rotate(0deg);}
 }
 @-webkit-keyframes part3bone2Move {
     0%{transform: rotate(0deg);}
-
     15%{transform: rotate(0deg);}
     18.125%{transform: rotate(-24deg);}
     21.25%{transform: rotate(-42deg); }
     24.375%{transform: rotate(-34deg);}
     27.5%{transform: rotate(-37deg);}
     30.625%{transform: rotate(-38deg);}
-
-
     33.75%{transform: rotate(0deg);}
     36.875%{transform: rotate(-24deg);}
     40%{transform: rotate(-42deg);}
     43.125%{transform: rotate(-34deg);}
     46.25%{transform: rotate(-37deg);}
     49.375%{transform: rotate(-38deg);}
-
     52.5%{transform: rotate(0deg);}
     55.625%{transform: rotate(-24deg);}
     58.75%{transform: rotate(-42deg);}
     61.875%{transform: rotate(-34deg);}
     65%{transform: rotate(-37deg);}
     68.125%{transform: rotate(-38deg);}
-
     71.25%{transform: rotate(0deg);}
-
     100%{transform: rotate(0deg);}
 }
 @-webkit-keyframes part3bone3Move {
     0%{transform: rotate(0deg);}
-
     15%{transform: rotate(0deg);}
     18.125%{transform: rotate(-38deg);}
     21.25%{transform: rotate(-53deg); }
     24.375%{transform: rotate(-50deg);}
     27.5%{transform: rotate(-49deg);}
     30.625%{transform: rotate(0deg);}
-
-
     33.75%{transform: rotate(0deg);}
     36.875%{transform: rotate(-38deg);}
     40%{transform: rotate(-53deg);}
     43.125%{transform: rotate(-50deg);}
     46.25%{transform: rotate(-49deg);}
     49.375%{transform: rotate(0deg);}
-
     52.5%{transform: rotate(0deg);}
     55.625%{transform: rotate(-38deg);}
     58.75%{transform: rotate(-53deg);}
     61.875%{transform: rotate(-50deg);}
     65%{transform: rotate(-49deg);}
     68.125%{transform: rotate(0deg);}
-
     71.25%{transform: rotate(0deg);}
-
     100%{transform: rotate(0deg);}
 }
 .part3-body{width: 100%; position: absolute; left: 0; top: 0;}
-.part-btn{opacity: 0;
-    -webkit-transition: opacity 2s;
-    -moz-transition: opacity 2s;
-    -ms-transition: opacity 2s;
-    -o-transition: opacity 2s;
-    transition: opacity 2s;}
-.part3-btn{position: absolute;  width: 10.67vw; height: 34.27vw; background: url("../img/part3-btn.png") no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain; left: 51vw; top: 78vw; }
-.part-btn.show{
-   opacity: 1;
-}
+.part-btn{opacity: 0; -webkit-transition: opacity 2s;-o-transition: opacity 2s; transition: opacity 2s;}
+.part3-btn{position: absolute;  width: 10.67vw; height: 34.27vw; background: url("../img/part3-btn.png") no-repeat; -webkit-background-size: contain; background-size: contain; left: 51vw; top: 78vw; }
+.part-btn.show{opacity: 1; }
 /*==part4==*/
-.part4{width: 100%; height: 138.53vw; background: url("../img/bg4.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -174vw;}
-.part4.show .part4-fish{animation: part4WaterShow 0.5s 1 ease-out 0.3s forwards; }
-.part4.show .part4-water{animation: part4WaterShow 0.5s 1 ease-out 0s forwards;}
+.part4{width: 100%; height: 138.53vw; background: url("../img/bg4.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -174vw;}
+.part4.show .part4-fish{animation: part4WaterShow 1.5s 1 ease-in 0s forwards}
+/*.part4.show .part4-water{animation: part4WaterShow 3s 1 ease-in 0s forwards;}*/
 
-.part4-fish{width: 31.6vw; height: 32.53vw; background: url("../img/part4-fish.png") no-repeat left bottom; position: absolute; left: 0; top: 35vw;
--webkit-background-size: 0%;
-background-size: 0%;  }
-.part4-water{width: 45.2vw; height: 40.8vw; background: url("../img/part4-water.png") no-repeat left bottom; position: absolute; left: 0; top: 44vw;
-    -webkit-background-size: 0% 0%;
-    background-size: 0% 0%; }
-.part4-flower{width: 9.6vw; height: 40vw; background: url("../img/part4-flower.png") no-repeat center center;
-    -webkit-background-size: contain;
-    background-size: contain; position: absolute; left: 36vw; top: 35vw; z-index: 30;}
-.part4-btn{width: 19.33vw; height: 19.33vw; background: url("../img/part4-btn.png") no-repeat center center;
-    -webkit-background-size: contain;
-    background-size: contain; position: absolute; left: 21vw; top: 36vw; z-index: 20; opacity: 0;}
+.part4-fish{width: 15.8vw; height: 16.265vw; background: url("../img/part4-fish.png") no-repeat center bottom; position: absolute; left: 0; -webkit-background-size: 0%; background-size: 0%; top: 43vw; }
+.part4-water{width: 22.6vw; height: 20.4vw; background: url("../img/part4-water.png") no-repeat left bottom; position: absolute; left: 0; top: 44vw; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.part4-flower{width: 11.48vw; height: 0; background: url("../img/part4-flower.png") no-repeat center bottom; -webkit-background-size: 100% auto; background-size: 100% auto; position: absolute; left: 30vw; bottom: 81vw; z-index: 30; opacity: 0;}
+.part4.show .part4-flower{ -webkit-animation: part4FlowerShow 6s 1 ease-in 2s forwards; -o-animation: part4FlowerShow 6s 1 ease-in 2s forwards; animation: part4FlowerShow 6s 1 ease-in 2s forwards;}
+
+@-webkit-keyframes part4FlowerShow {
+    0%{}
+    100%{ height: 28.7vw; opacity: 0.8;}
+}
+@keyframes part4FlowerShow {
+    0%{}
+    100%{ height: 28.7vw; opacity: 0.8;}
+}
+.part4-btn{width: 19.33vw; height: 19.33vw; background: url("../img/part4-btn.png") no-repeat center center;-webkit-background-size: contain; background-size: contain; position: absolute; left: 11vw; top: 30vw; z-index: 20; opacity: 0;}
+.part4-btn.show2{-webkit-animation: fadeIn 2s 1 ease-in 0s forwards; -o-animation: fadeIn 2s 1 ease-in 0s forwards; animation: fadeIn 2s 1 ease-in 0s forwards;}
+@-webkit-keyframes part4FishShow{
+    0%{}
+    100%{top: 42vw;}
+}
+@keyframes part4FishShow{
+    0%{}
+    100%{top: 42vw;}
+}
 @-webkit-keyframes part4WaterShow{
-    0%{ -webkit-background-size: 0% 0%;
-        background-size: 0% 0%;}
-    100%{ -webkit-background-size: 100% 100%;
-        background-size: 100% 100%;}
+    0%{ -webkit-background-size: 0% 0%; background-size: 0% 0%;}
+    100%{ -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 }
-
+@keyframes part4WaterShow{
+    0%{ -webkit-background-size: 0% 0%; background-size: 0% 0%;}
+    100%{ -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+}
 /*==part5==*/
-.part5{width: 100%; height: 246.27vw; background: url("../img/bg5.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -66vw; padding-left: 43vw; padding-top: 46vw;}
+.part5{width: 100%; height: 246.27vw; background: url("../img/bg5.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -66vw; padding-left: 43vw; padding-top: 46vw;}
 .part5-btn{width: 8.8vw; height: 30vw; background: url("../img/part5-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 81vw; top: 39.5vw; opacity: 0;}
-.part5-deer{width: 35vw; height: 24.84vw; background: url("../img/part5-deer.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
+.part5-deer{width: 35vw; height: 24.84vw; background: url("../img/part5-deer.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
 }
-.part5-headW{width: 29.03%; height: 42.267%; position: absolute; right: 0; top: 22.5%;transform-origin: 25% 65%;
-    animation: part5HeadMove 5s infinite ease-out 0s forwards;
+.part5-headW{width: 29.03%; height: 42.267%; position: absolute; right: 0; top: 22.5%; -webkit-transform-origin: 25% 65%; -o-transform-origin: 25% 65%; transform-origin: 25% 65%; -webkit-animation: part5HeadMove 5s infinite ease-out 0s forwards; -o-animation: part5HeadMove 5s infinite ease-out 0s forwards; animation: part5HeadMove 5s infinite ease-out 0s forwards;
 }
-.part5-head{width: 100%; height: 100%; background: url("../img/part5-head.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; right: 0; top: 0;
-
+.part5-head{width: 100%; height: 100%; background: url("../img/part5-head.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; right: 0; top: 0; -webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);
 }
 .part5-mouth{width: 53.261%; height: 20.8333%; background: url("../img/part5-mouth.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; right: 2%; top: 75%;
-    transform-origin: 27% 18%;
-    animation: part5MouthMove 5s infinite ease-out 0s forwards;
+    -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; right: 2%; top: 75%; -webkit-transform-origin: 27% 18%; -o-transform-origin: 27% 18%; transform-origin: 27% 18%; -webkit-animation: part5MouthMove 5s infinite ease-out 0s forwards; -o-animation: part5MouthMove 5s infinite ease-out 0s forwards; animation: part5MouthMove 5s infinite ease-out 0s forwards;
 }
 @-webkit-keyframes part5HeadMove {
-    0%{transform: rotate(0deg);}
-    10%{transform: rotate(15deg);}
-    20%{transform: rotate(15deg);}
-    24%{transform: rotate(11deg);}
-    30%{transform: rotate(15deg);}
-    36%{transform: rotate(11deg);}
-    41%{transform: rotate(15deg);}
-    /*45%{transform: rotate(35deg);}*/
-    50%{transform: rotate(15deg);}
-    65%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{ -webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    10%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    20%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    24%{-webkit-transform: rotate(11deg);-o-transform: rotate(11deg);transform: rotate(11deg);}
+    30%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    36%{-webkit-transform: rotate(11deg);-o-transform: rotate(11deg);transform: rotate(11deg);}
+    41%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    50%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    65%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    100%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+}
+@keyframes part5HeadMove {
+    0%{ -webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    10%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    20%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    24%{-webkit-transform: rotate(11deg);-o-transform: rotate(11deg);transform: rotate(11deg);}
+    30%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    36%{-webkit-transform: rotate(11deg);-o-transform: rotate(11deg);transform: rotate(11deg);}
+    41%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    50%{ -webkit-transform: rotate(15deg); -o-transform: rotate(15deg); transform: rotate(15deg);}
+    65%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    100%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
 }
 @-webkit-keyframes part5MouthMove {
-    0%{transform: rotate(0deg);}
-    10%{transform: rotate(0deg);}
-    20%{transform: rotate(10deg);}
-    24%{transform: rotate(0deg);}
-    30%{transform: rotate(10deg);}
-    36%{transform: rotate(0deg);}
-    41%{transform: rotate(10deg);}
-    45%{transform: rotate(0deg);}
-    50%{transform: rotate(0deg);}
-    65%{transform: rotate(0deg);}
-    70%{}
-    75%{transform: rotate(6deg);}
-    79%{transform: rotate(0deg);}
-    83%{transform: rotate(6deg);}
-    87%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    20%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    24%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    30%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    36%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    41%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    45%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    50%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    65%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(6deg); -o-transform: rotate(6deg); transform: rotate(6deg);}
+    79%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    83%{-webkit-transform: rotate(6deg); -o-transform: rotate(6deg); transform: rotate(6deg);}
+    87%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+}
+@keyframes part5MouthMove {
+    0%{ -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    20%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    24%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    30%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    36%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    41%{-webkit-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);}
+    45%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    50%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    65%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    75%{-webkit-transform: rotate(6deg); -o-transform: rotate(6deg); transform: rotate(6deg);}
+    79%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    83%{-webkit-transform: rotate(6deg); -o-transform: rotate(6deg); transform: rotate(6deg);}
+    87%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 /*==part6==*/
-.part6{width: 100%; height: 120.3vw; background: url("../img/bg6.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -165vw; padding-left: 38vw; padding-top: 89vw; }
+.part6{width: 100%; height: 120.3vw; background: url("../img/bg6.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -165vw; padding-left: 38vw; padding-top: 89vw; }
 .part6-btn{width: 7.87vw; height: 40vw; background: url("../img/part6-btn.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 59vw; top: 63vw; opacity: 0;}
 .part6-boat{width: 61.07vw; height: 55.07vw; background: url("../img/part6-boat.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.part6-stick{width: 16.67vw; height: 15.2vw; background: url("../img/part6-stick.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; bottom: 2vw; left: 44.5vw; transform-origin: 30% 30%; transform: rotate(8deg);
-    animation: part6StickMove 3s  linear 0s infinite alternate;
-}
-.part6-sail{width: 14.8vw; height: 24.93vw; background: url("../img/part6-sail.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 5vw; right: 41vw; transform-origin: 100% top;
-    animation: part6SailMove 1s  linear 0s infinite alternate;
-}
+.part6-stick{width: 16.67vw; height: 15.2vw; background: url("../img/part6-stick.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; bottom: 2vw; left: 44.5vw; -webkit-transform-origin: 30% 30%; -o-transform-origin: 30% 30%; transform-origin: 30% 30%; -webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg); -webkit-animation: part6StickMove 3s linear 0s infinite alternate; -o-animation: part6StickMove 3s linear 0s infinite alternate; animation: part6StickMove 3s linear 0s infinite alternate; }
+.part6-sail{width: 14.8vw; height: 24.93vw; background: url("../img/part6-sail.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 5vw; right: 40vw; -webkit-transform-origin: 100% top; -o-transform-origin: 100% top; transform-origin: 100% top; -webkit-animation: part6SailMove 1s linear 0s infinite alternate; -o-animation: part6SailMove 1s linear 0s infinite alternate; animation: part6SailMove 1s linear 0s infinite alternate;}
 @-webkit-keyframes part6StickMove {
-    0%{transform: rotate(8deg);}
-    15%{transform: rotate(8deg);}
-    85%{transform: rotate(-8deg);}
-    100%{transform: rotate(-8deg);}
+    0%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    15%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    85%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    100%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+}
+@keyframes part6StickMove {
+    0%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    15%{-webkit-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg);}
+    85%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    100%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
 }
 @-webkit-keyframes part6SailMove {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(-5deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
 }
-
+@keyframes part6SailMove {
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+}
 /*==part7==*/
 .part7{width: 100%; height: 192.4vw; margin-top: -35vw;}
-.part7-bg{position: absolute; width: 100%; height: 100%;  background: url("../img/bg7.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;}
-.part7-bird{width: 9.44vw; height: 7.68vw; background: url("../img/part7-bird.png") no-repeat;
-    -webkit-background-size: 200% 100%;
-    background-size: 200% 100%; position: absolute; background-position: 0 0; top: 130vw; left: -9vw;}
-.part7-bird.move{animation: part7BirdMove 6s ease-out 0s 1 forwards;}
+.part7-bg{position: absolute; width: 100%; height: 100%;  background: url("../img/bg7.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.part7-bird{width: 9.44vw; height: 7.68vw; background: url("../img/part7-bird.png") no-repeat; -webkit-background-size: 200% 100%; background-size: 200% 100%; position: absolute; background-position: 0 0; top: 130vw; left: -9vw;}
+.part7-bird.move{-webkit-animation: part7BirdMove 6s ease-out 0s 1 forwards; -o-animation: part7BirdMove 6s ease-out 0s 1 forwards; animation: part7BirdMove 6s ease-out 0s 1 forwards;}
 @-webkit-keyframes part7BirdMove {
     0%{}
     100%{width: 40vw; height: 32.54vw; top: 44vw; left: 48vw;}
 }
-.part7-cloudB{width: 68.67vw; height: 16.3vw; background: url("../img/part7-cloudB.png") no-repeat left bottom;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    position: absolute; top: 108vw; left: -70vw;
+@keyframes part7BirdMove {
+    0%{}
+    100%{width: 40vw; height: 32.54vw; top: 44vw; left: 48vw;}
 }
-.part7-cloudB.show{
-    -webkit-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
-    -o-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
-    animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;
-}
-@-webkit-keyframes part7CloudBMove {
-    0%{left: -70vw;}
-    100%{ left: 30vw;}
-}
-@-webkit-keyframes part7CloudBMoveUp {
-    0%{margin-top: 0;}
-    100%{margin-top: 2vw;}
-}
-.part7-cloudS{width: 38vw; height: 10.2vw; background: url("../img/part7-cloudB.png") no-repeat left bottom; -webkit-background-size: 100% auto;  background-size: 100% auto; position: absolute; top: 95vw; left: 10vw;
-}
-.part7-cloudS.show{
-    -webkit-animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
-    -o-animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
-    animation: part7CloudSMove 7s linear 0s 1 forwards, fadeOut 3.5s ease-out 4.5s 1 forwards;
-}
+/*.part7-cloudB{width: 68.67vw; height: 16.3vw; background: url("../img/part7-cloudB.png") no-repeat left bottom;*/
+    /*-webkit-background-size: 100% auto;*/
+    /*background-size: 100% auto;*/
+    /*position: absolute; top: 108vw; left: -70vw;*/
+/*}*/
+/*.part7-cloudB.show{*/
+    /*-webkit-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;*/
+    /*-o-animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;*/
+    /*animation: part7CloudBMove 8s linear 0s 1 forwards, part7CloudBMoveUp 1.5s ease-out 0s infinite alternate, fadeIn 5s ease-in 0s 1 forwards;*/
+/*}*/
+/*@-webkit-keyframes part7CloudBMove {*/
+    /*0%{left: -70vw;}*/
+    /*100%{ left: 30vw;}*/
+/*}*/
+/*@-webkit-keyframes part7CloudBMoveUp {*/
+    /*0%{margin-top: 0;}*/
+    /*100%{margin-top: 2vw;}*/
+/*}*/
+.part7-cloudS{width: 38vw; height: 10.2vw; background: url("../img/part7-cloudB.png") no-repeat left bottom; -webkit-background-size: 100% auto;  background-size: 100% auto; position: absolute; top: 95vw; left: 10vw;}
+.part7-cloudS.show{ -webkit-animation: part7CloudSMove 7s linear 0s infinite forwards, fadeOut 7s ease-out 0s infinite forwards; -o-animation: part7CloudSMove 7s linear 0s infinite forwards, fadeOut 7s ease-out 0s infinite forwards; animation: part7CloudSMove 7s linear 0s infinite forwards, fadeOut 7s ease-out 0s infinite forwards;}
 @-webkit-keyframes part7CloudSMove {
+    0%{left: 10vw;}
+    100%{left: 90vw;}
+}
+@keyframes part7CloudSMove {
     0%{left: 10vw;}
     100%{left: 90vw;}
 }
@@ -459,78 +433,64 @@ background-size: 0%;  }
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
+@keyframes fadeOut {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
 /*==part8==*/
 .part8{width: 100%; height: 211vw;margin-top: -29vw;}
-.part8-bg{position: absolute; width: 100%; height: 100%; left: 0;top: 0; background: url("../img/bg8.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;}
+.part8-bg{position: absolute; width: 100%; height: 100%; left: 0;top: 0; background: url("../img/bg8.png") no-repeat top center;-webkit-background-size: 100% auto; background-size: 100% auto;}
 .part8-couples{width: 32.53vw; height: 23.87vw; background: url("../img/part8-couples.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 24vw; right: 10vw;}
-.left-body{width: 18.67vw; height: 100%; background: url("../img/left-body.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 0; left: 0; transform-origin: 66% 45%;
-    animation: leftBodyMove 5s linear 0s infinite forwards;
+.left-body{width: 18.67vw; height: 100%; background: url("../img/left-body.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 0; left: 0; -webkit-transform-origin: 66% 45%; -o-transform-origin: 66% 45%; transform-origin: 66% 45%; -webkit-animation: leftBodyMove 5s linear 0s infinite forwards; -o-animation: leftBodyMove 5s linear 0s infinite forwards; animation: leftBodyMove 5s linear 0s infinite forwards;
 }
-.left-head{width: 7.47vw; height: 6vw; background: url("../img/left-head.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 11.2vw; top: 0;; transform: rotate(-8deg);
-    animation: leftHeadMove 5s linear 0s infinite forwards;
+.left-head{width: 7.47vw; height: 6vw; background: url("../img/left-head.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 11.2vw; top: 0;; -webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg); -webkit-animation: leftHeadMove 5s linear 0s infinite forwards; -o-animation: leftHeadMove 5s linear 0s infinite forwards; animation: leftHeadMove 5s linear 0s infinite forwards; }
+.left-leg{width: 6.13vw; height: 8.27vw; background: url("../img/left-leg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 7.4vw; bottom: 0;}
+.right-head{width: 7.33vw; height: 5.6vw; background: url("../img/right-head.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 19.7vw; top: 2vw; -webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg); -webkit-animation: rightHeadMove 5s linear 0s infinite forwards; -o-animation: rightHeadMove 5s linear 0s infinite forwards; animation: rightHeadMove 5s linear 0s infinite forwards;
 }
-.left-leg{width: 6.13vw; height: 8.27vw; background: url("../img/left-leg.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 7.4vw; bottom: 0;}
-.right-head{width: 7.33vw; height: 5.6vw; background: url("../img/right-head.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 19.7vw; top: 2vw;
-    transform: rotate(-10deg);
-    animation: rightHeadMove 5s linear 0s infinite forwards;
-}
-.right-mouth{width: 100%; height: 100%; background: url("../img/right-mouth.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;transform: rotate(0deg);
-    animation: rightMouthMove 5s linear 0s infinite forwards;
+.right-mouth{width: 100%; height: 100%; background: url("../img/right-mouth.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;transform: rotate(0deg);-webkit-animation: rightMouthMove 5s linear 0s infinite forwards; -o-animation: rightMouthMove 5s linear 0s infinite forwards; animation: rightMouthMove 5s linear 0s infinite forwards;
 }
 @-webkit-keyframes leftBodyMove {
-    0%{transform: rotate(0deg);}
-    8%{transform: rotate(12deg);}
-    60%{transform: rotate(12deg);}
-    70%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    8%{-webkit-transform: rotate(4deg); -o-transform: rotate(4deg); transform: rotate(4deg);}
+    60%{-webkit-transform: rotate(4deg); -o-transform: rotate(4deg); transform: rotate(4deg);}
+    70%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 @-webkit-keyframes leftHeadMove {
-    0%{transform: rotate(-8deg);}
-    3%{transform: rotate(-8deg);}
-    10%{transform: rotate(0deg);}
-    60%{transform: rotate(0deg);}
-    70%{transform: rotate(-8deg);}
-    100%{transform: rotate(-8deg);}
+    0%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    3%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    10%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    60%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    70%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
+    100%{-webkit-transform: rotate(-8deg); -o-transform: rotate(-8deg); transform: rotate(-8deg);}
 }
 
 @-webkit-keyframes rightMouthMove {
-    0%{transform: rotate(0deg);}
-    10%{transform: rotate(0deg);}
-    17%{transform: rotate(12deg);}
-    24%{transform: rotate(0deg);}
-    31%{transform: rotate(12deg);}
-    38%{transform: rotate(0deg);}
-    45%{transform: rotate(12deg);}
-    52%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    10%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    17%{-webkit-transform: rotate(12deg); -o-transform: rotate(12deg); transform: rotate(12deg);}
+    24%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    31%{-webkit-transform: rotate(12deg); -o-transform: rotate(12deg); transform: rotate(12deg);}
+    38%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    45%{-webkit-transform: rotate(12deg); -o-transform: rotate(12deg); transform: rotate(12deg);}
+    52%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
 @-webkit-keyframes rightHeadMove {
-    0%{transform: rotate(-10deg);}
-    10%{transform: rotate(-10deg);}
-    17%{transform: rotate(-13deg);}
-    24%{transform: rotate(-10deg);}
-    31%{transform: rotate(-13deg);}
-    38%{transform: rotate(-10deg);}
-    45%{transform: rotate(-13deg);}
-    52%{transform: rotate(-10deg);}
-    100%{transform: rotate(-10deg);}
+    0%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    10%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    17%{-webkit-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    24%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    31%{-webkit-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    38%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    45%{-webkit-transform: rotate(-13deg); -o-transform: rotate(-13deg); transform: rotate(-13deg);}
+    52%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    100%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
 }
-.part8-cloudB{width: 63.33vw; height: 14.67vw; background: url("../img/part8-cloudB.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 100vw; top: 37vw; }
-.part8.show .part8-cloudB{animation: part8CloudBMove 12s ease-in 3s 1 forwards, part7CloudBMoveUp 2s linear 3s infinite alternate, fadeIn 13s ease-in 3s 1 forwards;}
-.part8-cloudS{width: 30.27vw; height: 7.73vw; background: url("../img/part8-cloudS.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 60vw; top: 21vw;  }
-.part8.show .part8-cloudS{ animation: part8CloudSMove 12s ease-in 0s 1 forwards, fadeOut 7s ease-in 3s 1 forwards;}
+/*.part8-cloudB{width: 63.33vw; height: 14.67vw; background: url("../img/part8-cloudB.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 100vw; top: 37vw; }*/
+/*.part8.show .part8-cloudB{animation: part8CloudBMove 12s ease-in 3s 1 forwards, part7CloudBMoveUp 2s linear 3s infinite alternate, fadeIn 13s ease-in 3s 1 forwards;}*/
+.part8-cloudS{width: 30.27vw; height: 7.73vw; background: url("../img/part8-cloudS.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 60vw; top: 21vw;  }
+.part8.show .part8-cloudS{ -webkit-animation: part8CloudSMove 12s ease-in 0s 1 forwards, fadeOut 7s ease-in 3s 1 forwards; -o-animation: part8CloudSMove 12s ease-in 0s 1 forwards, fadeOut 7s ease-in 3s 1 forwards;animation: part8CloudSMove 12s ease-in 0s 1 forwards, fadeOut 7s ease-in 3s 1 forwards;}
 @-webkit-keyframes part8CloudBMove {
     0%{left: 100vw;}
     100%{left: 0;}
@@ -540,43 +500,23 @@ background-size: 0%;  }
     100%{left: -33vw;}
 }
 /*==part8-2==*/
-.lotus1{width: 42.67vw; height: 44.67vw; background: url("../img/lotus1.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: -5vw; bottom: 74vw; transform-origin: 66.6% bottom;
-    transform: rotate(-2deg);
-    animation: lotusMove 4s linear 0s infinite alternate;
+.lotus1{width: 42.67vw; height: 44.67vw; background: url("../img/lotus1.png") no-repeat;-webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: -5vw; bottom: 74vw; -webkit-transform-origin: 66.6% bottom; -o-transform-origin: 66.6% bottom; transform-origin: 66.6% bottom; -webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg); -webkit-animation: lotusMove 4s linear 0s infinite alternate; -o-animation: lotusMove 4s linear 0s infinite alternate; animation: lotusMove 4s linear 0s infinite alternate;
 }
-.lotus2{width: 44.4vw; height: 38.93vw; background: url("../img/lotus2.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 17vw; bottom: 95vw; transform-origin: 51% bottom;
-    transform: rotate(-2deg);
-    animation: lotusMove 4s linear 0s infinite alternate;
+.lotus2{width: 44.4vw; height: 38.93vw; background: url("../img/lotus2.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 17vw; bottom: 95vw; transform-origin: 51% bottom; -webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg);transform: rotate(-2deg); -webkit-animation: lotusMove 4s linear 0.5s infinite alternate; -o-animation: lotusMove 4s linear 0.5s infinite alternate; animation: lotusMove 4s linear 0.5s infinite alternate;
 }
-.lotus3{width: 38.267vw; height: 34vw; background: url("../img/lotus3.png") no-repeat;
-     -webkit-background-size: 100% 100%;
-     background-size: 100% 100%; position: absolute; left: 42vw; bottom: 87vw; transform-origin: 46% bottom;
-     transform: rotate(-2deg);
-     animation: lotusMove 4s linear 0s infinite alternate;
+.lotus3{width: 38.267vw; height: 34vw; background: url("../img/lotus3.png") no-repeat;  -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 42vw; bottom: 87vw; -webkit-transform-origin: 46% bottom; -o-transform-origin: 46% bottom; transform-origin: 46% bottom; -webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg); -webkit-animation: lotusMove 3.5s linear 0s infinite alternate;-o-animation: lotusMove 3.5s linear 0s infinite alternate; animation: lotusMove 3.5s linear 0s infinite alternate;
  }
 @-webkit-keyframes lotusMove {
-    0%{transform: rotate(-3deg);}
-    20%{transform: rotate(-3deg);}
-    80%{transform: rotate(3deg);}
-    100%{transform: rotate(3deg);}
+    0%{-webkit-transform: rotate(-3deg); -o-transform: rotate(-3deg); transform: rotate(-3deg);}
+    20%{-webkit-transform: rotate(-3deg); -o-transform: rotate(-3deg); transform: rotate(-3deg);}
+    80%{ -webkit-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg);}
+    100%{-webkit-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg);}
 }
-.part8-btn{width: 9.07vw; height: 63.067vw; background: url("../img/part8-btn.png") no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain; position: absolute; right: 22vw; bottom: 83vw; opacity: 0;}
+.part8-btn{width: 9.07vw; height: 63.067vw; background: url("../img/part8-btn.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; right: 22vw; bottom: 83vw; opacity: 0;}
 .part8-crane{width: 53.87vw; height: 55.07vw;position: absolute; left: 46vw; bottom: 44vw;}
-.crane-eye{width: 1.867vw; height: 2vw; background: url("../img/crane-eye.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 19.5vw; top: 2vw;
-    animation: craneEyeMove 4s ease-in 0s infinite forwards;}
+.crane-eye{width: 1.867vw; height: 2vw; background: url("../img/crane-eye.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 19.5vw; top: 2vw; -webkit-animation: craneEyeMove 2s ease-in 0s infinite forwards; -o-animation: craneEyeMove 2s ease-in 0s infinite forwards; animation: craneEyeMove 2s ease-in 0s infinite forwards;}
 .crane-mouth{width: 6.13vw; height: 5.2vw; background: url("../img/crane-mouth.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 19vw; top: 4vw; transform-origin: top left;
-    transform: rotate(0deg);
-    animation: craneMouthMove 4s ease-in 0s infinite forwards;
+    -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 19vw; top: 4vw;-webkit-transform-origin: top left;-o-transform-origin: top left; transform-origin: top left; transform: rotate(0deg); -webkit-animation: craneMouthMove 4s ease-in 0s infinite forwards; -o-animation: craneMouthMove 4s ease-in 0s infinite forwards; animation: craneMouthMove 4s ease-in 0s infinite forwards;
 }
 @-webkit-keyframes craneEyeMove {
     0%{opacity: 1;}
@@ -591,79 +531,79 @@ background-size: 0%;  }
     100%{opacity: 1;}
 }
 @-webkit-keyframes craneMouthMove {
-    0%{transform: rotate(0deg);}
-    35%{transform: rotate(0deg);}
-    36%{transform: rotate(-6deg);}
-    42%{transform: rotate(-6deg);}
-    43%{transform: rotate(0deg);}
-    49%{transform: rotate(0deg);}
-    50%{transform: rotate(-6deg);}
-    56%{transform: rotate(-6deg);}
-    57%{transform: rotate(0deg);}
-    100%{transform: rotate(0deg);}
+    0%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    35%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    36%{-webkit-transform: rotate(-6deg); -o-transform: rotate(-6deg); transform: rotate(-6deg);}
+    42%{-webkit-transform: rotate(-6deg); -o-transform: rotate(-6deg); transform: rotate(-6deg);}
+    43%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    49%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    50%{-webkit-transform: rotate(-6deg); -o-transform: rotate(-6deg); transform: rotate(-6deg);}
+    56%{-webkit-transform: rotate(-6deg); -o-transform: rotate(-6deg); transform: rotate(-6deg);}
+    57%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
 }
-.crane-body{width: 100%; height: 100%;background: url("../img/crane.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; left: 0; top: 0;}
-.part8-leaf{width: 52.27vw; height: 36.67vw; background: url("../img/part8-leaf.png") no-repeat center center;
-    -webkit-background-size: contain;
-    background-size: contain; position: absolute; left: 33vw; bottom: 23vw;}
+.crane-body{width: 100%; height: 100%;background: url("../img/crane.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 0; top: 0;}
+.part8-leaf{width: 52.27vw; height: 36.67vw; background: url("../img/part8-leaf.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 33vw; bottom: 23vw;}
 /*==part9==*/
-.part9{width: 100%; height: 154.67vw; background: url("../img/bg9.png") no-repeat top center;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto; margin-top: -23vw;}
+.part9{width: 100%; height: 154.67vw; background: url("../img/bg9.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; margin-top: -23vw;}
 .part9-deer1{width: 31.6vw; height: 32.267vw; background: url("../img/part9-deer1.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 9vw; bottom: 104vw;}
-.part9-head{width: 8.667vw; height: 11.47vw; background: url("../img/part9-head.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%; position: absolute; right: 0; bottom: 0; transform-origin: 25% 25%;
-transform: rotate(-10deg);
-    animation: part9HeadMove 6s linear 0s infinite forwards;
+.part9-head{width: 8.667vw; height: 11.47vw; background: url("../img/part9-head.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; right: 0; bottom: 0; -webkit-transform-origin: 25% 25%; -o-transform-origin: 25% 25%; transform-origin: 25% 25%;
+transform: rotate(-10deg); -webkit-animation: part9HeadMove 6s linear 0s infinite forwards; -o-animation: part9HeadMove 6s linear 0s infinite forwards; animation: part9HeadMove 6s linear 0s infinite forwards;
 }
 @-webkit-keyframes part9HeadMove {
-    0%{transform: rotate(-10deg);}
-    10%{transform: rotate(-10deg);}
-    17%{transform: rotate(5deg);}
-    24%{transform: rotate(0deg);}
-    31%{transform: rotate(5deg);}
-    38%{transform: rotate(0deg);}
-    45%{transform: rotate(5deg);}
-    52%{transform: rotate(0deg);}
-    59%{transform: rotate(-10deg);}
-    100%{transform: rotate(-10deg);}
+    0%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    10%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    17%{-webkit-transform: rotate(5deg); -o-transform: rotate(5deg); transform: rotate(5deg);}
+    24%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    31%{-webkit-transform: rotate(5deg); -o-transform: rotate(5deg); transform: rotate(5deg);}
+    38%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    45%{-webkit-transform: rotate(5deg); -o-transform: rotate(5deg); transform: rotate(5deg);}
+    52%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    59%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
+    100%{-webkit-transform: rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg);}
 }
 
 .part9-btn{width: 9.6vw; height: 30.93vw; background: url("../img/part9-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 37vw; top: 51vw; opacity: 0;}
-.part9-deer2{width: 45.2vw; height: 51.467vw; background: url("../img/part9-deer2.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 0; bottom: 56vw;}
+.part9-deer2{width: 45.2vw; height: 51.467vw;  position: absolute; left: 0; bottom: 56vw;}
+.part9-deer2-ear{width: 8.267vw; height: 7.067vw; background: url("../img/part9-deer2Ear.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; left: 18.5vw; top: 5vw; -webkit-transform-origin: bottom right; -o-transform-origin: bottom right; transform-origin: bottom right; -webkit-animation: part9Deer2Ear 4s linear 0s infinite forwards; -o-animation: part9Deer2Ear 4s linear 0s infinite forwards; animation: part9Deer2Ear 4s linear 0s infinite forwards; }
+.part9-deer2-body{width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url("../img/part9-deer2.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+@-webkit-keyframes part9Deer2Ear {
+    0%{}
+    5%{-webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    10%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    15%{-webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    20%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    25%{-webkit-transform: rotate(-2deg); -o-transform: rotate(-2deg); transform: rotate(-2deg);}
+    30%{-webkit-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg);}
+    35%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+}
 /*==bottom==*/
-.bottom{width: 100%; height: 51.4667vw; background: url("../img/bottom-bg.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
+.bottom{width: 100%; height: 51.4667vw; background: url("../img/bottom-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
 margin-top: -51.4667vw;}
 .bottom img{width: 76.267%; display: block; position: absolute; left: 0; bottom: 0;}
 .toTop{width: 7.5vw; height: 7.5vw; background: url("../img/toTop.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; right: 1rem; bottom: 30vw;}
+.bottom-words{font-size: 0.5rem; line-height: 0.9rem;letter-spacing: 0.5px; position: absolute; left: 4vw; bottom: 6vw; color: #312e2d;}
 /*==侧边==*/
 .side{width: 100%; height: 100vh; position: fixed; left: 100%; top: 0; bottom: 0; overflow: hidden; z-index: 9999; background: url("../img/active-bg.png") repeat; -webkit-background-size: 100% auto; background-size: 100% auto; }
 .side-content{position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; background: url("../img/side.png") no-repeat center bottom;-webkit-background-size: 100% auto; background-size: 100% auto;}
 .main-title,.main-title a{text-align: center; height: 2.25rem; line-height: 2.25rem; color: #221815; font-size: 0.75rem;}
 .main-title p{width: 100%; height: 100%;}
 /*.main-title a{display: block;}*/
-.side-icon{width: 0.85rem; height: 0.85rem; background: url("../img/side-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -4rem; top: 0.65rem; -webkit-transition: transform 0.5s; -moz-transition: transform 0.5s; -ms-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
+.side-icon{width: 0.85rem; height: 0.85rem; background: url("../img/side-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -4rem; top: 0.65rem; -webkit-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
 .main-title.active a{color: #7b3428;}
 .main-title.active .side-icon{ -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);}
 .main-title:before{content: ""; position: absolute; width: 2.075rem; height: 1.55rem; left: 50%; margin-left: -4.8rem; top: -0.55rem;
-    background: url("../img/side-bird.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; opacity: 0; -webkit-transition: opacity 1.5s; -moz-transition: opacity 1.5s; -ms-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;}
+    background: url("../img/side-bird.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; opacity: 0; -webkit-transition: opacity 1.5s; -o-transition: opacity 1.5s; transition: opacity 1.5s;}
 .main-title.active:before{opacity: 1;}
-.side-item{padding: 0.5rem 0.75rem; margin-top: -0.35rem; background-color: rgba(158,142,112,0.3); display: none; opacity: 0;
-    -webkit-animation: fadeIn 2s forwards;
-    -o-animation: fadeIn 2s forwards;
-    animation: fadeIn 2s forwards; }
+.side-item{padding: 0.5rem 0.75rem; margin-top: -0.35rem; background-color: rgba(158,142,112,0.3); display: none; opacity: 0; -webkit-animation: fadeIn 2s forwards; -o-animation: fadeIn 2s forwards; animation: fadeIn 2s forwards; }
 .side-item a{ float: left; width: 25%;text-align: center; color: #7b3428; font-size: 0.7rem; height: 1.3rem; line-height: 1.3rem;}
 .side-back{display: block; width: 13.3vw; height: 13.3vw; background: url("../img/side-back.png") no-repeat center center;-webkit-background-size: 85% auto; background-size: 85% auto; margin: 1.4rem 0 1.4rem 80vw;}
 /*==loading==*/
 .loading{ position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: url("../img/index-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; z-index: 99999; overflow-x: hidden;}
-.night-bg{width: 100%; height: 100%; background: url("../img/loading-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; }
+/*.night-bg{width: 100%; height: 100%;}*/
 .day-bg{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 .sun{width: 8.67vw; height: 8.67vw; background: url("../img/sun.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: absolute; left: 71%; top: 14%; opacity: 0;}
 .mountain{min-width: 101%; position: absolute; left: 0; top: 33%; height: 21vw; background: url("../img/loading-mountain.png") repeat-x; -webkit-background-size: auto 100%; background-size: auto 100%;}
-.deer{width: 32vw; height: 25.86vw; background: url("../img/deerMove.png") no-repeat; -webkit-background-size: 300% 100%; background-size: 300% 100%; position: absolute; left: 34vw; top: 34%;}
+.deer{width: 24vw; height: 25.86vw; background: url("../img/deerLoading.gif") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 40vw; top: 40%;}
 #progress{color: #5078b1; font-size: 0.75rem; text-align: center; width: 100%; position: absolute; left: 0; top: calc(34% + 35vw); font-weight: bold;}
