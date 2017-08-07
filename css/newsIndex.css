@@ -47,6 +47,6 @@
 .list-title{width: 100%; height: 2.25rem; line-height: 2.25rem; color: #000000; font-size: 0.75rem; position: relative; margin-bottom: 0.75rem;}
 .list-title a{position: absolute; left: 0.5rem; width: 1.375rem; height: 1.375rem; background: url("../img/list-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; top: 0.4375rem;}
 .list-title-word{position: absolute; height: 100%; top:-0.1rem; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
-.list-title-word:before,.list-title-word:after{content: "";width: 1.2rem; height: 100%; position: absolute; border: none; top: 0;}
+.list-title-word:before,.list-title-word:after{content: "";width: 1.2rem; height: 1.45rem; position: absolute; border: none; top: 0.4rem;}
 .list-title-word:before{left: -1.2rem; background: url("../img/list-title-left.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .list-title-word:after{ right: -1.2rem;background: url("../img/list-title-right.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
