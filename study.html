@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="敦煌，敦煌研究院"/>
+    <meta name="description" content="敦煌研究院"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/activeApply.css"/>
+    <title>敦煌研究院</title>
+</head>
+<body>
+<div class="wrapper" id="lost-found">
+    <div class="content">
+        <div class="top-wrapper">
+            <div class="news-index-logos clearfix">
+                <img src="img/study.png" alt="" class="active-logo"/>
+                <a href="##" class="logo">
+                    <img src="img/logo.png" alt="" width="100%"/>
+                </a>
+            </div>
+            <div class="stu-lists">
+                <p class="stu-title">
+                    <span class="stu-arrow"></span>
+                </p>
+                <div class="stu-links clearfix">
+                    <a href="##"></a>
+                    <a href="##"></a>
+                    <a href="##"></a>
+                    <a href="##"></a>
+                    <a href="##"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function ($){
+        FastClick.attach(document.body);
+        var stuTitle = $(".stu-title");
+        stuTitle.on("click", function (){
+            if($(this).hasClass("show")){
+                $(this).removeClass("show");
+                $(this).next().slideUp(500);
+            }else{
+                $(this).addClass("show");
+                $(this).next().slideDown(500);
+            }
+        })
+    })(jQuery);
+</script>
+</body>
+</html>

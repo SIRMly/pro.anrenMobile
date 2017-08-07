@@ -52,3 +52,28 @@ select:focus{outline: none; border: none;}
 .description-inner{font-size: 0.6rem; color: #8b4637; padding: 0.6rem 0.3rem 1rem; text-indent: 1.2rem; text-align: justify;}
 .left-border{position: absolute; height: 100%; width: 0.2rem; left: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; -webkit-background-size: 100% auto;; background-size: 100% auto;;}
 .right-border{position: absolute; height: 100%; width: 0.2rem; right: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+/*==学术研究新==*/
+.stu-lists{margin-left: 1rem;}
+.stu-title{width: 26.93vw; height: 8.8vw; background: url("../img/stu-title.png") no-repeat center center; -webkit-background-size:contain; background-size:contain; position: relative;}
+.stu-arrow{width: 19.8%; height: 60%; background: url("../img/stu-arrow.png") no-repeat center center;
+    -webkit-background-size:contain; background-size:contain; position: absolute; left: 4%; top: 21%;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);}
+.stu-title.show .stu-arrow{ -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);}
+.stu-links{width: 86.8vw; height: 18.13vw;margin: 0.4rem auto 1.45rem; background: url("../img/stu-links.png") no-repeat; -webkit-background-size:100% auto; background-size:100% auto; display: none;}
+.stu-links.show{height: 18.13vw;}
+.stu-links a{display: block; float: left; height: 9.47vw;}
+.stu-links a:nth-of-type(1){width: 30%;}
+.stu-links a:nth-of-type(2){width: 21%;}
+.stu-links a:nth-of-type(3){width: 29%;}
+.stu-links a:nth-of-type(4){width: 19%;}
+.stu-links a:nth-of-type(5){width: 31%; margin-left: 13%}
+
+
