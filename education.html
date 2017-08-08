@@ -49,11 +49,11 @@
         stuTitle.on("click", function (){
             if($(this).hasClass("show")){
                 $(this).removeClass("show");
-                $(this).parent().next().slideUp(300);
+                $(this).parent().next().stop().slideUp(600);
             }else{
                 $(this).addClass("show");
-                $(this).parent().next().slideDown(300);
-            }
+                $(this).parent().next().stop().slideDown(600);
+
         })
     })(jQuery);
 </script>
