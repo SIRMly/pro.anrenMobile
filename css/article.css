@@ -12,7 +12,7 @@ img{font-size: 0; display: block;}
 .article-time .author{color: #af0d23;}
 .article-content{font-size: 0.75rem; color: #000; line-height: 1.15rem; padding-bottom: 0.45rem; }
 .article-content img{width: 100%;}
-.article-content .title{text-align: center; margin: 1.85rem 0 1.75rem;}
+.article-content .title{text-align: left; font-size: 0.6rem; margin: 1.25rem 0 0.4rem;}
 .article-read{margin-top: 2.2rem;  font-size: 0.8rem; color: #46202a;}
 .read-num{background: url("../img/read-icon.png") no-repeat center left; -webkit-background-size: auto 70%;  background-size: auto 70%; padding-left: 1.2rem; margin-right: 1.5rem;}
 .point-num{padding-left: 1.2rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 90%; background-size: auto 90%;}
