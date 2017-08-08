@@ -15,7 +15,7 @@
     <title>敦煌研究院</title>
 </head>
 <body>
-<div class="wrapper" id="lost-found">
+<div class="wrapper study-wrapper" id="lost-found">
     <div class="content">
         <div class="top-wrapper">
             <div class="news-index-logos clearfix">
@@ -50,10 +50,10 @@
             if($(this).hasClass("show")){
                 $(this).removeClass("show");
                 $(this).parent().next().stop().slideUp(600);
-            }else{
+            }else {
                 $(this).addClass("show");
                 $(this).parent().next().stop().slideDown(600);
-
+            }
         })
     })(jQuery);
 </script>

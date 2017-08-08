@@ -53,6 +53,7 @@ select:focus{outline: none; border: none;}
 .left-border{position: absolute; height: 100%; width: 0.2rem; left: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; -webkit-background-size: 100% auto;; background-size: 100% auto;;}
 .right-border{position: absolute; height: 100%; width: 0.2rem; right: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
 /*==学术研究新==*/
+.study-wrapper .active-logo{max-height: 100vh;}
 .stu-lists{height: 45vw; width: 100%; left: 0; bottom: 0; position: absolute; z-index: 30;}
 .stu-title{margin-left: 1rem; margin-right: 1rem; width: 26.93vw; height: 8.8vw; background: url("../img/stu-title.png") no-repeat left center; -webkit-background-size:contain; background-size:contain; position: relative;}
 .stu-arrow{width: 19.8%; height: 60%; background: url("../img/stu-arrow.png") no-repeat center center;
@@ -67,7 +68,7 @@ select:focus{outline: none; border: none;}
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);}
-.stu-links{width: 100vw; padding: 0 6.6vw; height: 18.13vw;margin: 0.4rem auto 0; background: rgba(158,142,112,0.3) url("../img/stu-links.png") no-repeat top center; -webkit-background-size:86.8% auto; background-size:86.8% auto; display: none;}
+.stu-links{width: 100vw; padding: 0 6.6vw; height: 19vw;margin: 0.4rem auto 0; background: rgba(158,142,112,0.3) url("../img/stu-links.png") no-repeat top center; -webkit-background-size:86.8% auto; background-size:86.8% auto; display: none;}
 .stu-links a{display: block; float: left; height: 9.47vw;}
 .stu-links a:nth-of-type(1){width: 30%;}
 .stu-links a:nth-of-type(2){width: 21%;}
@@ -83,6 +84,6 @@ select:focus{outline: none; border: none;}
 /*==教育==*/
 /*.education-lists{margin-top: 1.5rem; margin-bottom: 4rem; }*/
 .education-lists .stu-title{background: url("../img/stu-title.png") no-repeat right center; -webkit-background-size:contain; background-size:contain; }
-.education-lists .stu-links{width: 100vw;height: 9.47vw; background: rgba(158,142,112,0.3) url("../img/education-links.png") no-repeat top center; -webkit-background-size:100% auto; background-size:100% auto;}
+.education-lists .stu-links{width: 100vw; padding: 0; height: 9.47vw; background: rgba(158,142,112,0.3) url("../img/education-links.png") no-repeat top center; -webkit-background-size:100% auto; background-size:100% auto;}
 .education-lists .stu-links a{width: 26%;}
 .education-lists .stu-links a:nth-of-type(4){width: 22%;}
