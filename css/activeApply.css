@@ -54,7 +54,7 @@ select:focus{outline: none; border: none;}
 .right-border{position: absolute; height: 100%; width: 0.2rem; right: 0; top: 0; background: url("../img/des-left-border.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
 /*==学术研究新==*/
 .study-wrapper .active-logo{max-height: 100vh;}
-.stu-lists{height: 45vw; width: 100%; left: 0; bottom: 0; position: absolute; z-index: 30;}
+.stu-lists{height: 66vw; width: 100%; left: 0; bottom: 0; position: absolute; z-index: 30;}
 .stu-title{margin-left: 1rem; margin-right: 1rem; width: 26.93vw; height: 8.8vw; background: url("../img/stu-title.png") no-repeat left center; -webkit-background-size:contain; background-size:contain; position: relative;}
 .stu-arrow{width: 19.8%; height: 60%; background: url("../img/stu-arrow.png") no-repeat center center;
     -webkit-background-size:contain; background-size:contain; position: absolute; left: 4%; top: 21%;
