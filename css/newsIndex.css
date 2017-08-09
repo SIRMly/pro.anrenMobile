@@ -4,16 +4,14 @@
 .wrapper{position: absolute; left: 0; top: 0; width: 100%; background: url("../img/newsIndexBg.png") repeat; background-size: 100% auto; min-height: 100vh;}
 /*==上部==*/
 .top-wrapper{min-height: 100vh; width: 100%; position: relative;}
-.news-index-logos{margin-left: 12.8vw; margin-top: 8.4vw;}
-.active-logo{width: 24vw;}
+.active-logo{width: 100vw;}
 @keyframes fadeIn {
     from{opacity: 0;}
     to{opacity: 1;}
 }
-.logo{width: 7vw; margin-right: 8.3vw;}
-.news-screen1{margin-top: -20vw;}
+.logo{width: 7vw; right: 8.3vw; position: absolute; top: 8.4vw;}
 /*==首部轮播图==*/
-#topSlider{font-size: 0; padding: 0 0.5rem; position: relative; margin-top: 15vw;}
+#topSlider{font-size: 0; padding: 0 0.5rem; position: relative; margin-top: 0;}
 .deer{width: 23vw; height: 18.53vw; background: url("../img/deerMove.png") no-repeat center center;  position: absolute; left: -22vw; top: -20vw; z-index: 90; background-size: 300% 100%; -webkit-transition: left 2s; -moz-transition: left 2s; -ms-transition: left 2s; -o-transition: left 2s; transition: left 2s;  }
 .deerShow{left: 0;}
 #topSlider a{display: block;}
