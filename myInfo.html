@@ -10,6 +10,7 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iosSelect.css">
     <link rel="stylesheet" href="css/myCenter.css"/>
     <title>敦煌研究院</title>
 </head>
@@ -17,25 +18,71 @@
 <div class="wrapper myInfo">
     <div class="content">
         <ul class="info-lists">
-            <li class="flex ver-center her-stretch">
-                <span>闹腾的二狗子</span>
-                <img src="img/header.png" alt=""/>
+            <li class="flex her-stretch">
+                <span>头像</span>
+                <div class="change-head">
+                    <img src="img/header.png" alt=""/>
+                    <!--<input type="file"/>-->
+                </div>
+            </li>
+            <li class="flex her-stretch">
+                <span>昵称</span>
+                <input type="text" class="font-small" value="狗子"/>
             </li>
             <li class="flex her-stretch">
                 <span>性别</span>
-                <span class="font-small color-gray">男</span>
+                <div class="sex">
+                    <input type="hidden" name="sex_id" id="sexId" value="女">
+                    <span id="showSex" class="font-small color-gray">女</span>
+                </div>
             </li>
             <li class="flex her-stretch">
                 <span>电话</span>
-                <span class="font-small">12345678911</span>
+                <input type="tel" class="font-small" value="11111111111"/>
             </li>
             <li class="flex her-stretch">
                 <span>邮箱</span>
-                <span class="font-small color-gray">1234568@163.com</span>
+                <input type="text" class="font-small color-gray" value="1234568@163.com"/>
             </li>
         </ul>
+        <a href="javascript:;" class="fill-info">完善信息 ></a>
+        <a href="javascript:;" class="submit-btn"></a>
+        <a href="index.html" class="home-icon"></a>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/iosSelect.js"></script>
+<script>
+    ;(function (jQuery) {
+        /*==性别选择==*/
+        var showSexDom = document.querySelector('#showSex');
+        var sexIdDom = document.querySelector('#sexId');
+        showSexDom.addEventListener('click', function () {
+            var sexId = showSexDom.dataset['id'];
+            var sexName = showSexDom.dataset['value'];
+            var sexSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '女'},
+                            {'id': '02', 'value': '男'}
+                        ]
+                    ],
+                    {
+                        container: '.container',
+                        title: '请选择您的性别',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: sexId,
+                        callback: function (selectOneObj) {
+                            sexIdDom.value = selectOneObj.id;
+                            showSexDom.innerHTML = selectOneObj.value;
+                            showSexDom.dataset['id'] = selectOneObj.id;
+                            showSexDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+    })($);
+</script>
 </body>
 </html>

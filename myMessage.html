@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/newsIndex.css"/>
+    <link rel="stylesheet" href="css/myCenter.css"/>
+    <title>敦煌研究院</title>
+</head>
+<body>
+<div class="wrapper my-active my-message">
+    <div class="content">
+        <div class="my-title">
+            <img src="img/message-title.png" alt=""/>
+        </div>
+        <div class="news-content">
+            <ul class="message-lists">
+                <li class="message-list flex her-stretch">
+                    <div class="message-checkbox">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </div>
+                    <a href="message-detail.html" class="message-link">消息消息消息消息消息消息消息消息消息消息消息消息消息</a>
+                </li>
+                <li class="message-list flex her-stretch active">
+                    <div class="message-checkbox">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </div>
+                    <a href="message-detail.html" class="message-link">消息消息消息消息消息消息消息消息消息消息消息消息消息</a>
+                </li>
+                <li class="message-list flex her-stretch">
+                    <div class="message-checkbox">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </div>
+                    <a href="message-detail.html" class="message-link">消息消息消息消息消息消息消息消息消息消息消息消息消息</a>
+                </li>
+                <li class="message-list flex her-stretch noRead">
+                    <div class="message-checkbox">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </div>
+                    <a href="message-detail.html" class="message-link">消息消息消息消息消息消息消息消息消息消息消息消息消息</a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="delete-btn">删除</a>
+        </div>
+        <a href="javascript:;" class="check-more"></a>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    ;(function (jQuery){
+        /*==如果消息未读   不能点==*/
+        var centerList = $(".message-list");
+        centerList.each(function (index, item){
+            if($(this).hasClass("noRead")){
+                $(this).find("input").attr("disabled","disabled");
+            }
+        });
+    })($);
+</script>
+</body>
+</html>
