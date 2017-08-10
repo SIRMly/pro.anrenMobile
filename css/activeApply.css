@@ -87,3 +87,4 @@ select:focus{outline: none; border: none;}
 .education-lists .stu-links{width: 100vw; padding: 0; height: 9.47vw; background: rgba(158,142,112,0.3) url("../img/education-links.png") no-repeat top center; -webkit-background-size:100% auto; background-size:100% auto;}
 .education-lists .stu-links a{width: 26%;}
 .education-lists .stu-links a:nth-of-type(4){width: 22%;}
+.toTop{width: 7.5vw; height: 7.5vw; background: url("../img/toTop2.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: fixed; right: 1rem; bottom: 10%; display: none;}

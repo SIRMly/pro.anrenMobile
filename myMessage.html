@@ -52,12 +52,25 @@
             </ul>
             <a href="javascript:;" class="delete-btn">删除</a>
         </div>
-        <a href="javascript:;" class="check-more"></a>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script>
     ;(function (jQuery){
+        var winH = $(window).height();
+        $(window).scroll(function (){
+            if($(window).scrollTop() >= winH*2){
+                $(".toTop").show(500);
+            }else{
+                $(".toTop").hide(500);
+            }
+        });
+        $(".toTop").on("click", function () {
+            $("html,body").stop().animate({
+                "scrollTop": 5
+            }, 1000);
+        });
         /*==如果消息未读   不能点==*/
         var centerList = $(".message-list");
         centerList.each(function (index, item){

@@ -54,4 +54,5 @@
 .contract-content{padding: 0 0.5rem; line-height: 1.1rem; text-align: justify;}
 .contract-content p{font-size: 0.55rem; color: #333333; text-indent: 1.1rem; margin-top: 0.5rem;}
 .contract-back{width: 16.8vw; height: 7.73vw; display: block; margin: 1.65rem auto 0; background: url("../img/contract-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
-.contract .news-content{padding-bottom: 1rem; }
+.contract .news-content{padding-bottom: 2.75rem;}
+.toTop{width: 7.5vw; height: 7.5vw; background: url("../img/toTop2.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: fixed; right: 1rem; bottom: 10%; display: none;}

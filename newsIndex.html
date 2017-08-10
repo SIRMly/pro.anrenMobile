@@ -135,12 +135,58 @@
                     </p>
                 </a>
             </div>
+            <div class="card video-card">
+                <a href="video-detail.html">
+                    <p class="word-card-link">“数字敦煌”成果走进第十二届中国(深圳) 国际文化产业博览交易会</p>
+
+                    <div class="video-card-img">
+                        <img src="img/video-poster.png" alt="" width="100%"/>
+                        <span>03:30</span>
+                    </div>
+                    <p class="word-card-bottom clearfix">
+                        <span class="news-date">2016-05-22</span>
+                        <span class="card-read pull-right">2016</span>
+                    </p>
+                </a>
+            </div>
+            <div class="card video-card">
+                <a href="video-detail.html">
+                    <p class="word-card-link">“数字敦煌”成果走进第十二届中国(深圳) 国际文化产业博览交易会</p>
+
+                    <div class="video-card-img">
+                        <img src="img/video-poster.png" alt="" width="100%"/>
+                        <span>03:30</span>
+                    </div>
+                    <p class="word-card-bottom clearfix">
+                        <span class="news-date">2016-05-22</span>
+                        <span class="card-read pull-right">2016</span>
+                    </p>
+                </a>
+            </div>
         </div>
     </div>
 </div>
+<div class="toTop"></div>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
-<script src="js/pull.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script src="js/newsIndex.js"></script>
+<script>
+    ;(function ($){
+        var winH = $(window).height();
+        $(window).scroll(function (){
+            if($(window).scrollTop() >= winH*2){
+                $(".toTop").show(500);
+            }else{
+                $(".toTop").hide(500);
+            }
+        });
+        $(".toTop").on("click", function () {
+            $("html,body").stop().animate({
+                "scrollTop": 5
+            }, 1000);
+        });
+    })(jQuery);
+</script>
 </body>
 </html>
