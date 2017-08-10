@@ -38,8 +38,3 @@
 .tab-link+.tab-link{margin-top: 1rem;}
 .tab-icon{position: absolute; width: 0.7rem; height: 0.7rem; background: url("../img/tab-icon.png") no-repeat; -webkit-background-size: contain; background-size: contain; left: 0; top: 0.2rem;}
 .tab-active{width: 3.8rem; height: 0.94rem; background: url("../img/cho-cloud.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; top: 2.4rem;}
-
-
-
-
-

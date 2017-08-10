@@ -63,20 +63,3 @@
 .message-detail .my-title{margin: 0 auto 0.4rem;}
 .message-content{margin: 0 0.5rem 0; background-color: rgba(182,161,137,0.4); border-radius: 0.25rem; font-size: 0.7rem; color: #373635; line-height: 1rem; padding: 0.75rem; min-height: calc(100vh - 9.2vw -  1.75rem);}
 .toTop{width: 7.5vw; height: 7.5vw; background: url("../img/toTop2.png") no-repeat; -webkit-background-size: contain; background-size: contain; position: fixed; right: 1rem; bottom: 10%; display: none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
