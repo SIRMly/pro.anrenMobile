@@ -32,8 +32,9 @@
                         </div>
                         <div class="input-wrapper">
                             <div class="input-label">
-                                <input type="password" class="input-controls" placeholder="输入密码6－12位字母与数字">
+                                <input type="password" class="input-controls" id="password1" placeholder="输入密码6－12位字母与数字">
                             </div>
+                            <div class="pass-check"></div>
                         </div>
                         <div class="input-wrapper">
                             <div class="input-label">
@@ -190,6 +191,20 @@
                     values: [ '男', '女']
                 }
             ]
+        });
+        /*==密码验证==*/
+        $("#password1").on("input", function (){
+            $(".pass-check").show();
+            var val = $(this).val();
+            var lv = 0;
+            if(val.match(/[a-z]/g)){lv++;}
+            if(val.match(/[0-9]/g)){lv++;}
+            if(val.match(/(.[^a-z0-9])/g)){lv++;}
+            if(val.length < 6){lv=0;}
+            if(lv > 3){lv=3;}
+            $(".pass-check").addClass("lv"+lv);
+        }).on("blur", function (){
+            $("pass-check").hide();
         });
     })(jQuery);
 </script>
