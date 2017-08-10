@@ -25,14 +25,18 @@
             <div class="my-collect flex ver-center her-center">
                 <div class="top-item">
                     <a href="myArticle.html">
-                        <p class="number">103</p>
+                        <p class="number">
+                            <span>111</span>
+                        </p>
                         <p class="word">我喜欢的文章</p>
                     </a>
                 </div>
-                <div class="top-item">
+                <div class="top-item myMessage">
                     <a href="mySurvey.html">
-                        <p class="number">103</p>
-                        <p class="word">我的调查问卷</p>
+                        <p class="number">
+                            <span>103</span>
+                        </p>
+                        <p class="word">我的消息</p>
                     </a>
                 </div>
             </div>
@@ -41,41 +45,61 @@
             <img src="img/center-line.png" alt="" class="center-line"/>
             <ul class="center-lists">
                 <li>
-                    <div class="lists-inner flex ver-center her-stretch">
-                        <span class="">我的活动</span>
+                    <div class="lists-inner flex her-stretch">
+                        <span>我的活动</span>
                         <a href="myActive.html" class="center-btn"></a>
                     </div>
                     <img src="img/center-line.png" alt="" class="center-line"/>
                     <img src="img/person1.png" alt="" class="center-person"/>
                 </li>
                 <li>
-                    <div class="lists-inner flex ver-center her-stretch">
-                        <span class="">失物招领</span>
+                    <div class="lists-inner flex her-stretch">
+                        <span>失物招领</span>
                         <a href="myLost.html" class="center-btn"></a>
                     </div>
                     <img src="img/center-line.png" alt="" class="center-line"/>
                     <img src="img/person2.png" alt="" class="center-person"/>
                 </li>
                 <li>
-                    <div class="lists-inner flex ver-center her-stretch">
-                        <span class="">我的商品</span>
+                    <div class="lists-inner flex her-stretch">
+                        <span>我的商品</span>
                         <a href="myGoods.html" class="center-btn"></a>
                     </div>
                     <img src="img/center-line.png" alt="" class="center-line"/>
                     <img src="img/person3.png" alt="" class="center-person"/>
                 </li>
                 <li>
-                    <div class="lists-inner flex ver-center her-stretch">
-                        <span class="">我的建议</span>
+                    <div class="lists-inner flex her-stretch">
+                        <span>我的建议</span>
                         <a href="myAdvice.html" class="center-btn"></a>
                     </div>
                     <img src="img/center-line.png" alt="" class="center-line"/>
                     <img src="img/person4.png" alt="" class="center-person"/>
                 </li>
+                <li>
+                    <div class="lists-inner flex her-stretch">
+                        <span>我的问卷调查</span>
+                        <a href="mySurvey.html" class="center-btn"></a>
+                    </div>
+                    <img src="img/center-line.png" alt="" class="center-line"/>
+                    <img src="img/person5.png" alt="" class="center-person"/>
+                </li>
             </ul>
+            <div class="clearfix home-icon">
+                <a href="index.html" class="pull-right"></a>
+            </div>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        /*==我的消息 >0时 加红点==*/
+        var myMessage = parseInt($(".myMessage").find("span").html());
+        if(myMessage > 0){
+            $(".myMessage").addClass("more");
+        }
+    })(jQuery);
+</script>
 </body>
 </html>
