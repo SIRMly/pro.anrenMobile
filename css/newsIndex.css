@@ -53,3 +53,5 @@
 .contract-title{color: #333333; font-size: 0.8rem; text-align: center;}
 .contract-content{padding: 0 0.5rem; line-height: 1.1rem;}
 .contract-content p{font-size: 0.55rem; color: #333333; text-indent: 1.1rem; margin-top: 0.5rem;}
+.contract-back{width: 16.8vw; height: 7.73vw; display: block; margin: 1.65rem auto 0; background: url("../img/contract-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.contract .news-content{padding-bottom: 1rem; }
