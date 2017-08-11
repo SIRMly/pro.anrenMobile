@@ -26,7 +26,6 @@
 .center-person{position: absolute; width: 1.8rem; left: 0; bottom: -0.05rem;}
 .home-icon{position: absolute; right: 1.15rem; bottom: 12%; width: 1.375rem; height: 1.375rem;background: url("../img/home-icon.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .sign-out{font-size: 0.6rem; color: #a58071; position: absolute; left: 50%; -webkit-transform: translate(-50%,-10%); -moz-transform: translate(-50%,-10%); -ms-transform: translate(-50%,-10%); -o-transform: translate(-50%,-10%); transform: translate(-50%,-10%); bottom: 12%;}
-/*.home-icon a{display: block;  margin-right: 0.5rem; margin-top: 3rem;}*/
 /*==我的活动==*/
 .my-active .content{min-height: 100vh;background: url("../img/my-active-bg.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto; padding-bottom: 14.4vw; padding-top: 2.6rem;}
 .my-active .news-content{padding-top: 0; background: none;}
@@ -45,7 +44,6 @@
 .info-lists li:after{ content: ""; display: block; height: 0.25rem; position: absolute; left: 0; right: 0; bottom: -0.05rem; background: url(../img/card-border.png) no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .info-lists li:first-child{height: 2.8rem;}
 .font-small{font-size: 0.75rem; text-align: right; min-width: 50vw;}
-.color-gray{color: #b1b0a9;}
 .fill-info{font-size: 0.7rem; color: #3b5f80; display: block; text-align: left; margin-top: 0.65rem;}
 .submit-btn{width: 16.8vw; height: 7.73vw; display: block; margin: 0.3rem auto; background: url("../img/my-submit.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 /*==我的消息==*/
