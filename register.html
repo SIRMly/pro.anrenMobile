@@ -12,6 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/light7.min.css"/>
+    <link rel="stylesheet" href="css/lCalendar.css"/>
     <link rel="stylesheet" href="css/login.css"/>
     <title>敦煌研究院</title>
 </head>
@@ -160,6 +161,7 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/light7.min.js"></script>
+<script src="js/lCalendar.min.js"></script>
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
@@ -176,11 +178,6 @@
         /*==toRegister2==*/
         $("#toInfo").on(click, function (){
             $.router.loadPage("#register2");
-        });
-        /*==出生日期==*/
-        $("#birthday").calendar({
-            monthNames : ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
-            dayNamesShort : ["日","一","二","三","四","五","六"]
         });
         /*==性别==*/
         $("#sex").picker({
@@ -205,6 +202,19 @@
             $(".pass-check").addClass("lv"+lv);
         }).on("blur", function (){
             $("pass-check").hide();
+        });
+
+        /*==出生日期==*/
+        var newDate = new Date();
+        var newYear = newDate.getFullYear();
+        var newMonth = newDate.getMonth()+1;
+        var newDay = newDate.getDate();
+        var today = newYear+"-"+newMonth+"-"+newDay;
+        $("#birthday").attr("data-lcalendar","1900-01-1,"+today);
+        var calendar = new lCalendar();
+        calendar.init({
+            'trigger': '#birthday',
+            'type': 'date'
         });
     })(jQuery);
 </script>
