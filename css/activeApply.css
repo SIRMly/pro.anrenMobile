@@ -24,15 +24,18 @@
 .point-num.active{background: url("../img/point-active.png") no-repeat center left; -webkit-background-size: auto 90%; background-size: auto 90%;}
 select{background: transparent; border: none; outline: none;appearance:none; -moz-appearance:none; -webkit-appearance:none;}
 select:focus{outline: none; border: none;}
+.error-warning{position: absolute;font-size: 0.5rem; color: #a34c46; left: 0.5rem; top:-1.2rem; width: 100%; text-align: center;}
+textarea{resize: none;}
 /*==表格部分==*/
 .forms-wrapper{width: 100%; margin-top: 1rem; font-size: 0; padding-bottom: 21vw; background: url("../img/form-bg.png") no-repeat bottom center; -webkit-background-size:100% auto; background-size:100% auto;}
 .forms-wrapper>img{width: 32.8vw; margin: 0 auto; display: block;}
 .forms-content{margin-top: 1.5rem;}
-.input-label{width: 100%; height: 1.68rem; line-height: 1.68rem; background: url("../img/input-bg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%; font-size: 0.8rem; color: #8b4637; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch;}
+.input-label{width: 100%; height: 1.68rem; line-height: 1.68rem; background: url("../img/input-bg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%; font-size: 0.8rem; color: #8b4637; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch; position: relative;}
 .forms-content label+label{margin-top: 1.35rem;}
 .input-controller{height: 100%; background: url("../img/label-bg.png") no-repeat; -webkit-background-size:100% 100%;  background-size:100% 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding: 0 0.5rem; }
 .input-controller.number2{word-spacing: 1.4rem;}
 .input-controls{flex: 1; text-indent: 0.8rem;}
+.ios-select-widget-box header.iosselect-header a{color: #0894ec;}
 /*==textarea==*/
 .textarea-label{height: 5.5rem; line-height: 5.5rem; background: url("../img/textarea-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 .input-controller{ background: url("../img/label2-bg.png") no-repeat; -webkit-background-size:100% 100%;  background-size:100% 100%;}
@@ -56,33 +59,22 @@ select:focus{outline: none; border: none;}
 .study-wrapper .active-logo{max-height: 100vh;}
 .stu-lists{height: 47vw; width: 100%; left: 0; bottom: 0; position: absolute; z-index: 30;}
 .stu-title{margin-left: 1rem; margin-right: 1rem; width: 26.93vw; height: 8.8vw; background: url("../img/stu-title.png") no-repeat left center; -webkit-background-size:contain; background-size:contain; position: relative;}
-.stu-arrow{width: 19.8%; height: 60%; background: url("../img/stu-arrow.png") no-repeat center center;
-    -webkit-background-size:contain; background-size:contain; position: absolute; left: 4%; top: 21%;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);}
-.stu-title.show .stu-arrow{ -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);}
-.stu-links{width: 100vw; padding: 0 6.6vw; height: 19vw;margin: 0.4rem auto 0; background: rgba(158,142,112,0.3) url("../img/stu-links.png") no-repeat top center; -webkit-background-size:86.8% auto; background-size:86.8% auto; display: none;}
+.stu-arrow{width: 19.8%; height: 60%; background: url("../img/stu-arrow.png") no-repeat center center; -webkit-background-size:contain; background-size:contain; position: absolute; left: 4%; top: 21%; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);}
+.stu-title.show .stu-arrow{ -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);}
+.stu-links{width: 100vw; padding: 0; height: 9.74vw;margin: 0.4rem auto 0; background: rgba(158,142,112,0.3) url("../img/stu-links.png") no-repeat center center; -webkit-background-size:100% auto; background-size:100% auto; display: none;}
 .stu-links a{display: block; float: left; height: 9.47vw;}
-.stu-links a:nth-of-type(1){width: 30%;}
-.stu-links a:nth-of-type(2){width: 21%;}
-.stu-links a:nth-of-type(3){width: 29%;}
-.stu-links a:nth-of-type(4){width: 19%;}
-.stu-links a:nth-of-type(5){width: 31%; margin-left: 13%;}
-.stu-links a:nth-of-type(6){width: 36%;}
+.stu-links a:nth-of-type(1){width: 40%;}
+/*.stu-links a:nth-of-type(2){width: 21%;}*/
+/*.stu-links a:nth-of-type(3){width: 29%;}*/
+/*.stu-links a:nth-of-type(4){width: 19%;}*/
+/*.stu-links a:nth-of-type(5){width: 31%; margin-left: 13%;}*/
+/*.stu-links a:nth-of-type(6){width: 36%;}*/
 /*==公共服务==*/
-/*.service-lists{margin-top: -17vw; margin-bottom: 2.5rem;}*/
-.service-lists .stu-links{height: 9.47vw; background: rgba(158,142,112,0.3) url("../img/service-links.png") no-repeat top center; -webkit-background-size:57.33vw auto; background-size:57.33vw auto; }
-.service-lists .stu-links a:nth-of-type(1){width: 50.5%;}
-.service-lists .stu-links a:nth-of-type(2){width: 49%;}
+.service-lists .stu-links{height: 9.47vw; padding: 0; background: rgba(158,142,112,0.3) url("../img/service-links.png") no-repeat center center; -webkit-background-size:100% 100%; background-size:100% 100%; }
+.service-lists .stu-links a:nth-of-type(1){width: 39%;}
+.service-lists .stu-links a:nth-of-type(2){width: 25%;}
+.service-lists .stu-links a:nth-of-type(3){width: 30%;}
 /*==教育==*/
-/*.education-lists{margin-top: 1.5rem; margin-bottom: 4rem; }*/
 .education-lists .stu-title{background: url("../img/stu-title.png") no-repeat right center; -webkit-background-size:contain; background-size:contain; }
 .education-lists .stu-links{width: 100vw; padding: 0; height: 9.47vw; background: rgba(158,142,112,0.3) url("../img/education-links.png") no-repeat top center; -webkit-background-size:100% auto; background-size:100% auto;}
 .education-lists .stu-links a{width: 26%;}

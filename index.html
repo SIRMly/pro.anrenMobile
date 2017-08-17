@@ -289,9 +289,11 @@
 </div>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($) {
-        var click = "ontouchstart" in document ? "touchstart" : "click";
+        FastClick.attach(document.body);
+        var click =  "click";
         var bgm = document.getElementById("bgm");
         bgm.src = "audio/bgm.mp3";
         document.addEventListener("WeixinJSBridgeReady", function () {
@@ -307,13 +309,6 @@
 
         /*==山==*/
         var mountain = $(".mountain");
-//        var mountainTimer;
-//        mountainTimer = setInterval(function (){
-//            mountain.stop().css({
-//                width : "+=0.5px",
-//                left : "-=0.2px"
-//            });
-//        },0,"linear");
         /*=progress==*/
         var imgs = [
             "img/sun.png",
@@ -399,9 +394,6 @@
                 newImg.onload = function (){
                     proNum++;
                     proPercentage = Math.floor(proNum/count*100);
-//                    $(".night-bg").css({
-//                        opacity : (100-proPercentage)/100
-//                    });
                     if(proPercentage>30){
                         $(".sun").css({
                             opacity : (proPercentage-10)/100
@@ -412,7 +404,6 @@
                         setTimeout(function (){
                             page1();
                         },2000);
-//                        },0)
                     }
                     proBox.html(proPercentage+"%");
                 }
@@ -421,7 +412,6 @@
         function page1(){
             $(".loading").fadeOut(500);
             $(".container").fadeIn(2000);
-//            clearInterval(mountainTimer);
         }
 
         /*==index动效==*/
@@ -433,10 +423,7 @@
         var part4 = $(".part4");
         var part4FishTop = part4.find(".part4-fish").offset().top + 0.16*winW;
         var btn4Show = 0;
-//        var part7Bird = $(".part7-bird");
-//        var part7BirdTop = part7Bird.offset().top;
         var part7 = $(".part7");
-//        var part7Top = $(".part7").offset().top;
         var part7BirdShow = true;
         var part7BirdTimer;
         var partBtn = $(".part-btn");
@@ -470,7 +457,6 @@
             });
             /*==鱼出来==*/
             if(!($(part4).hasClass("show"))){
-//                if($(window).scrollTop()+ winH*0.64 >= part4.find(".part4-fish").offset().top){
                 if(win.scrollTop()+winH*0.7 >= $(".part4-btn").offset().top+ 0.1*winW){
                     part4.addClass("show");
                 }
@@ -478,10 +464,7 @@
             /*==part7Bird==*/
             if(part7BirdShow){
                 if($(window).scrollTop() >= (part7.offset().top - winH*0.3)){
-//                    part7BirdMove();
                     part7BirdShow = false;
-//                    part7Bird.addClass("move");
-//                    $(".part7-cloudB").addClass("show");
                     $(".part7-cloudS").addClass("show");
                 }
             }
@@ -494,31 +477,13 @@
                 }
             }
         });
-//        function part7BirdMove(){
-//            var backPosition = 0;
-//            var part7BirdTimer = setInterval(function (){
-//                backPosition = (backPosition>=100 ? 0 :backPosition+100);
-//                part7Bird.css({
-//                    "background-position-x": backPosition+"%"
-//                });
-//                if(part7Bird.position().left >= 0.48*winW){
-//                    clearInterval(part7BirdTimer);
-//                }
-//            },500);
-//        }
-
-
-
 
         /*==回到顶部==*/
-        var click = "ontouchstart" in document ? "touchstart" : "click";
         $(".toTop").on(click, function () {
             container.stop().animate({
                 "scrollTop": 5
             }, 1000);
         });
-
-
         /*==侧边栏==*/
         console.log($(".toIndex").length);
         $(".nav-circle").on(click, function (){

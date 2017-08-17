@@ -23,17 +23,20 @@
                 <div class="forms-content">
                     <div class="input-wrapper">
                         <div class="input-label">
-                            <input type="text" class="input-controls" placeholder="输入账号">
+                            <input type="text" class="input-controls" placeholder="请输入账号">
+                            <div class="error">用户名不能为空</div>
                         </div>
                     </div>
                     <div class="input-wrapper">
                         <div class="input-label">
-                            <input type="password" class="input-controls number2" placeholder="密 码">
+                            <input type="password" class="input-controls" placeholder="请输入账号密码">
+                            <div class="error">用户名和密码不匹配</div>
                         </div>
                     </div>
                     <div class="input-wrapper clearfix">
                         <div class="input-label input-label-small pull-left">
                             <input type="text" class="input-controls pull-left" placeholder="验证码" maxlength="4">
+                            <div class="error">验证码不正确</div>
                         </div>
                         <div class="check-img pull-right po-re">
                             <div class="check-bg">
@@ -55,10 +58,11 @@
         </div>
     </div>
 </div>
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>'
+<script src="js/fastclick.min.js"></script>
 <script>
-    ;
-    (function ($) {
+    ;(function ($) {
+        FastClick.attach(document.body);
     })(jQuery);
 </script>
 </body>

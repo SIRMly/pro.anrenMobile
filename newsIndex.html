@@ -29,36 +29,7 @@
         <div id="topSlider">
             <div class="deer"></div>
             <div class="swiper-container" id="swiper-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="##">
-                            <img src="img/top-slider.png" alt="" width="100%;"/>
 
-                            <p class="top-slider-word">
-                                全景敦煌全新上线
-                            </p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="##">
-                            <img src="img/top-slider.png" alt="" width="100%;"/>
-
-                            <p class="top-slider-word">
-                                全景敦煌全新上线
-                            </p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="##">
-                            <img src="img/top-slider.png" alt="" width="100%;"/>
-
-                            <p class="top-slider-word">
-                                全景敦煌全新上线
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-pagination" id="top-pagination"></div>
             </div>
         </div>
         <div class="news-content" id="list-wrapper">
@@ -173,6 +144,7 @@
 <script src="js/newsIndex.js"></script>
 <script>
     ;(function ($){
+        FastClick.attach(document.body);
         var winH = $(window).height();
         $(window).scroll(function (){
             if($(window).scrollTop() >= winH*2){
@@ -185,6 +157,33 @@
             $("html,body").stop().animate({
                 "scrollTop": 5
             }, 1000);
+        });
+        var data=[
+
+                    {"img":"img/top-slider.png","p" :"全景敦煌全新上线1"},
+                    {"img":"img/top-slider.png","p" :"全景敦煌全新上线2"},
+                    {"img":"img/top-slider.png","p" :"全景敦煌全新上线3"}
+
+        ];
+        var html= "";
+        for(var i=0; i<data.length;i++){
+            html+='<div class="swiper-slide"><a href="##"><img src="'+data[i].img+'" width="100%"> <p class="top-slider-word">'+data[i].p+'</p></a></div>'
+        }
+        var container = '<div class="swiper-wrapper"></div><div class="swiper-pagination" id="top-pagination"></div>';
+        $("#swiper-top").append(container);
+        $(".swiper-wrapper").append(html);
+        var swiper = new Swiper('#swiper-top',{
+            pagination: "#top-pagination",
+            simulateTouch: false,
+            slidesPerView: 1,
+            paginationClickable: false,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 2500,
+            //autoplay: false,
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true
         });
     })(jQuery);
 </script>

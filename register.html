@@ -11,184 +11,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/light7.min.css"/>
+    <link rel="stylesheet" href="css/iosSelect.css">
     <link rel="stylesheet" href="css/lCalendar.css"/>
     <link rel="stylesheet" href="css/login.css"/>
     <title>敦煌研究院</title>
 </head>
 <body>
-<div class="page-group " id="register">
-    <div class="page register" id="register1">
-        <div class="content">
-            <div class="wrapper">
-                <div class="forms-wrapper">
-                    <div class="register-form-title po-re">
-                        <img src="img/register-basic.png" alt=""/>
-                    </div>
-                    <div class="forms-content">
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="text" class="input-controls" placeholder="输入用户名称">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="password" class="input-controls" id="password1" placeholder="输入密码6－12位字母与数字">
-                            </div>
-                            <div class="pass-check"></div>
-                        </div>
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="password" class="input-controls" placeholder="确认密码">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="tel" class="input-controls" placeholder="输入手机号码">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="text" class="input-controls" placeholder="输入邮箱">
-                            </div>
-                        </div>
-                        <div class="input-wrapper">
-                            <div class="input-label">
-                                <input type="text" class="input-controls" placeholder="确认邮箱">
-                            </div>
-                        </div>
-                        <div class="check-label flex">
-                            <label class="checkbox-wrapper">
-                                <input type="checkbox" class="checkbox-input"/>
-                                <div class="checkbox-show"></div>
-                            </label>
-                            <span class="checkbox-word">同意<a href="javascript:;">《敦煌研究院网站隐私政策》</a>(若不同意，将不能注册)</span>
-                        </div>
-                        <div class="check-label flex">
-                            <label class="checkbox-wrapper">
-                                <input type="checkbox" class="checkbox-input"/>
-                                <div class="checkbox-show"></div>
-                            </label>
-                            <span class="checkbox-word">同意<a href="javascript:;">《敦煌研究院网站会员注册协议》</a>(若不同意，将不能注册)</span>
-                        </div>
-                    </div>
-                    <a href="javascript:;" class="register-next po-re" id="toRegister2">
-                        <img src="img/next-btn.png" alt=""/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page register" id="register-success">
-        <div class="content">
-            <div class="wrapper">
-                <div class="register-succ po-re">
-                    <p class="succ-word">恭喜您，注册成功！</p>
-                    <a href="javascript:;" class="toInfo" id="toInfo">去完善信息>></a>
-                </div>
-                <a href="login.html" class="backToLogin">返回登陆</a>
-            </div>
-        </div>
-    </div>
-    <div class="page register" id="register2">
-        <div class="content">
-            <div class="wrapper">
-                <div class="register2">
-                    <div class="forms-wrapper pd75">
+<div class="page register" id="register">
+    <div class="container">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="forms-wrapper">
                         <div class="register-form-title po-re">
-                            <img src="img/register-real.png" alt=""/>
+                            <img src="img/register-basic.png" alt=""/>
                         </div>
                         <div class="forms-content">
                             <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls number2" placeholder="姓 名">
+                                <div class="input-label">
+                                    <input type="text" class="input-controls" placeholder="输入用户名称">
                                 </div>
                             </div>
                             <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="tel" class="input-controls" placeholder="联系电话">
+                                <div class="input-label">
+                                    <input type="password" class="input-controls" id="password1" placeholder="输入密码6－12位字母与数字">
+                                </div>
+                                <div class="pass-check"></div>
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="input-label">
+                                    <input type="password" class="input-controls" placeholder="确认密码">
                                 </div>
                             </div>
                             <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls number3" placeholder="身 份 证">
+                                <div class="input-label">
+                                    <input type="tel" class="input-controls" placeholder="输入手机号码">
                                 </div>
                             </div>
                             <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls" id="birthday" placeholder="出生日期" readonly>
+                                <div class="input-label">
+                                    <input type="text" class="input-controls" placeholder="输入邮箱">
                                 </div>
                             </div>
                             <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls number2" id="sex" placeholder="性 别">
+                                <div class="input-label">
+                                    <input type="text" class="input-controls" placeholder="确认邮箱">
                                 </div>
                             </div>
-                            <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls number2" placeholder="籍 贯">
-                                </div>
+                            <div class="check-label flex">
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox-input" checked/>
+                                    <div class="checkbox-show"></div>
+                                </label>
+                                <span class="checkbox-word">同意<a href="javascript:;">《敦煌研究院网站隐私政策》</a>(若不同意，将不能注册)</span>
                             </div>
-                            <div class="input-wrapper">
-                                <div class="input-label ">
-                                    <input type="text" class="input-controls" placeholder="居住地址">
-                                </div>
-                            </div>
-                            <div class="input-wrapper clearfix">
-                                <div class="input-label input-label-small pull-left">
-                                    <input type="text" class="input-controls pull-left" placeholder="验证码">
-                                </div>
-                                <div class="check-img pull-right po-re">
-                                    <div class="check-bg">
-                                        <img src="img/check.png" alt="">
-                                    </div>
-                                </div>
+                            <div class="check-label flex">
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" class="checkbox-input" checked/>
+                                    <div class="checkbox-show"></div>
+                                </label>
+                                <span class="checkbox-word">同意<a href="javascript:;">《敦煌研究院网站会员注册协议》</a>(若不同意，将不能注册)</span>
                             </div>
                         </div>
-                        <a href="javascript:;" class="register-next po-re">
-                            <img src="img/register-2.png" alt=""/>
+                        <a href="javascript:;" class="register-next po-re" id="toRegister2">
+                            <img src="img/next-btn.png" alt=""/>
                         </a>
-                        <div class="register-links">
-                            已注册？
-                            <a href="login.html" class="external" id="toLogin">请登陆</a>
-                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/light7.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/iosSelect.js"></script>
 <script src="js/lCalendar.js"></script>
 <script>
     ;(function ($){
-        var click = "ontouchstart" in document ? "touchstart" : "click";
-        /*==发送验证码按钮点击==*/
-        $(".check-img").on(click, function(){
-            if(!($(this).hasClass("disabled"))){
-                $(this).addClass("disabled");
-            }
-        });
-        /*==显示注册成功页面==*/
-        $("#toRegister2").on(click, function (){
-            $.router.loadPage("#register-success");
-        });
-        /*==toRegister2==*/
-        $("#toInfo").on(click, function (){
-            $.router.loadPage("#register2");
-        });
-        /*==性别==*/
-        $("#sex").picker({
-            toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">好的</button><h1 class="title">请选择您的性别</h1></header>',
-            cols: [
-                {
-                    textAlign: 'center',
-                    values: [ '男', '女']
-                }
-            ]
-        });
+        FastClick.attach(document.body);
+        var click = "click";
         /*==密码验证==*/
         $("#password1").on("input", function (){
             $(".pass-check").show();
@@ -202,19 +102,6 @@
             $(".pass-check").addClass("lv"+lv);
         }).on("blur", function (){
             $("pass-check").hide();
-        });
-
-        /*==出生日期==*/
-        var newDate = new Date();
-        var newYear = newDate.getFullYear();
-        var newMonth = newDate.getMonth()+1;
-        var newDay = newDate.getDate();
-        var today = newYear+"-"+newMonth+"-"+newDay;
-        $("#birthday").attr("data-lcalendar","1900-01-1,"+today);
-        var calendar = new lCalendar();
-        calendar.init({
-            'trigger': '#birthday',
-            'type': 'date'
         });
     })(jQuery);
 </script>

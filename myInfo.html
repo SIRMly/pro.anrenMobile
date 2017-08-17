@@ -32,8 +32,8 @@
             <li class="flex her-stretch">
                 <span>性别</span>
                 <div class="sex">
-                    <input type="hidden" name="sex_id" id="sexId" value="女">
-                    <span id="showSex" class="font-small color-gray">女</span>
+                    <input type="hidden" name="sex_id" id="sexId" value="">
+                    <span id="showSex" class="font-small color-gray"></span>
                 </div>
             </li>
             <li class="flex her-stretch">
@@ -51,10 +51,12 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script src="js/iscroll.js"></script>
 <script src="js/iosSelect.js"></script>
 <script>
     ;(function (jQuery) {
+        FastClick.attach(document.body);
         /*==上传预览图片==*/
         $("#img-btn").on("change", function (){
             var $file = $(this);
@@ -97,8 +99,8 @@
             var sexSelect = new IosSelect(1,
                     [
                         [
-                            {'id': '01', 'value': '女'},
-                            {'id': '02', 'value': '男'}
+                            {'id': '女', 'value': '女'},
+                            {'id': '男', 'value': '男'}
                         ]
                     ],
                     {

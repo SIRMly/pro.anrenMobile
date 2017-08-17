@@ -405,8 +405,10 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
+        FastClick.attach(document.body);
         var winW = $(window).width();
         var click = "ontouchstart" in document ? "touchend" : "click";
         var chronoSwiperArr = [];

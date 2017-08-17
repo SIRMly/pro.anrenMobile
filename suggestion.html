@@ -43,6 +43,7 @@
                     <span class="input-controller">手机号码</span>
                     <img src="img/input-border.png" alt="" height="100%">
                     <input type="tel" class="input-controls">
+                    <div class="error-warning">请输入正确的手机号码</div>
                 </label>
                 <label class="input-label textarea-label flex">
                     <span class="input-controller textarea-controller">建议描述</span>
@@ -72,8 +73,10 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
+        FastClick.attach(document.body);
         /*==上传预览图片==*/
         $("#img-btn3").on("change", function (){
             console.log(3);
@@ -109,6 +112,24 @@
             $(".text-words").html(length+"/100");
 
         });
+        /*==提交成功后==*/
+        $(".form-submit").on("click", function (){
+//            $(".submit-notice").show();
+//            $(".wrapper").hide();
+//            timer();
+        });
+        /*==5秒后跳转==*/
+        function timer(){
+            var timer = 10;
+            var linkTimer = setInterval(function (){
+                $(".notice-timeout").html(timer + "秒后自动回到首页／");
+                timer--;
+                if(timer < 0){
+                    clearInterval(linkTimer);
+                    window.location.href = "index.html";
+                }
+            },1000)
+        }
     })(jQuery);
 </script>
 </body>

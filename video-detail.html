@@ -77,10 +77,12 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script src="js/video.js"></script>
 <script>
     ;(function ($){
-        var click = "ontouchstart" in document ? "touchstart" : "click";
+        FastClick.attach(document.body);
+        var click = "click";
         /*==视频==*/
         var player = videojs("video_1",{
             autoplay :  false,
@@ -136,7 +138,6 @@
             $(".textarea-reply").addClass("hide");
         });
     })(jQuery);
-
 </script>
 </body>
 </html>

@@ -642,6 +642,7 @@
 <script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
+        FastClick.attach(document.body);
         var winH = $(window).height();
         $(window).scroll(function (){
             if($(window).scrollTop() >= winH*2){

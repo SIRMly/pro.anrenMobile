@@ -9,7 +9,7 @@
 .forms-wrapper{width: 100%; font-size: 0; padding-top: 25.3vw; }
 .forms-content{margin-top: 1.15rem;}
 .input-wrapper{display: block; margin:0 auto; width: 61vw; min-width: 12rem; height: 10vw; line-height: 10vw;  position: relative;}
-.input-label{width:100%; height: 100%; background: url("../img/login-input.png") no-repeat; background-size: 100% 100%;}
+.input-label{width:100%; height: 100%; background: url("../img/login-input.png") no-repeat; background-size: 100% 100%; position: relative;}
 .input-controls{width: 100%; height: 100%;  font-size: 0.8rem; padding: 0 0.8rem; color: #8d8d8c; text-align: center;}
 .input-controls::-webkit-input-placeholder{text-align: center; color: #8d8d8c;}
 .input-controls::-ms-input-placeholder{text-align: center;  color: #8d8d8c;}
@@ -22,7 +22,7 @@
 .check-img{width: 37%; height: 100%; display: block; font-size: 0;border-radius: 30%; background: url("../img/check-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; position: relative; }
 .check-bg{width: 100%; height: 100%; background: url("../img/check-back.png") no-repeat; -webkit-background-size: 100% 100%;  background-size: 100% 100%; overflow: hidden;}
 .check-img img{display: block; width: 90%; max-height: 95%; position: absolute; left: 5%; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%); }
-.change-check{font-size: 0.6rem; color: #b1b0a9; position: absolute; top: 100%; width: 100%; text-align: center; height: 1rem; line-height: 1rem;}
+.change-check,.register .change-check{font-size: 0.6rem; color: #b1b0a9; position: absolute; top: 100%; width: 100%; text-align: center; height: 1rem; line-height: 1rem;}
 .login-btns img{width: 60vw; display: block; margin: 1.7rem auto 0;}
 .login-btn{width: 18.67vw; height: 9.1vw; position: absolute; top: 65%;}
 .login-btn.login{left: 27vw;}
@@ -62,8 +62,10 @@
 select.input-controls{border: none; outline: none; background-color: transparent; appearance: none; -webkit-appearance:none;}
 .register-links{color: #994242; font-size: 0.7rem; text-align: center; margin-top: 0.6rem; padding-left: 2.5rem;}
 .register-links a{color: #429984;}
+.ios-select-widget-box header.iosselect-header a{color: #0894ec;}
 /*==成功==*/
 .register-succ,#register-success a{color: #9e6c5e; text-align: center;}
 .succ-word{font-size:1rem; margin-top: 30vh;}
 a.toInfo{font-size: 0.75rem;}
 a.backToLogin{position: absolute; bottom: 1.2rem; font-size: 0.6rem; width: 100%;}
+.error{position: absolute; font-size: 0.5rem; color: #a34c46; left: 0; top: -7vw; width: 100%; text-align: center;}
