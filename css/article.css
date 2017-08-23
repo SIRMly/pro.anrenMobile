@@ -86,3 +86,9 @@ img{font-size: 0; display: block;}
 video::-webkit-media-controls { display:none !important; }
 /*==点击屏幕控制播放暂停==*/
 .video-js.vjs-playing .vjs-tech {pointer-events: auto;}
+/*==删除评论==*/
+.crash{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 999; background-color: rgba(0,0,0,0.45); display: none;}
+.delete{width: 58.8vw; height: 30.93vw; position: absolute; top: 35%; left: 20.6vw; background: url("../img/delete.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.delete a{position: absolute; width: 15.067vw; height: 7.067vw; top: 63%;}
+.detele-sure{left: 8.3vw;}
+.delete-cancel{left: 34.5vw;}

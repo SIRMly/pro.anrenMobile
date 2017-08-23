@@ -15,60 +15,65 @@
     <title>敦煌研究院</title>
 </head>
 <body>
-<div class="wrapper" id="lost-found">
-    <div class="content">
-        <div class="top-wrapper">
-            <div class="news-index-logos clearfix">
-                <img src="img/suggestion.png" alt="" class="active-logo"/>
-                <a href="##" class="logo">
-                    <img src="img/logo.png" alt="" width="100%"/>
-                </a>
-            </div>
-        </div>
-        <div class="description">
-            <img src="img/des-border.png" alt="" width="100%">
-            <div class="description-inner">作为理论应用性的论文，撰写者应能运用所学的基本理论知识，来解决实际中出现的问题。论文总体的思路是围绕论文主题“提出问题、分析问题、解决问题”，并据此搭建整篇文章的框架结构。</div>
-            <img src="img/des-border.png" alt="" width="100%">
-            <div class="left-border"></div>
-            <div class="right-border"></div>
-        </div>
-        <div class="forms-wrapper pd75">
-            <div class="forms-content">
-                <label class="input-label flex">
-                    <span class="input-controller number2">姓 名</span>
-                    <img src="img/input-border.png" alt="" height="100%">
-                    <input type="text" class="input-controls">
-                </label>
-                <label class="input-label flex">
-                    <span class="input-controller">手机号码</span>
-                    <img src="img/input-border.png" alt="" height="100%">
-                    <input type="tel" class="input-controls">
-                    <div class="error-warning">请输入正确的手机号码</div>
-                </label>
-                <label class="input-label textarea-label flex">
-                    <span class="input-controller textarea-controller">建议描述</span>
-                    <img src="img/textarea-border.png" alt="" height="100%">
-                    <div class="textarea-wrapper">
-                        <textarea name="" id="" class="textarea-controls" maxlength="100"></textarea>
-                        <div class="text-words">0/100</div>
-                        <div class="img-wrapper clearfix">
-                            <div class="img-updown pull-right">
-                                <img src="" alt="" class="img-show" id="img-show3">
-                                <input type="file" class="img-btn" id="img-btn3" accept="image/jpeg,image/jpg,image/png">
-                            </div>
-                            <div class="img-updown pull-right">
-                                <img src="" alt="" class="img-show" id="img-show2">
-                                <input type="file" class="img-btn" id="img-btn2" accept="image/jpeg,image/jpg,image/png">
-                            </div>
-                            <div class="img-updown pull-right">
-                                <img src="" alt="" class="img-show" id="img-show1">
-                                <input type="file" class="img-btn" id="img-btn1" accept="image/jpeg,image/jpg,image/png">
+<div class="page">
+    <div class="container">
+        <div class="wrapper" id="lost-found">
+            <div class="content">
+                <div class="top-wrapper">
+                    <div class="news-index-logos clearfix">
+                        <img src="img/suggestion.png" alt="" class="active-logo"/>
+                        <a href="##" class="logo">
+                            <img src="img/logo.png" alt="" width="100%"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="description">
+                    <img src="img/des-border.png" alt="" width="100%">
+                    <div class="description-inner">作为理论应用性的论文，撰写者应能运用所学的基本理论知识，来解决实际中出现的问题。论文总体的思路是围绕论文主题“提出问题、分析问题、解决问题”，并据此搭建整篇文章的框架结构。</div>
+                    <img src="img/des-border.png" alt="" width="100%">
+                    <div class="left-border"></div>
+                    <div class="right-border"></div>
+                </div>
+                <div class="forms-wrapper pd75">
+                    <div class="forms-content">
+                        <label class="input-label flex">
+                            <span class="input-controller number2">姓 名</span>
+                            <img src="img/input-border.png" alt="" height="100%">
+                            <input type="text" class="input-controls">
+                        </label>
+                        <label class="input-label flex">
+                            <span class="input-controller">手机号码</span>
+                            <img src="img/input-border.png" alt="" height="100%">
+                            <input type="tel" class="input-controls">
+                            <div class="error-warning">请输入正确的手机号码</div>
+                        </label>
+                        <div class="input-label textarea-label flex">
+                            <span class="input-controller textarea-controller">建议描述</span>
+                            <img src="img/textarea-border.png" alt="" height="100%">
+                            <div class="textarea-wrapper">
+                                <textarea name="" id="" class="textarea-controls" maxlength="100"></textarea>
+                                <div class="text-words">0/100</div>
+                                <div class="img-wrapper clearfix">
+                                    <div class="img-updown img-updown1 pull-right">
+                                        <img src="" alt="" class="img-show" id="img-show1">
+                                        <input type="file" class="img-btn" id="img-btn1" accept="image/jpeg,image/jpg,image/png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </label>
+                    <a href="javascript:;" class="form-submit"></a>
+                </div>
             </div>
-            <a href="javascript:;" class="form-submit"></a>
+        </div>
+    </div>
+</div>
+<div class="page img-delete-wrapper">
+    <div class="container">
+        <div class="">
+            <img src="img/pic.png" alt="" id="delete-img"/>
+            <a href="javascript:;" class="pic-delete"></a>
+            <a href="javascript:;" class="pic-cancel"></a>
         </div>
     </div>
 </div>
@@ -77,19 +82,54 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        var imgNum = 2;
+        var upCrash = $("<div class='up-crash'></div>");
+        var deleteImage = $("#delete-img");
+        function addImg(){
+            if($(".img-updown").length<5){
+                $(".img-wrapper").append($('<div class="img-updown pull-right img-updown'+imgNum+'"><img src="" alt="" class="img-show" id="img-show'+imgNum+'"><input type="file" class="img-btn" id="img-btn'+imgNum+'" accept="image/jpeg,image/jpg,image/png"></div>'))
+                imgNum++;
+            }
+        }
+
+        $("body").on("click",".img-updown", function (){
+            var thisId = $(this).find(".img-btn").attr("id");
+            var index = thisId.charAt(thisId.length-1);
+            if($("#img-btn"+index).val() == ""){
+                /*==如果input内没有选图==*/
+                $("#img-btn"+index).on("change", function (){
+                    imgUpdown(index);
+                    upCrash.clone(true).appendTo($(".img-updown"+index));
+                    addImg();
+                });
+            }else{
+                console.log("bbb");
+                /*==出现删除层==*/
+                deleteImage.attr("src",$("#img-show"+index).attr("src"));
+                $(".img-delete-wrapper").fadeIn(100, function (){
+                    $(".pic-cancel").on("click", function (){
+                        deleteImage.attr("src","");
+                        $(".img-delete-wrapper").hide();
+                    });
+                    $(".pic-delete").on("click", function (){
+                        $(".img-updown"+index).empty().remove();
+                        deleteImage.attr("src","");
+                        $(".img-delete-wrapper").hide();
+                        /*==判断是否还有+号的==*/
+                        var emptyInput = 0;
+                        $(".img-btn").each(function (){
+                            if($(this).val()==""){
+                                emptyInput++;
+                            }
+                        });
+                        if(emptyInput<=0){
+                            addImg();
+                        }
+                    })
+                });
+            }
+        });
         /*==上传预览图片==*/
-        $("#img-btn3").on("change", function (){
-            console.log(3);
-            imgUpdown(3);
-        });
-        $("#img-btn2").on("change", function (){
-            console.log(2);
-            imgUpdown(2);
-        });
-        $("#img-btn1").on("change", function (){
-            console.log(1);
-            imgUpdown(1);
-        });
         function imgUpdown(index){
             var $file = $("#img-btn"+ index +"");
             var fileObj = $file[0];

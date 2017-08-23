@@ -131,6 +131,12 @@
         </div>
         <a href="javascript:;" class="comment-send"></a>
     </div>
+    <div class="crash">
+        <div class="delete">
+            <a href="javascript:;" class="detele-sure"></a>
+            <a href="javascript:;" class="delete-cancel"></a>
+        </div>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
@@ -173,6 +179,13 @@
         }
         $(".textarea-reply").addClass("hide");
     });
+    /*==删除==*/
+    $(".container").on(click, function (){
+        $(".crash").show();
+    });
+    $(".delete-cancel").on(click, function (){
+        $(".crash").hide();
+    })
 </script>
 </body>
 </html>

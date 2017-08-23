@@ -410,7 +410,7 @@
     ;(function ($){
         FastClick.attach(document.body);
         var winW = $(window).width();
-        var click = "ontouchstart" in document ? "touchend" : "click";
+        var click = "click";
         var chronoSwiperArr = [];
         var tabs = $(".tabs");
         $(".item").each(function(){
@@ -427,7 +427,8 @@
                     loop: true,
                     autoplay: false,
                     autoplayDisableOnInteraction: false,
-                    touchRatio : 0
+                    touchRatio : 0,
+                    autoHeight : true
                 });
             }
             for(var i=0; i<tabs.length; i++){
