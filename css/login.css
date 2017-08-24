@@ -36,7 +36,7 @@
 #forget1 .check-img.disabled .check-bg{opacity: 0.8; background: none;}
 .form-submit{display: block; width: 46.67vw; height: 30.13vw; background: url("../img/submit-btn.png") no-repeat center center; background-size: contain; margin: 2rem auto 0;}
 /*==注册==*/
-#register .wrapper{ background: url("../img/register-bg.png") repeat; -webkit-background-size:100% auto; background-size:100% auto; padding-top: 1.7rem;}
+#register .wrapper{min-height: 100vh; background: url("../img/register-bg.png") repeat; -webkit-background-size:100% auto; background-size:100% auto; padding-top: 1.7rem;}
 .register a{color: #464646;}
 #register img{display: block;}
 .register-form-title{height: 19.73vw; background: url("../img/title.png") no-repeat center center; -webkit-background-size: auto 100%; background-size: auto 100%;}
