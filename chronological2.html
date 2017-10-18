@@ -164,27 +164,26 @@
             });
             $("#page2").stop().fadeIn(500, function () {
                 $("#page2").removeClass("hide");
+                var swiperTop = new Swiper("#swiper-top",{
+                    initialSlide : slideNum,
+                    autoHeight : true,
+                    speed : 0,
+                    effect : 'fade',
+                    fade: {
+                        crossFade: true
+                    }
+                });
+                var swiperController = new Swiper("#swiper-year",{
+                    initialSlide : slideNum,
+                    autoHeight : true,
+                    speed : 300,
+                    slidesPerView: 5,
+                    centeredSlides: true
+                });
+                swiperController.params.control = swiperTop;
+                swiperTop.update();
+                swiperController.update();
             });
-            var swiperTop = new Swiper("#swiper-top",{
-                initialSlide : slideNum,
-                autoHeight : true,
-                speed : 0,
-                effect : 'fade',
-                fade: {
-                    crossFade: true
-                }
-            });
-            var swiperController = new Swiper("#swiper-year",{
-                initialSlide : slideNum,
-                autoHeight : true,
-                speed : 300,
-                slidesPerView: 5,
-                centeredSlides: true
-            });
-            swiperController.params.control = swiperTop;
-            swiperTop.update();
-            swiperController.update();
-            console.log(slideNum);
         });
         touch.on("#page2", "swipedown", function (){
             $("#page2").stop().fadeOut(500, function (){
@@ -196,49 +195,49 @@
         });
         /*==打开crash==*/
         $(".show-second").on(click, function (){
-           $(".crash").fadeIn(500);
-            var swiperInner = new Swiper("#swiper-inner",{
-                speed : 300,
-                slidesPerView: 1,
-                pagination : '.swiper-pagination'
-            });
-            swiperInner.update();
+           $(".crash").fadeIn(500, function (){
+               var swiperInner = new Swiper("#swiper-inner",{
+                   speed : 300,
+                   slidesPerView: 1,
+                   pagination : '.swiper-pagination'
+               });
+               swiperInner.update();
+               /*==图片=*/
+               var slider = $("#swiper-inner").find(".swiper-slide");
+               var sliderH = slider.height();
+               var fs = parseFloat($("body").css("font-size"));
+               slider.each(function (index, item){
+//            var img = $(this).find("img");
+                   var words = $(this).find(".pic-word");
+                   var p = $(this).find(".word-content");
+                   var inner = $(this).find(".word-inner");
+                   var scrollbar = $(this).find(".scrollbar");
+                   /*==滚动条==*/
+                   var pHei = p.height();
+                   var wordsHei = words.height();
+                   var innerHei = 0.63*winH;
+                   console.log(innerHei+"////"+pHei);
+                   if(pHei > innerHei){
+                       words.addClass("more");
+                       /*==滚动条长度==*/
+                       scrollbar.css({
+//                    height :　innerHei/pHei*winH*0.66
+                           height :　(innerHei/pHei)*innerHei
+                       });
+//                console.log(innerHei/pHei);
+                       /*==滚动时移动==*/
+                       inner.scroll(function(){
+                           scrollbar.css({
+                               top : inner.scrollTop()/pHei*innerHei+"px"
+                           });
+                       })
+                   }
+               });
+           });
         });
         /*==关闭crash==*/
         $(".close-crash").on(click, function (){
            $(".crash").fadeOut(500);
-        });
-
-        /*==图片=*/
-        var slider = $("#swiper-inner").find(".swiper-slide");
-        var sliderH = slider.height();
-        var fs = parseFloat($("body").css("font-size"));
-        slider.each(function (index, item){
-//            var img = $(this).find("img");
-            var words = $(this).find(".pic-word");
-            var p = $(this).find(".word-content");
-            var inner = $(this).find(".word-inner");
-            var scrollbar = $(this).find(".scrollbar");
-            /*==滚动条==*/
-            var pHei = p.height();
-            var wordsHei = words.height();
-            var innerHei = 0.63*winH;
-            console.log(innerHei+"////"+pHei);
-            if(pHei > innerHei){
-                words.addClass("more");
-                /*==滚动条长度==*/
-                scrollbar.css({
-//                    height :　innerHei/pHei*winH*0.66
-                    height :　(innerHei/pHei)*innerHei
-                });
-//                console.log(innerHei/pHei);
-                /*==滚动时移动==*/
-                inner.scroll(function(){
-                    scrollbar.css({
-                        top : inner.scrollTop()/pHei*innerHei+"px"
-                    });
-                })
-            }
         });
     })(jQuery);
 </script>
