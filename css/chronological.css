@@ -13,10 +13,10 @@
 .p2-bottom{width: 100%; height: 100%; background: url("../img/ch-p2-bottom.png") no-repeat bottom center; -webkit-background-size: 100% auto; background-size: 100% auto; position: absolute; left: 0; bottom: 0;}
 .p2-right{width: 44.1vw; height: 130vw; background: url("../img/cho-right.png") no-repeat left center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 0; top: 7%;}
 .cho-top{width: 41vw; position: absolute; top: 19%; right: 3%;}
-.event-title{font-size: 0.7rem; color: #d19693; text-align: center; width: 5.5rem; margin: 0 auto 0.2rem; line-height: 0.9rem;}
-.swiper1{height: 9rem;}
+/*.event-title{font-size: 0.7rem; color: #d19693; text-align: center; width: 5.5rem; margin: 0 auto 0.2rem; line-height: 0.9rem;}*/
+/*.swiper1{height: 9rem;}*/
 #swiper-top{width: 100%; height: 100%;}
-#swiper-top a{display: block; font-size: 0.7rem; color: #b5615d; text-align: center;  line-height: 0.9rem; padding: 0.2rem 0;}
+#swiper-top a{display: block; font-size: 0.7rem; color: #b5615d; text-align: center;  line-height: 0.9rem; padding: 0.4rem 0.8rem;}
 
 
 
